@@ -24,7 +24,7 @@ const AboutUsSection: React.FC = () => {
           <p className="max-w-lg text-base leading-relaxed text-gray-700">
             GreenKids đồng hành cùng trẻ 5-12 tuổi khám phá tái chế sáng tạo,
             biến vật liệu cũ thành đồ chơi mới có giá trị. Mỗi workshop là hành
-            trình "vừa học vừa chơi", giúp trẻ phát triển tư duy sáng tạo, kỹ
+            trình &quot;vừa học vừa chơi&quot;, giúp trẻ phát triển tư duy sáng tạo, kỹ
             năng hợp tác và thói quen sống xanh với thành phẩm đồ chơi mang về
             sau mỗi buổi.
           </p>

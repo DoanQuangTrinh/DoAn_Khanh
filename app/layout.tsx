@@ -29,8 +29,15 @@ export default function RootLayout({
   children: React.ReactNode;
 }) {
   return (
+    // Bạn nên dùng 'vi' (tiếng Việt)
     <html lang="vi" className={josefin.variable}>
+      {/* 2. Bọc toàn bộ ứng dụng trong <PrimeReactProvider> */}
       <PrimeReactProvider>
+        {/* 3. Thêm:
+             - ${inter.className} để áp dụng font
+             - text-brand-text để có màu chữ mặc định
+             - overflow-x-hidden để chống tràn ngang
+        */}
         <body
           className={`${inter.className} bg-brand-background text-brand-text overflow-x-hidden`}
         >
