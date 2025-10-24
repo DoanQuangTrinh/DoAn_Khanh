@@ -81,14 +81,14 @@ const TestimonialCard = ({ item }: { item: Testimonial }) => {
         </div>
 
         {/* 2b. Phần trích dẫn */}
-        <p className="text-gray-600 italic flex-grow mb-6 text-base">
-          {item.quote}
-        </p>
+        <p className="font-text-content-min text-xs mb-6 ">{item.quote}</p>
 
         {/* 2c. Phần thông tin người đánh giá */}
         <div>
-          <p className="font-bold text-gray-900 text-lg">{item.name}</p>
-          <p className="text-gray-500 text-sm">{item.title}</p>
+          <p className="font-bold font-text-content">{item.name}</p>
+          <p className="text-gray-500 text-sm font-text-content-min !font-bold">
+            {item.title}
+          </p>
         </div>
       </div>
     </div>
@@ -140,11 +140,9 @@ export const TestimonialSlider = () => {
     <section className=" py-16 md:py-24">
       <div className="max-w-7xl mx-auto px-4">
         {/* 3a. Tiêu đề */}
-        <div className="text-center mb-12">
-          <h2 className="text-4xl md:text-5xl font-bold text-[#4A6341] mb-4">
-            What our clients say
-          </h2>
-          <p className="text-lg text-gray-700 max-w-2xl mx-auto">
+        <div className="mb-12 md:pl-12 pl-0">
+          <h2 className="text-4xl md:text-5xl text-about">Khách hàng nói gì</h2>
+          <p className="font-text-content  !text-sm">
             Cùng lắng nghe xem các phụ huynh và bé đã nói gì về trải nghiệm
             workshop của chúng tôi!
           </p>

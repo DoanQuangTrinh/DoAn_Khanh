@@ -40,9 +40,9 @@ export const RegistrationForm = () => {
   };
 
   // Các lớp CSS tái sử dụng để code sạch hơn
-  const labelClasses = "block text-sm font-semibold text-[#333] mb-2";
+  const labelClasses = "block !text-sm font-text-content mb-2";
   const inputClasses =
-    "w-full px-5 py-3.5 bg-white rounded-lg shadow-sm " +
+    "!font-josefin text-xs w-full px-5 py-3.5 bg-white rounded-lg shadow-sm " +
     "border border-gray-200 placeholder-gray-400 text-gray-800 " +
     "focus:outline-none focus:ring-2 focus:ring-[#4A6341] focus:ring-opacity-50";
 
@@ -52,12 +52,12 @@ export const RegistrationForm = () => {
         {/* --- 1. Tiêu đề --- */}
         <div className="text-center mb-12">
           <h2
-            className="text-4xl md:text-5xl font-bold mb-4"
+            className="text-4xl md:text-5xl text-about mb-4"
             style={{ color: "#4A6341" }} // Màu xanh lá đậm
           >
             Đăng ký Tư vấn & Nhận Thông tin Workshop
           </h2>
-          <p className="text-lg text-gray-700 max-w-2xl mx-auto">
+          <p className="font-text-content !text-xs mx-auto w-full !text-center">
             "Để lại thông tin, GreenKids sẽ liên hệ tư vấn và gửi chi tiết các
             workshop phù hợp với độ tuổi của bé."
           </p>
@@ -133,7 +133,7 @@ export const RegistrationForm = () => {
                     <button
                       type="submit"
                       className="
-                        w-full sm:w-auto px-8 py-3.5 rounded-lg text-white font-semibold 
+                        w-full sm:w-auto px-8 py-3.5 rounded-lg button-workshop text-workshop 
                         transition-all duration-300
                         hover:opacity-90 hover:shadow-md
                       "

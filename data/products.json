@@ -1,0 +1,32 @@
+{
+  "tabs": {
+    "noiDung": "Nội dung chi tiết về workshop... (Đây là tab Nội dung) Trẻ sẽ được học về...",
+    "ketQua": "Trẻ phân biệt được truyền sáng, phản xạ và khuếch tán. Trẻ hiểu vai trò của chất liệu trong việc điều tiết ánh sáng, rèn tính tỉ mỉ và tư duy bố cục. Ý thức về môi trường được củng cố khi một chai nhựa cũ được tái sinh thành đồ vật hữu ích."
+  },
+  "testimonials": [
+    {
+      "name": "Anh Quang Huy",
+      "title": "Phụ huynh (quận Hải Châu)",
+      "quote": "Con tôi mang về món đồ chơi đâu tay từ chai nhựa và kể rất chi tiết cách làm. Tôi thấy con chủ động, tập trung hơn hẳn.",
+      "rating": 4
+    },
+    {
+      "name": "Cô Thu Hà",
+      "title": "Giáo viên chủ nhiệm",
+      "quote": "Buổi học rõ ràng, an toàn, có quy trình. Học sinh hào hứng mà giáo viên cũng dễ tích hợp vào tiết kỹ năng sống.",
+      "rating": 4
+    },
+    {
+      "name": "Bé Gia Khang",
+      "title": "Học sinh lớp 4",
+      "quote": "Em thích nhất phần lắp ghép robot nắp chai. Về nhà em còn làm thêm một cái nữa để tặng em trai.",
+      "rating": 5
+    },
+    {
+      "name": "Chị Ngọc Ánh",
+      "title": "Phụ huynh (quận Sơn Trà)",
+      "quote": "Con tôi vẫn nhút nhát, nhưng khi tự tay hoàn thiện món đồ chơi, bé tự tin khoe trước lớp. Đó là thay đổi tôi mong đợi.",
+      "rating": 5
+    }
+  ]
+}

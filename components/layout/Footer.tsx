@@ -23,13 +23,13 @@ const FooterLinkColumn: React.FC<FooterLinkColumnProps> = ({
   links,
 }) => (
   <div>
-    <h3 className="font-serif text-3xl font-medium mb-6">{title}</h3>
+    <h3 className="font-text-content text-3xl font-medium mb-6">{title}</h3>
     <ul className="space-y-4">
       {links.map((link) => (
         <li key={link.href}>
           <a
             href={link.href}
-            className="font-serif text-lg transition-colors duration-300 hover:text-white"
+            className="font-text-content !text-sm transition-colors duration-300 hover:text-white"
           >
             {link.label}
           </a>
@@ -58,12 +58,12 @@ export const Footer = () => {
   return (
     // Sử dụng màu nền và màu chữ chính xác từ thiết kế
     // bg-[#879382] (xanh sage) và text-[#FDFBF4] (kem)
-    <footer className="bg-[#8B9477] text-[#FDFBF4] py-16 md:py-24 px-6 lg:px-8">
+    <footer className="bg-[#8B9477] !font-josefin !text-[#FFF4E2] py-16 md:py-24 px-6 lg:px-8">
       <div className="max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-3 gap-12 lg:gap-8">
         {/* === CỘT 1: BRANDING, SUBSCRIBE & FOLLOW === */}
         <div className="space-y-12">
           {/* 1a. Branding */}
-          <h2 className="font-serif text-5xl md:text-6xl font-medium leading-tight">
+          <h2 className="text-about !text-[#FFF4E2] text-4xl md:text-5xl font-medium leading-tight">
             Little Hands
             <br />
             Green Hearts!
@@ -78,8 +78,8 @@ export const Footer = () => {
                 placeholder="Nhập E - mail của bạn."
                 className="
                   w-full bg-transparent border-b border-[#FDFBF4]
-                  py-3 pl-0 pr-10 text-lg font-serif
-                  placeholder:text-[#FDFBF4] placeholder:opacity-70
+                  py-3 pl-0 pr-10 text-lg font-josefin
+                  placeholder:text-[#FFF4E2] placeholder:opacity-70
                   focus:outline-none focus:border-white transition-colors
                 "
               />
@@ -113,7 +113,7 @@ export const Footer = () => {
                   className="text-[#879382] opacity-0 peer-checked:opacity-100 transition-opacity"
                 />
               </div>
-              <span className="text-sm opacity-80 group-hover:opacity-100 transition-opacity">
+              <span className="font-text-content !text-sm opacity-80 group-hover:opacity-100 transition-opacity">
                 I agree with the privacy policy and terms of use.
               </span>
             </label>
@@ -121,7 +121,7 @@ export const Footer = () => {
 
           {/* 1c. Follow Us */}
           <div className="space-y-6">
-            <h3 className="font-serif text-3xl font-medium">Follow Us</h3>
+            <h3 className="font-josefin text-3xl font-medium">Follow Us</h3>
             <div className="flex items-center gap-5">
               <a
                 href="#"

@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@400;500;600;700&display=swap");
 @import "tailwindcss";
 @tailwind utilities;
 @tailwind components;
@@ -13,7 +14,7 @@
 }
 
 body {
-  background-color: #fff4e2;
+  background-color: #fff9ef;
   font-family: var(--font-josefin), sans-serif;
 }
 
@@ -50,4 +51,113 @@ body {
 .scrollbar-hide {
   scrollbar-width: none !important;
   /* Firefox */
+}
+
+.font-text-content {
+  font-family: "Josefin Sans";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 25px;
+  line-height: 25px;
+  text-align: justify;
+}
+
+.font-text-content-min {
+  font-family: "Josefin Sans";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 20px;
+  text-align: justify;
+}
+
+.button-content {
+  background: #d9dac7;
+  border: 1px solid #6f7a6b;
+  border-radius: 10px;
+  padding: 18px;
+}
+
+.button-text {
+  font-family: "Josefin Sans";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 22px;
+  /* identical to box height */
+  text-align: center;
+  text-transform: uppercase;
+  color: #6f7a6b;
+}
+
+.text-header {
+  font-family: "Josefin Sans";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 30px;
+  line-height: 30px;
+  /* identical to box height */
+  color: #508d57;
+}
+
+.text-judson {
+  font-family: "Judson";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 32px;
+  line-height: 40px;
+  color: #ffffff;
+}
+
+.text-about {
+  font-family: "Judson";
+  font-style: normal;
+  font-weight: 700;
+  line-height: 76px;
+  color: #508d57;
+}
+
+.title-work-shop {
+  font-family: "Judson";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 34px;
+  line-height: 46px;
+  text-align: center;
+  text-transform: capitalize;
+  color: #424d3e;
+}
+
+.button-workshop {
+  background: #6f7a6b;
+  border-radius: 8px;
+}
+
+.text-workshop {
+  font-family: "Josefin Sans";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 25px;
+  /* identical to box height */
+  text-align: center;
+  color: #ffffff;
+}
+
+.heading-title {
+  font-family: "Josefin Sans";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 38px;
+  line-height: 50px;
+  color: #424d3e;
+}
+
+@media (max-width: 640px) {
+  .font-text-content {
+    font-size: 22px;
+  }
+  .text-about {
+    line-height: 46px;
+  }
 }

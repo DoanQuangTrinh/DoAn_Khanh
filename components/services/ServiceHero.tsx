@@ -35,8 +35,6 @@ const ServiceCard: React.FC<ServiceCardProps> = ({
     )}
   </div>
 );
-
-// --- COMPONENT CHÍNH ---
 export const ServiceHero = () => {
   return (
     // Nền màu kem
@@ -44,27 +42,26 @@ export const ServiceHero = () => {
       <div className="max-w-7xl mx-auto px-6 lg:px-8">
         {/* Link Quay Lại */}
         <a
-          href="/services"
+          href="/"
           className="
-            flex items-center gap-2 font-serif text-lg 
-            text-[#4A6341] opacity-80
+            flex items-center gap-2 heading-title text-lg  opacity-80
             hover:opacity-100 transition-opacity duration-300
           "
         >
           <FaChevronLeft size={16} />
-          Our Services
+          Dịch vụ
         </a>
 
         {/* Layout chính: 2 cột trên desktop, 1 cột trên mobile */}
         <div className="mt-8 grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-16 items-center">
           {/* CỘT BÊN TRÁI: Nội dung văn bản */}
           <div className="flex flex-col justify-center">
-            <h1 className="font-serif text-5xl md:text-6xl font-bold text-[#4A6341] leading-tight">
+            <h1 className="text-about text-2xl md:text-4xl">
               HỌC HỎI QUA
               <br />
               TRẢI NGHIỆM THỰC TẾ
             </h1>
-            <p className="mt-6 text-lg text-gray-700 max-w-lg">
+            <p className="mt-6 font-text-content-min">
               Từ robot hộp sữa đến đèn lồng chai PET, mỗi workshop là một trải
               nghiệm 2 giờ đầy hứng khởi. Hãy chọn cho bé khung giờ cuối tuần
               phù hợp để con vừa học, vừa chơi, và mang về những sản phẩm tự tay
@@ -98,16 +95,13 @@ export const ServiceHero = () => {
                 -translate-x-1/2 -translate-y-1/2 z-20
                 bg-[#B5C4B0]
               "
-              // imageUrl="path/to/your/image2.jpg"
             />
 
-            {/* Thẻ 3: Dưới-Trái (Màu xanh đậm) */}
             <ServiceCard
               className="
                 w-3/4 h-60 bottom-0 left-0 z-10
                 bg-[#879382]
               "
-              // imageUrl="path/to/your/image3.jpg"
             />
           </div>
         </div>

@@ -33,20 +33,11 @@ const WorkshopCard = ({ item }: { item: WorkshopItem }) => {
 
       {/* Phần nội dung thẻ */}
       <div className="p-6 flex flex-col flex-grow">
-        <h3 className="text-xl lg:text-2xl font-bold text-gray-900 mb-3">
-          {item.title}
-        </h3>
-        <p className="text-gray-600 mb-6 flex-grow">{item.description}</p>
+        <h3 className="title-work-shop">{item.title}</h3>
+        <p className="font-text-content !text-sm">{item.description}</p>
 
         {/* Nút bấm được đẩy xuống dưới cùng */}
-        <button
-          className="
-            mt-auto w-full px-5 py-2.5 rounded-lg bg-blue-600 text-white
-            font-semibold text-center
-            hover:bg-blue-700 transition-colors duration-200
-            focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-opacity-50
-          "
-        >
+        <button className="button-workshop text-workshop py-2 px-4 w-max">
           Xem thêm
         </button>
       </div>

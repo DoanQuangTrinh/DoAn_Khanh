@@ -10,6 +10,19 @@ import "primereact/resources/primereact.min.css";
 import "primeicons/primeicons.css";
 import Header from "@/components/layout/Header";
 import { Footer } from "@/components/layout/Footer";
+import { Merriweather } from "next/font/google";
+import localFont from "next/font/local";
+const cashC = localFont({
+  src: "/fonts/Cash-Regular.ttf",
+  variable: "--font-cashc",
+  display: "swap",
+});
+
+const merr = Merriweather({
+  subsets: ["vietnamese"],
+  weight: ["300", "400", "700"],
+  variable: "--font-serif",
+});
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -30,7 +43,7 @@ export default function RootLayout({
 }) {
   return (
     // Bạn nên dùng 'vi' (tiếng Việt)
-    <html lang="vi" className={josefin.variable}>
+    <html lang="vi">
       {/* 2. Bọc toàn bộ ứng dụng trong <PrimeReactProvider> */}
       <PrimeReactProvider>
         {/* 3. Thêm:
@@ -44,7 +57,7 @@ export default function RootLayout({
           <Header />
 
           {/* 4. Thêm thẻ <main> cho nội dung chính */}
-          <main className="relative z-10">{children}</main>
+          <main className="relative z-10 ">{children}</main>
           <Footer />
           {/* (Sau này bạn có thể thêm Footer ở đây) */}
         </body>

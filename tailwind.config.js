@@ -11,6 +11,11 @@ module.exports = {
       animation: {
         marquee: "marquee 20s linear infinite",
       },
+      fontFamily: {
+        serif: ['"Merriweather"', "serif"],
+        cash: ["var(--font-cash)"],
+        josefin: ["Josefin Sans", "sans-serif"],
+      },
     },
   },
 };

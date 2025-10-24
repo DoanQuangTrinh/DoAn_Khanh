@@ -10,10 +10,10 @@ import { useScrollDirection } from "@/hooks/useScrollDirection";
 import { motion } from "framer-motion";
 // Tách các link ra để dễ quản lý
 const navLinks = [
-  { label: "ABOUT US", href: "/about" },
-  { label: "SERVICES", href: "/services" },
-  { label: "BLOGS", href: "/blogs" },
-  { label: "BOOKING", href: "/booking" },
+  { label: "Về Chúng Tôi", href: "/about" },
+  { label: "Dịch Vụ", href: "/services" },
+  { label: "Blogs", href: "/blogs" },
+  { label: "Đặt Lịch", href: "/booking" },
 ];
 
 export default function Header() {
@@ -22,8 +22,7 @@ export default function Header() {
   // 2. Gọi hook
   const scrollDirection = useScrollDirection();
 
-  const linkClassName =
-    "hover:text-brand-green-light transition text-lg font-semibold";
+  const linkClassName = "text-header";
 
   return (
     <>
@@ -46,10 +45,10 @@ export default function Header() {
             {/* Left Menus */}
             <nav className="flex gap-10">
               <Link href="/about" className={linkClassName}>
-                ABOUT US
+                Về Chúng Tôi
               </Link>
               <Link href="/services" className={linkClassName}>
-                SERVICES
+                Dịch Vụ
               </Link>
             </nav>
 
@@ -69,12 +68,12 @@ export default function Header() {
             {/* Right Menus */}
             <nav className="flex items-center gap-10">
               <Link href="/blogs" className={linkClassName}>
-                BLOGS
+                Blogs
               </Link>
               <Link href="/booking" className={linkClassName}>
-                BOOKING
+                Đặt Lịch
               </Link>
-              <span className="pi pi-search cursor-pointer text-2xl hover:text-brand-green-light transition"></span>
+              <span className="text-header pi pi-search cursor-pointer text-2xl hover:text-brand-green-light transition"></span>
             </nav>
           </div>
 
@@ -142,7 +141,7 @@ export default function Header() {
 
             <Link
               href="/search"
-              className="mt-4 flex items-center justify-center gap-2 text-2xl font-semibold text-brand-green-dark hover:text-brand-green-light"
+              className=" mt-4 flex items-center justify-center gap-2 text-2xl font-semibold text-brand-green-dark hover:text-brand-green-light"
               onClick={() => setIsMobileMenuVisible(false)}
             >
               <span className="pi pi-search"></span>

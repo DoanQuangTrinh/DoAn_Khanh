@@ -9,7 +9,7 @@ type ProductImage = {
   alt: string;
 };
 
-type ProductDetails = {
+export type ProductDetails = {
   title: string;
   description: string;
   images: ProductImage[];
@@ -151,22 +151,21 @@ export const ServiceDetailPage = () => {
         {/* CỘT PHẢI: Thông Tin Chi Tiết */}
         <div className="flex flex-col">
           {/* Tiêu đề & Mô tả */}
-          <h1 className="font-serif text-5xl md:text-6xl font-bold text-[#4A6341]">
+          <h1 className="title-work-shop md:!text-5xl text-3xl">
             {productData.title}
           </h1>
-          <p className="mt-6 text-lg text-gray-700 leading-relaxed">
+          <p className="mt-6 font-text-content-min ">
             {productData.description}
           </p>
 
-          {/* Chi tiết (Thời gian, Lịch học,...) */}
           <div className="my-8 space-y-4">
             {productData.details.map((item) => (
               <div key={item.label} className="flex">
-                <span className="font-semibold text-gray-900 w-28 shrink-0">
+                <span className="font-text-content-min text-sm w-28 shrink-0">
                   {item.label} :
                 </span>
                 {/* `whitespace-pre-line` để giữ ngắt dòng (cho lịch học) */}
-                <span className="text-gray-700 whitespace-pre-line">
+                <span className="font-text-content-min text-sm whitespace-pre-line">
                   {item.value}
                 </span>
               </div>
@@ -175,10 +174,10 @@ export const ServiceDetailPage = () => {
 
           {/* Giá & Ưu đãi */}
           <div className="mt-4 p-6 bg-[#E5E6D8] rounded-lg">
-            <p className="font-serif text-4xl font-bold text-[#4A6341]">
+            <p className="font-text-content-min !text-4xl">
               {productData.price}
             </p>
-            <ul className="mt-4 space-y-2 list-disc list-inside text-gray-700">
+            <ul className="mt-4 font-text-content-min space-y-2 list-disc list-inside">
               {productData.priceNotes.map((note, index) => (
                 <li key={index}>{note}</li>
               ))}
@@ -186,14 +185,14 @@ export const ServiceDetailPage = () => {
           </div>
 
           {/* Miễn trừ trách nhiệm */}
-          <p className="mt-4 text-sm text-gray-600 italic">
+          <p className="mt-4 text-sm font-text-content-min ">
             {productData.disclaimer}
           </p>
 
           {/* Nút Đặt Lịch (đẩy xuống dưới cùng) */}
           <button
             className="
-              mt-auto w-full lg:w-auto px-10 py-4 rounded-lg bg-[#879382] text-white
+              mt-auto w-full lg:w-auto px-10 py-4 rounded-lg button-workshop  text-workshop
               font-semibold text-lg
               transition-all duration-300 ease-in-out
               hover:bg-[#4A6341] hover:scale-105
