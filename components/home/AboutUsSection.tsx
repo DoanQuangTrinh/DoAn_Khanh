@@ -1,5 +1,5 @@
 "use client";
-import { usePathname } from "next/navigation";
+import { usePathname, useRouter } from "next/navigation";
 import { motion } from "framer-motion";
 import React from "react";
 
@@ -33,6 +33,7 @@ const itemsAboutUs = [
 
 const AboutUsSection: React.FC = () => {
   const pathname = usePathname();
+  const router = useRouter()
   const data = pathname === '/' ? itemsAboutUs[0] : pathname === '/booking' ? itemsAboutUs[1] : itemsAboutUs[2];
 
   return (
@@ -55,7 +56,9 @@ const AboutUsSection: React.FC = () => {
           </h2>
           <p className="font-text-content">{data.content}</p>
           {data.contentButton && (
-            <div className="mt-10">
+            <div className="mt-10"
+              onClick={() => router.push("/about")}
+            >
               <motion.button
                 className="button-content button-text"
                 whileHover={{ scale: 1.05 }}

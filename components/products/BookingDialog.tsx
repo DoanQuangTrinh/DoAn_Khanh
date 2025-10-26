@@ -4,6 +4,7 @@
 import { useState } from "react";
 import { useRouter } from "next/navigation";
 import { Dialog } from "primereact/dialog";
+import { toast } from "react-toastify";
 
 interface WorkshopDetail {
     label: string;
@@ -58,11 +59,11 @@ export const BookingDialog = ({ workshopName, data, visible, onHide }: BookingDi
             const existingCart = JSON.parse(localStorage.getItem("cart") || "[]");
             existingCart.push(cartItem);
             localStorage.setItem("cart", JSON.stringify(existingCart));
-            alert("Đã thêm vào giỏ hàng thành công!");
+            toast.success("Đã thêm vào giỏ hàng thành công!")
             onHide();
         } catch (error) {
             console.error("Lỗi khi lưu vào giỏ hàng:", error);
-            alert("Đã xảy ra lỗi, vui lòng thử lại.");
+            toast.error("Đã xảy ra lỗi, vui lòng thử lại.");
         }
     };
 
@@ -81,7 +82,7 @@ export const BookingDialog = ({ workshopName, data, visible, onHide }: BookingDi
             onHide();
         } catch (error) {
             console.error("Lỗi khi chuyển đến thanh toán:", error);
-            alert("Đã xảy ra lỗi, vui lòng thử lại.");
+            toast.error("Đã xảy ra lỗi, vui lòng thử lại.")
         }
     };
 

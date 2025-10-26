@@ -1,59 +1,71 @@
-// app/components/layout/Header.tsx (hoặc file của bạn)
-"use client";
+'use client';
 
-import Image from "next/image";
-import Link from "next/link";
-import { useState } from "react";
-import { Sidebar } from "primereact/sidebar"; // 1. Import Sidebar của PrimeReact
-import { Button } from "primereact/button";
-import { useScrollDirection } from "@/hooks/useScrollDirection";
-import { motion } from "framer-motion";
-// Tách các link ra để dễ quản lý
+import Image from 'next/image';
+import Link from 'next/link';
+import { useState, useEffect } from 'react';
+import { usePathname } from 'next/navigation';
+import { Sidebar } from 'primereact/sidebar';
+import { Button } from 'primereact/button';
+import { motion, easeInOut } from 'framer-motion';
+
 const navLinks = [
-  { label: "Về Chúng Tôi", href: "/about" },
-  { label: "Dịch Vụ", href: "/services" },
-  { label: "Blogs", href: "/blogs" },
-  { label: "Đặt Lịch", href: "/booking" },
+  { label: 'Về Chúng Tôi', href: '/about' },
+  { label: 'Dịch Vụ', href: '/services' },
+  { label: 'Blogs', href: '/blogs' },
+  { label: 'Đặt Lịch', href: '/booking' },
 ];
+
+const leftLinks = navLinks.slice(0, 2);
+const rightLinks = navLinks.slice(2);
 
 export default function Header() {
   const [isMobileMenuVisible, setIsMobileMenuVisible] = useState(false);
+  const [isScrolled, setIsScrolled] = useState(false);
+  const pathname = usePathname();
 
-  // 2. Gọi hook
-  const scrollDirection = useScrollDirection();
+  useEffect(() => {
+    const handleScroll = () => setIsScrolled(window.scrollY > 50);
+    window.addEventListener('scroll', handleScroll);
+    handleScroll();
+    return () => window.removeEventListener('scroll', handleScroll);
+  }, []);
 
-  const linkClassName = "text-header";
+  const getLinkClass = (href: string) =>
+    pathname === href
+      ? 'text-header-active font-bold'
+      : 'text-header hover:text-brand-green-light';
+
+  const getMobileLinkClass = (href: string) =>
+    `text-2xl font-semibold ${pathname === href
+      ? 'text-brand-green-light'
+      : 'text-brand-green-dark hover:text-brand-green-light'
+    }`;
 
   return (
     <>
-      {/* 3. Thay <header> bằng <motion.header> */}
       <motion.header
-        // 4. Thêm class "sticky top-0" để header dính lại
-        className="bg-brand-background text-brand-green-dark relative z-40 shadow-sm sticky top-0"
-        // 5. Thêm animate và transition
-        animate={{
-          // Nếu cuộn xuống, y = -100% (ẩn đi)
-          // Nếu cuộn lên, y = 0 (hiện ra)
-          y: scrollDirection === "down" ? "-100%" : 0,
-        }}
-        transition={{ duration: 0.3, ease: "easeInOut" }}
+        className="bg-brand-background text-brand-green-dark relative z-40 shadow-sm top-0 !h-[100px] md:!h-auto"
+        layout
       >
         <div className="container mx-auto px-4 sm:px-8">
-          {/* === 1. HEADER CHO DESKTOP === */}
-          <div className="hidden lg:flex items-center justify-around py-4">
-            {/* ... (Nội dung header desktop của bạn giữ nguyên) ... */}
-            {/* Left Menus */}
+          <motion.div
+            className="hidden lg:flex items-center justify-around"
+            animate={{
+              paddingTop: isScrolled ? '0.125rem' : '1rem',
+              paddingBottom: isScrolled ? '0.125rem' : '1rem',
+            }}
+            transition={{ duration: 0.3, ease: easeInOut }}
+            layout
+          >
             <nav className="flex gap-10">
-              <Link href="/about" className={linkClassName}>
-                Về Chúng Tôi
-              </Link>
-              <Link href="/services" className={linkClassName}>
-                Dịch Vụ
-              </Link>
+              {leftLinks.map((link) => (
+                <Link key={link.href} href={link.href} className={getLinkClass(link.href)}>
+                  {link.label}
+                </Link>
+              ))}
             </nav>
 
-            {/* Logo (Giữa) */}
-            <div className="px-4">
+            <motion.div animate={{ scale: isScrolled ? 0.5 : 1 }} transition={{ duration: 0.3, ease: easeInOut }} layout>
               <Link href="/">
                 <Image
                   src="/logo/LOGO 1.png"
@@ -61,39 +73,33 @@ export default function Header() {
                   width={110}
                   height={110}
                   priority
+                  className="transition-all"
                 />
               </Link>
-            </div>
+            </motion.div>
 
-            {/* Right Menus */}
             <nav className="flex items-center gap-10">
-              <Link href="/blogs" className={linkClassName}>
-                Blogs
-              </Link>
-              <Link href="/booking" className={linkClassName}>
-                Đặt Lịch
-              </Link>
+              {rightLinks.map((link) => (
+                <Link key={link.href} href={link.href} className={getLinkClass(link.href)}>
+                  {link.label}
+                </Link>
+              ))}
               <span className="text-header pi pi-search cursor-pointer text-2xl hover:text-brand-green-light transition"></span>
             </nav>
-          </div>
+          </motion.div>
 
-          {/* === 2. HEADER CHO MOBILE & TABLET === */}
-          <div className="flex lg:hidden items-center justify-between py-4">
-            {/* ... (Nội dung header mobile của bạn giữ nguyên) ... */}
-            {/* Logo (Bên trái) */}
-            <div>
+          {/* Mobile */}
+          <motion.div
+            className="flex lg:hidden items-center justify-between"
+            animate={{ paddingTop: isScrolled ? '0.125rem' : '1rem', paddingBottom: isScrolled ? '0.125rem' : '1rem' }}
+            transition={{ duration: 0.3, ease: easeInOut }}
+            layout
+          >
+            <motion.div animate={{ scale: isScrolled ? 0.6 : 1 }} transition={{ duration: 0.3, ease: easeInOut }} layout>
               <Link href="/">
-                <Image
-                  src="/logo/LOGO 1.png"
-                  alt="GreenKids Logo"
-                  width={80}
-                  height={80}
-                  priority
-                />
+                <Image src="/logo/LOGO 1.png" alt="GreenKids Logo" width={80} height={80} priority />
               </Link>
-            </div>
-
-            {/* Nút Hamburger (Bên phải) */}
+            </motion.div>
             <Button
               icon="pi pi-bars"
               className="text-brand-green-dark"
@@ -101,51 +107,39 @@ export default function Header() {
               rounded
               aria-label="Toggle menu"
               onClick={() => setIsMobileMenuVisible(true)}
-              style={{ fontSize: "1.5rem" }}
+              style={{ fontSize: '1.5rem' }}
             />
-          </div>
+          </motion.div>
         </div>
       </motion.header>
 
-      {/* === 3. SIDEBAR (Giữ nguyên) === */}
       <Sidebar
         visible={isMobileMenuVisible}
         onHide={() => setIsMobileMenuVisible(false)}
         position="left"
         className="bg-brand-background w-full sm:w-80"
       >
-        {/* ... (Nội dung sidebar của bạn giữ nguyên) ... */}
         <div className="flex h-full flex-col items-center justify-center">
-          {/* Logo trong menu */}
           <div className="mb-12">
-            <Image
-              src="/logo/LOGO 1.png"
-              alt="GreenKids Logo"
-              width={120}
-              height={120}
-            />
+            <Image src="/logo/LOGO 1.png" alt="GreenKids Logo" width={120} height={120} />
           </div>
-
-          {/* Các link trong menu */}
           <nav className="flex flex-col gap-8 text-center">
             {navLinks.map((link) => (
               <Link
                 key={link.href}
                 href={link.href}
-                className="text-2xl font-semibold text-brand-green-dark hover:text-brand-green-light"
+                className={getMobileLinkClass(link.href)}
                 onClick={() => setIsMobileMenuVisible(false)}
               >
                 {link.label}
               </Link>
             ))}
-
             <Link
               href="/search"
-              className=" mt-4 flex items-center justify-center gap-2 text-2xl font-semibold text-brand-green-dark hover:text-brand-green-light"
+              className="mt-4 flex items-center justify-center gap-2 text-2xl font-semibold text-brand-green-dark hover:text-brand-green-light"
               onClick={() => setIsMobileMenuVisible(false)}
             >
-              <span className="pi pi-search"></span>
-              Search
+              <span className="pi pi-search"></span> Search
             </Link>
           </nav>
         </div>

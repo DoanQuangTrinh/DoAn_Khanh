@@ -43,16 +43,16 @@ const FooterLinkColumn: React.FC<FooterLinkColumnProps> = ({
 export const Footer = () => {
   // Dữ liệu mẫu cho các cột link
   const servicesLinks: NavLink[] = [
-    { href: "#", label: "WS Robot Từ Hộp Sữa" },
-    { href: "#", label: "WS Đèn Lồng Từ Chai PET" },
-    { href: "#", label: "WS Xe Đua Nắp Chai" },
-    { href: "#", label: "WS Chậu Cây Mini Tái Chế" },
+    { href: "/services/1", label: "WS Robot Từ Hộp Sữa" },
+    { href: "/services/2", label: "WS Đèn Lồng Từ Chai PET" },
+    { href: "/services/3", label: "WS Xe Đua Nắp Chai" },
+    { href: "/services/4", label: "WS Chậu Cây Mini Tái Chế" },
   ];
 
   const aboutLinks: NavLink[] = [
-    { href: "#", label: "About" },
-    { href: "#", label: "Liên Hệ" },
-    { href: "#", label: "Blogs" },
+    { href: "/about", label: "About" },
+    { href: "/services", label: "Dịch vụ" },
+    { href: "/blogs", label: "Blogs" },
   ];
 
   return (

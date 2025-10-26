@@ -2,6 +2,7 @@
 import { usePathname } from "next/navigation";
 import React, { useState, FormEvent } from "react";
 import { motion } from "framer-motion";
+import { toast } from "react-toastify";
 
 // Kiểu dữ liệu form
 type FormData = {
@@ -32,7 +33,7 @@ export const RegistrationForm = () => {
 
   const handleSubmit = (e: FormEvent) => {
     e.preventDefault();
-    alert("Đăng ký tư vấn thành công!");
+    toast.success("Đăng ký tư vấn thành công!")
     setFormData({ name: "", phone: "", email: "", message: "" });
   };
 

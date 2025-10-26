@@ -2,11 +2,13 @@
 
 import Image from "next/image";
 import { motion } from "framer-motion";
+import { useRouter } from "next/navigation";
 
 export const HeroSection = () => {
+  const router = useRouter()
   return (
     <div className="w-full pt-12">
-      <div className="flex flex-col-reverse lg:flex-row items-center justify-between gap-8 lg:gap-16 md:pr-16 pr-0">
+      <div className=" flex flex-col-reverse lg:flex-row items-center justify-between gap-8 lg:gap-16 md:pr-16 pr-0">
 
         {/* Hình ảnh */}
         <motion.div
@@ -16,17 +18,16 @@ export const HeroSection = () => {
           viewport={{ once: false, amount: 0.3 }} // once:false => mỗi lần scroll lại animate, amount:0.3 => 30% vào view
           transition={{ duration: 1, ease: "easeOut" }}
         >
-          <Image
-            src="/frame/Frame 1.png"
-            alt="Bear holding the earth illustration"
-            width={600}
-            height={550}
-            className="object-contain"
-            priority
-          />
-        </motion.div>
+          <div className="relative w-full h-[550px] lg:h-[600px]">
+            <Image
+              src="/frame/Frame 1.png"
+              alt="Bear holding the earth illustration"
+              fill
+              className="object-contain object-left"
+            />
+          </div>
 
-        {/* Nội dung text */}
+        </motion.div>
         <motion.div
           className="w-full lg:w-2/5 text-center lg:text-left font-sans flex flex-col md:justify-end justify-center items-end md:px-0 px-2 gap-6"
           initial={{ opacity: 0, x: -50 }}
@@ -44,7 +45,11 @@ export const HeroSection = () => {
             Từ những vật liệu bỏ đi, chúng tôi giúp trẻ tạo nên những sản phẩm độc đáo, nuôi dưỡng trí tưởng tượng, tinh thần bảo vệ môi trường và kết nối cùng gia đình.
           </p>
 
-          <div className="w-full md:w-auto flex justify-center lg:justify-start">
+          <div
+            onClick={() => {
+              router.push("services")
+            }}
+            className="w-full md:w-auto flex justify-center lg:justify-start">
             <motion.button
               className="button-content button-text"
               whileHover={{ scale: 1.05 }}

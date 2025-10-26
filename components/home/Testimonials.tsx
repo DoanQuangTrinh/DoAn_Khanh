@@ -1,9 +1,7 @@
 "use client";
 
-import React, { useRef, useState } from "react";
+import React, { useEffect, useRef, useState } from "react";
 import { motion } from "framer-motion";
-
-// 1. Định nghĩa type cho dữ liệu
 type Testimonial = {
   id: number;
   name: string;
@@ -12,7 +10,6 @@ type Testimonial = {
   rating: number; // 1-5
 };
 
-// 2. Dữ liệu mẫu
 const testimonialsData: Testimonial[] = [
   {
     id: 1,
@@ -56,7 +53,6 @@ const testimonialsData: Testimonial[] = [
   },
 ];
 
-// 3. Component Card Testimonial
 const TestimonialCard = ({ item }: { item: Testimonial }) => (
   <motion.div
     className="flex-shrink-0 w-full sm:w-1/2 lg:w-1/3 p-4 snap-center"
@@ -70,9 +66,8 @@ const TestimonialCard = ({ item }: { item: Testimonial }) => (
         {[...Array(5)].map((_, index) => (
           <svg
             key={index}
-            className={`w-5 h-5 ${
-              index < item.rating ? "text-yellow-400" : "text-gray-300"
-            }`}
+            className={`w-5 h-5 ${index < item.rating ? "text-yellow-400" : "text-gray-300"
+              }`}
             fill="currentColor"
             viewBox="0 0 20 20"
             xmlns="http://www.w3.org/2000/svg"
@@ -116,6 +111,19 @@ export const TestimonialSlider = () => {
 
   const isAtStart = currentScroll < 50;
   const isAtEnd = currentScroll > maxScroll - 50;
+  useEffect(() => {
+    const updateMaxScroll = () => {
+      if (scrollContainerRef.current) {
+        const { scrollWidth, clientWidth } = scrollContainerRef.current;
+        setMaxScroll(scrollWidth - clientWidth);
+      }
+    };
+
+    updateMaxScroll();
+    window.addEventListener("resize", updateMaxScroll);
+
+    return () => window.removeEventListener("resize", updateMaxScroll);
+  }, []);
 
   return (
     <section className="py-16 md:py-24">
@@ -137,17 +145,14 @@ export const TestimonialSlider = () => {
             <TestimonialCard key={item.id} item={item} />
           ))}
         </div>
-
-        {/* Nút điều khiển */}
         <div className="flex justify-center items-center gap-4 mt-12">
           <button
             onClick={() => handleNavClick("prev")}
             disabled={isAtStart}
-            className={`w-12 h-12 rounded-full bg-[#8EA885] text-white flex items-center justify-center transition-all duration-300 ${
-              isAtStart
+            className={`w-12 h-12 rounded-full bg-[#8EA885] text-white flex items-center justify-center transition-all duration-300 ${isAtStart
                 ? "opacity-30 cursor-not-allowed"
                 : "opacity-100 hover:bg-[#4A6341] hover:scale-105"
-            }`}
+              }`}
           >
             <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
               <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 19l-7-7 7-7" />
@@ -156,11 +161,10 @@ export const TestimonialSlider = () => {
           <button
             onClick={() => handleNavClick("next")}
             disabled={isAtEnd}
-            className={`w-12 h-12 rounded-full bg-[#8EA885] text-white flex items-center justify-center transition-all duration-300 ${
-              isAtEnd
+            className={`w-12 h-12 rounded-full bg-[#8EA885] text-white flex items-center justify-center transition-all duration-300 ${isAtEnd
                 ? "opacity-30 cursor-not-allowed"
                 : "opacity-100 hover:bg-[#4A6341] hover:scale-105"
-            }`}
+              }`}
           >
             <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
               <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
