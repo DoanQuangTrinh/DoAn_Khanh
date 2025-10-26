@@ -17,8 +17,8 @@ const itemsAboutUs = [
   },
   {
     id: 2,
-    title: '', 
-    content: `Lịch Workshop cuối tuần đã sẵn sàng! Hãy chọn ngay 120 phút trải nghiệm sáng tạo phù hợp với bé và khung giờ thuận tiện nhất cho gia đình bạn. Ưu đãi giảm 30% cho 10 vé đầu tiên!`, 
+    title: '',
+    content: `Lịch Workshop cuối tuần đã sẵn sàng! Hãy chọn ngay 120 phút trải nghiệm sáng tạo phù hợp với bé và khung giờ thuận tiện nhất cho gia đình bạn. Ưu đãi giảm 30% cho 10 vé đầu tiên!`,
     name: "ĐĂNG KÝ WORKSHOP SÁNG TẠO CHO BÉ",
     contentButton: ""
   },
@@ -38,7 +38,7 @@ const AboutUsSection: React.FC = () => {
   return (
     <section className="w-full py-20 lg:py-32" style={{ backgroundColor: "#fdf6ec" }}>
       <div className="container mx-auto grid max-w-6xl grid-cols-1 items-center gap-12 px-6 lg:grid-cols-2 lg:gap-20">
-        
+
         {/* TEXT */}
         <motion.div
           className="flex flex-col justify-center text-left"

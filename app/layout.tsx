@@ -12,6 +12,8 @@ import Header from "@/components/layout/Header";
 import { Footer } from "@/components/layout/Footer";
 import { Merriweather } from "next/font/google";
 import localFont from "next/font/local";
+import { IntroAnimation } from "@/components/intro/IntroAnimation";
+import { ToastContainer } from "react-toastify";
 const cashC = localFont({
   src: "/fonts/Cash-Regular.ttf",
   variable: "--font-cashc",
@@ -30,7 +32,7 @@ export const metadata: Metadata = {
   title: "GreenKids",
   description: "Chuỗi workshop tái chế sáng tạo",
   icons: {
-    icon: "/logo/LOGO 1.png",           
+    icon: "/logo/LOGO 1.png",
     shortcut: "/logo/LOGO 1.png",
     apple: "/apple-touch-icon.png",
   },
@@ -40,10 +42,10 @@ export const metadata: Metadata = {
     type: "website",
     locale: "vi_VN",
     siteName: "GreenKids",
-    url: "https://greenkids.vn", 
+    url: "https://greenkids.vn",
     images: [
       {
-        url: "/frame/Frame 1.png", 
+        url: "/frame/Frame 1.png",
         width: 1200,
         height: 630,
         alt: "GreenKids Workshop Tái Chế Sáng Tạo",
@@ -70,24 +72,15 @@ export default function RootLayout({
   children: React.ReactNode;
 }) {
   return (
-    // Bạn nên dùng 'vi' (tiếng Việt)
     <html lang="vi">
-      {/* 2. Bọc toàn bộ ứng dụng trong <PrimeReactProvider> */}
       <PrimeReactProvider>
-        {/* 3. Thêm:
-             - ${inter.className} để áp dụng font
-             - text-brand-text để có màu chữ mặc định
-             - overflow-x-hidden để chống tràn ngang
-        */}
         <body
-          className={`${inter.className} bg-brand-background text-brand-text overflow-x-hidden`}
-        >
+          className={`${inter.className} bg-brand-background text-brand-text overflow-x-hidden`}        >
           <Header />
-
-          {/* 4. Thêm thẻ <main> cho nội dung chính */}
-          <main className="relative z-10 ">{children}</main>
+          <main className="relative z-10">{children}</main>
+          <IntroAnimation />
+          <ToastContainer />
           <Footer />
-          {/* (Sau này bạn có thể thêm Footer ở đây) */}
         </body>
       </PrimeReactProvider>
     </html>
