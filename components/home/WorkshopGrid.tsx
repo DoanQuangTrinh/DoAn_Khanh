@@ -1,6 +1,7 @@
 "use client";
 import React from "react";
 import { motion } from "framer-motion";
+import { useRouter } from "next/navigation";
 
 type WorkshopItem = {
   id: number;
@@ -10,24 +11,59 @@ type WorkshopItem = {
   className?: string;
 };
 
-const WorkshopCard = ({ item }: { item: WorkshopItem }) => {
+const WorkshopCard = ({
+  item,
+  index,
+}: {
+  item: WorkshopItem;
+  index: number;
+}) => {
+  const router = useRouter();
+
   return (
     <motion.div
-      className={`bg-[#D9DAC7] rounded-xl shadow-lg overflow-hidden transition-all duration-300 ease-in-out hover:shadow-xl hover:-translate-y-1 flex flex-col ${item.className || ""}`}
-      initial={{ opacity: 0, y: 50 }}
-      whileInView={{ opacity: 1, y: 0 }}
+      className={`relative bg-[#D9DAC7] rounded-2xl shadow-lg overflow-hidden flex flex-col cursor-pointer ${
+        item.className || ""
+      }`}
+      initial={{ opacity: 0, scale: 0.7, rotate: -4 }}
+      whileInView={{ opacity: 1, scale: 1, rotate: 0 }}
       viewport={{ once: false, amount: 0.3 }}
-      transition={{ duration: 0.8, ease: "easeOut" }}
+      transition={{ type: "spring", stiffness: 120, damping: 10 }}
+      whileHover={{
+        scale: 1.05,
+        rotate: 1.5,
+      }}
     >
-      <div className="w-full h-48 bg-gray-200 flex items-center justify-center">
+      {/* Viền phát sáng chuyển màu */}
+      <div className="absolute inset-0 rounded-2xl border-[3px] border-transparent animate-glow pointer-events-none"></div>
+
+      {/* Ảnh */}
+      <motion.div
+        className="w-full h-48 bg-gray-200 overflow-hidden flex items-center justify-center"
+        whileHover={{ scale: 1.12, rotate: -2 }}
+        transition={{ type: "spring", stiffness: 200, damping: 8 }}
+      >
         <span className="text-gray-400 text-sm">[Ảnh Minh Họa]</span>
-      </div>
+      </motion.div>
+
       <div className="p-6 flex flex-col flex-grow">
-        <h3 className="title-work-shop">{item.title}</h3>
-        <p className="font-text-content !text-sm">{item.description}</p>
-        <button className="button-workshop text-workshop py-2 px-4 w-max mt-auto">
-          Xem thêm
-        </button>
+        <h3 className="title-work-shop mb-2">{item.title}</h3>
+        <p className="font-text-content !text-sm flex-grow">
+          {item.description}
+        </p>
+
+        {/* Nút bounce */}
+        <motion.button
+          onClick={() => {
+            router.push(`/services/${index}`);
+          }}
+          whileHover={{ scale: 1.15 }}
+          whileTap={{ scale: 0.9 }}
+          transition={{ type: "spring", stiffness: 300, damping: 8 }}
+          className="button-workshop text-workshop py-2 px-4 w-max mt-4"
+        >
+          Xem thêm 🚀
+        </motion.button>
       </div>
     </motion.div>
   );
@@ -68,18 +104,24 @@ export const WorkshopGrid = () => {
   const subItem2 = workshopData.find((p) => p.id === 4)!;
 
   return (
-    <div className="p-4 md:p-8 bg-[#F4EEE0] min-h-screen">
-      <div className="max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-6">
-        <WorkshopCard item={mainItem} />
-
+    <motion.div
+      className="p-4 md:p-8 bg-[#F4EEE0] min-h-screen"
+      style={{ perspective: 1400 }} // <- tạo chiều sâu 3D
+    >
+      <motion.div
+        className="max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-6"
+        whileHover={{ rotateX: 4, rotateY: -4 }} // <-- bàn nghiêng theo chuột
+        transition={{ type: "spring", stiffness: 80, damping: 12 }}
+      >
+        <WorkshopCard item={mainItem} index={1} />
         <div className="flex flex-col gap-6">
-          <WorkshopCard item={secondaryItem} />
+          <WorkshopCard item={secondaryItem} index={2} />
           <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
-            <WorkshopCard item={subItem1} />
-            <WorkshopCard item={subItem2} />
+            <WorkshopCard item={subItem1} index={3} />
+            <WorkshopCard item={subItem2} index={4} />
           </div>
         </div>
-      </div>
-    </div>
+      </motion.div>
+    </motion.div>
   );
 };

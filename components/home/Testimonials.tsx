@@ -66,8 +66,9 @@ const TestimonialCard = ({ item }: { item: Testimonial }) => (
         {[...Array(5)].map((_, index) => (
           <svg
             key={index}
-            className={`w-5 h-5 ${index < item.rating ? "text-yellow-400" : "text-gray-300"
-              }`}
+            className={`w-5 h-5 ${
+              index < item.rating ? "text-yellow-400" : "text-gray-300"
+            }`}
             fill="currentColor"
             viewBox="0 0 20 20"
             xmlns="http://www.w3.org/2000/svg"
@@ -95,7 +96,8 @@ export const TestimonialSlider = () => {
 
   const handleScroll = () => {
     if (scrollContainerRef.current) {
-      const { scrollLeft, scrollWidth, clientWidth } = scrollContainerRef.current;
+      const { scrollLeft, scrollWidth, clientWidth } =
+        scrollContainerRef.current;
       setCurrentScroll(scrollLeft);
       setMaxScroll(scrollWidth - clientWidth);
     }
@@ -104,8 +106,12 @@ export const TestimonialSlider = () => {
   const handleNavClick = (direction: "prev" | "next") => {
     if (scrollContainerRef.current) {
       const { clientWidth } = scrollContainerRef.current;
-      const scrollAmount = direction === "prev" ? -clientWidth * 0.8 : clientWidth * 0.8;
-      scrollContainerRef.current.scrollBy({ left: scrollAmount, behavior: "smooth" });
+      const scrollAmount =
+        direction === "prev" ? -clientWidth * 0.8 : clientWidth * 0.8;
+      scrollContainerRef.current.scrollBy({
+        left: scrollAmount,
+        behavior: "smooth",
+      });
     }
   };
 
@@ -131,7 +137,8 @@ export const TestimonialSlider = () => {
         <div className="mb-12 md:pl-12 pl-0">
           <h2 className="text-4xl md:text-5xl text-about">Khách hàng nói gì</h2>
           <p className="font-text-content !text-sm">
-            Cùng lắng nghe xem các phụ huynh và bé đã nói gì về trải nghiệm workshop của chúng tôi!
+            Cùng lắng nghe xem các phụ huynh và bé đã nói gì về trải nghiệm
+            workshop của chúng tôi!
           </p>
         </div>
 
@@ -149,25 +156,47 @@ export const TestimonialSlider = () => {
           <button
             onClick={() => handleNavClick("prev")}
             disabled={isAtStart}
-            className={`w-12 h-12 rounded-full bg-[#8EA885] text-white flex items-center justify-center transition-all duration-300 ${isAtStart
+            className={`w-12 h-12 rounded-full bg-[#8EA885] text-white flex items-center justify-center transition-all duration-300 ${
+              isAtStart
                 ? "opacity-30 cursor-not-allowed"
                 : "opacity-100 hover:bg-[#4A6341] hover:scale-105"
-              }`}
+            }`}
           >
-            <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 19l-7-7 7-7" />
+            <svg
+              className="w-6 h-6"
+              fill="none"
+              stroke="currentColor"
+              viewBox="0 0 24 24"
+            >
+              <path
+                strokeLinecap="round"
+                strokeLinejoin="round"
+                strokeWidth={2}
+                d="M15 19l-7-7 7-7"
+              />
             </svg>
           </button>
           <button
             onClick={() => handleNavClick("next")}
             disabled={isAtEnd}
-            className={`w-12 h-12 rounded-full bg-[#8EA885] text-white flex items-center justify-center transition-all duration-300 ${isAtEnd
+            className={`w-12 h-12 rounded-full bg-[#8EA885] text-white flex items-center justify-center transition-all duration-300 ${
+              isAtEnd
                 ? "opacity-30 cursor-not-allowed"
                 : "opacity-100 hover:bg-[#4A6341] hover:scale-105"
-              }`}
+            }`}
           >
-            <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
+            <svg
+              className="w-6 h-6"
+              fill="none"
+              stroke="currentColor"
+              viewBox="0 0 24 24"
+            >
+              <path
+                strokeLinecap="round"
+                strokeLinejoin="round"
+                strokeWidth={2}
+                d="M9 5l7 7-7 7"
+              />
             </svg>
           </button>
         </div>
