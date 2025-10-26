@@ -1,16 +1,18 @@
 "use client";
-import React, { useRef, useState } from "react";
 
-// 1. ĐỊNH NGHĨA TYPE CHO DỮ LIỆU
+import React, { useRef, useState } from "react";
+import { motion } from "framer-motion";
+
+// 1. Định nghĩa type cho dữ liệu
 type Testimonial = {
   id: number;
   name: string;
   title: string;
   quote: string;
-  rating: number; // Số sao từ 1 đến 5
+  rating: number; // 1-5
 };
 
-// Dữ liệu mẫu (lấy từ ảnh của bạn)
+// 2. Dữ liệu mẫu
 const testimonialsData: Testimonial[] = [
   {
     id: 1,
@@ -54,176 +56,114 @@ const testimonialsData: Testimonial[] = [
   },
 ];
 
-// --- COMPONENT CON ---
-
-// 2. Component Card Lời Chứng Thực (TestimonialCard)
-//    - Tái sử dụng, thiết kế sạch sẽ, chuyên nghiệp.
-//    - Có logic để hiển thị sao vàng và sao xám dựa trên `rating`.
-const TestimonialCard = ({ item }: { item: Testimonial }) => {
-  return (
-    <div className="flex-shrink-0 w-full sm:w-1/2 lg:w-1/3 p-4 snap-center">
-      <div className="h-full bg-white p-8 rounded-2xl shadow-lg border border-gray-100 flex flex-col">
-        {/* 2a. Phần đánh giá sao */}
-        <div className="flex items-center mb-4">
-          {[...Array(5)].map((_, index) => (
-            <svg
-              key={index}
-              className={`w-5 h-5 ${
-                index < item.rating ? "text-yellow-400" : "text-gray-300"
-              }`}
-              fill="currentColor"
-              viewBox="0 0 20 20"
-              xmlns="http://www.w3.org/2000/svg"
-            >
-              <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.54-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.462a1 1 0 00.95-.69l1.07-3.292z" />
-            </svg>
-          ))}
-        </div>
-
-        {/* 2b. Phần trích dẫn */}
-        <p className="font-text-content-min text-xs mb-6 ">{item.quote}</p>
-
-        {/* 2c. Phần thông tin người đánh giá */}
-        <div>
-          <p className="font-bold font-text-content">{item.name}</p>
-          <p className="text-gray-500 text-sm font-text-content-min !font-bold">
-            {item.title}
-          </p>
-        </div>
+// 3. Component Card Testimonial
+const TestimonialCard = ({ item }: { item: Testimonial }) => (
+  <motion.div
+    className="flex-shrink-0 w-full sm:w-1/2 lg:w-1/3 p-4 snap-center"
+    initial={{ opacity: 0, y: 50 }}
+    whileInView={{ opacity: 1, y: 0 }}
+    viewport={{ once: false, amount: 0.3 }}
+    transition={{ duration: 0.6, ease: "easeOut" }}
+  >
+    <div className="h-full bg-white p-8 rounded-2xl shadow-lg border border-gray-100 flex flex-col">
+      <div className="flex items-center mb-4">
+        {[...Array(5)].map((_, index) => (
+          <svg
+            key={index}
+            className={`w-5 h-5 ${
+              index < item.rating ? "text-yellow-400" : "text-gray-300"
+            }`}
+            fill="currentColor"
+            viewBox="0 0 20 20"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.54-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.462a1 1 0 00.95-.69l1.07-3.292z" />
+          </svg>
+        ))}
+      </div>
+      <p className="font-text-content-min text-xs mb-6">{item.quote}</p>
+      <div>
+        <p className="font-bold font-text-content">{item.name}</p>
+        <p className="text-gray-500 text-sm font-text-content-min !font-bold">
+          {item.title}
+        </p>
       </div>
     </div>
-  );
-};
+  </motion.div>
+);
 
-// --- COMPONENT CHÍNH ---
-
-// 3. Component Slider Lời Chứng Thực (TestimonialSlider)
-//    - Sử dụng `useRef` để tham chiếu đến container cuộn.
-//    - Sử dụng `useState` để theo dõi vị trí cuộn (để ẩn/hiện nút).
-//    - Sử dụng `scroll-snap-type-x mandatory` và `snap-center`
-//      để tạo hiệu ứng slider mượt mà.
+// 4. Component Slider chính
 export const TestimonialSlider = () => {
   const scrollContainerRef = useRef<HTMLDivElement>(null);
   const [currentScroll, setCurrentScroll] = useState(0);
   const [maxScroll, setMaxScroll] = useState(0);
 
-  // Cập nhật trạng thái cuộn khi người dùng cuộn (scroll)
   const handleScroll = () => {
     if (scrollContainerRef.current) {
-      const { scrollLeft, scrollWidth, clientWidth } =
-        scrollContainerRef.current;
+      const { scrollLeft, scrollWidth, clientWidth } = scrollContainerRef.current;
       setCurrentScroll(scrollLeft);
       setMaxScroll(scrollWidth - clientWidth);
     }
   };
 
-  // Hàm xử lý khi bấm nút (trái/phải)
   const handleNavClick = (direction: "prev" | "next") => {
     if (scrollContainerRef.current) {
       const { clientWidth } = scrollContainerRef.current;
-      // Tính toán vị trí cuộn mới, `clientWidth * 0.8` để cuộn đẹp hơn
-      const scrollAmount =
-        direction === "prev" ? -clientWidth * 0.8 : clientWidth * 0.8;
-
-      scrollContainerRef.current.scrollBy({
-        left: scrollAmount,
-        behavior: "smooth", // Đây là chìa khóa cho hiệu ứng mượt
-      });
+      const scrollAmount = direction === "prev" ? -clientWidth * 0.8 : clientWidth * 0.8;
+      scrollContainerRef.current.scrollBy({ left: scrollAmount, behavior: "smooth" });
     }
   };
 
-  // Logic ẩn/hiện nút (cải tiến UX)
-  const isAtStart = currentScroll < 50; // Thêm 1 khoảng đệm
+  const isAtStart = currentScroll < 50;
   const isAtEnd = currentScroll > maxScroll - 50;
 
   return (
-    <section className=" py-16 md:py-24">
+    <section className="py-16 md:py-24">
       <div className="max-w-7xl mx-auto px-4">
-        {/* 3a. Tiêu đề */}
         <div className="mb-12 md:pl-12 pl-0">
           <h2 className="text-4xl md:text-5xl text-about">Khách hàng nói gì</h2>
-          <p className="font-text-content  !text-sm">
-            Cùng lắng nghe xem các phụ huynh và bé đã nói gì về trải nghiệm
-            workshop của chúng tôi!
+          <p className="font-text-content !text-sm">
+            Cùng lắng nghe xem các phụ huynh và bé đã nói gì về trải nghiệm workshop của chúng tôi!
           </p>
         </div>
 
-        {/* 3b. Slider (Container cuộn) */}
+        {/* Slider */}
         <div
           ref={scrollContainerRef}
           onScroll={handleScroll}
-          className="
-            flex overflow-x-auto pb-6 -mb-6
-            snap-x snap-mandatory 
-            scrollbar-hide 
-          "
+          className="flex overflow-x-auto pb-6 -mb-6 snap-x snap-mandatory scrollbar-hide"
         >
           {testimonialsData.map((item) => (
             <TestimonialCard key={item.id} item={item} />
           ))}
         </div>
 
-        {/* 3c. Nút điều khiển */}
+        {/* Nút điều khiển */}
         <div className="flex justify-center items-center gap-4 mt-12">
           <button
             onClick={() => handleNavClick("prev")}
             disabled={isAtStart}
-            aria-label="Previous testimonial"
-            className={`
-              w-12 h-12 rounded-full bg-[#8EA885] text-white
-              flex items-center justify-center
-              transition-all duration-300
-              ${
-                isAtStart
-                  ? "opacity-30 cursor-not-allowed"
-                  : "opacity-100 hover:bg-[#4A6341] hover:scale-105"
-              }
-            `}
+            className={`w-12 h-12 rounded-full bg-[#8EA885] text-white flex items-center justify-center transition-all duration-300 ${
+              isAtStart
+                ? "opacity-30 cursor-not-allowed"
+                : "opacity-100 hover:bg-[#4A6341] hover:scale-105"
+            }`}
           >
-            <svg
-              className="w-6 h-6"
-              fill="none"
-              stroke="currentColor"
-              viewBox="0 0 24 24"
-              xmlns="http://www.w3.org/2000/svg"
-            >
-              <path
-                strokeLinecap="round"
-                strokeLinejoin="round"
-                strokeWidth={2}
-                d="M15 19l-7-7 7-7"
-              />
+            <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 19l-7-7 7-7" />
             </svg>
           </button>
-
           <button
             onClick={() => handleNavClick("next")}
             disabled={isAtEnd}
-            aria-label="Next testimonial"
-            className={`
-              w-12 h-12 rounded-full bg-[#8EA885] text-white
-              flex items-center justify-center
-              transition-all duration-300
-              ${
-                isAtEnd
-                  ? "opacity-30 cursor-not-allowed"
-                  : "opacity-100 hover:bg-[#4A6341] hover:scale-105"
-              }
-            `}
+            className={`w-12 h-12 rounded-full bg-[#8EA885] text-white flex items-center justify-center transition-all duration-300 ${
+              isAtEnd
+                ? "opacity-30 cursor-not-allowed"
+                : "opacity-100 hover:bg-[#4A6341] hover:scale-105"
+            }`}
           >
-            <svg
-              className="w-6 h-6"
-              fill="none"
-              stroke="currentColor"
-              viewBox="0 0 24 24"
-              xmlns="http://www.w3.org/2000/svg"
-            >
-              <path
-                strokeLinecap="round"
-                strokeLinejoin="round"
-                strokeWidth={2}
-                d="M9 5l7 7-7 7"
-              />
+            <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
             </svg>
           </button>
         </div>

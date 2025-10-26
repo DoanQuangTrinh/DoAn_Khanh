@@ -29,7 +29,35 @@ const inter = Inter({ subsets: ["latin"] });
 export const metadata: Metadata = {
   title: "GreenKids",
   description: "Chuỗi workshop tái chế sáng tạo",
+  icons: {
+    icon: "/logo/LOGO 1.png",           
+    shortcut: "/logo/LOGO 1.png",
+    apple: "/apple-touch-icon.png",
+  },
+  openGraph: {
+    title: "GreenKids",
+    description: "Chuỗi workshop tái chế sáng tạo",
+    type: "website",
+    locale: "vi_VN",
+    siteName: "GreenKids",
+    url: "https://greenkids.vn", 
+    images: [
+      {
+        url: "/frame/Frame 1.png", 
+        width: 1200,
+        height: 630,
+        alt: "GreenKids Workshop Tái Chế Sáng Tạo",
+      },
+    ],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "GreenKids",
+    description: "Chuỗi workshop tái chế sáng tạo",
+    images: ["/frame/Frame 1.png"],
+  },
 };
+
 const josefin = Josefin_Sans({
   subsets: ["latin"],
   weight: ["300", "400", "500", "700"],

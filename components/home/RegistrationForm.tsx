@@ -1,7 +1,9 @@
 "use client";
+import { usePathname } from "next/navigation";
 import React, { useState, FormEvent } from "react";
+import { motion } from "framer-motion";
 
-// Định nghĩa kiểu cho dữ liệu form (thực hành tốt với TypeScript)
+// Kiểu dữ liệu form
 type FormData = {
   name: string;
   phone: string;
@@ -9,16 +11,15 @@ type FormData = {
   message: string;
 };
 
-// Component chính
 export const RegistrationForm = () => {
+  const pathname = usePathname();
   const [formData, setFormData] = useState<FormData>({
     name: "",
     phone: "",
     email: "",
     message: "",
   });
-  console.log(formData);
-  // Xử lý khi nhập liệu, dùng chung cho tất cả input/textarea
+
   const handleChange = (
     e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>
   ) => {
@@ -29,31 +30,35 @@ export const RegistrationForm = () => {
     }));
   };
 
-  // Xử lý khi submit form
   const handleSubmit = (e: FormEvent) => {
     e.preventDefault();
-    // TODO: Xử lý logic gửi form (ví dụ: gọi API)
-    console.log("Form data submitted:", formData);
     alert("Đăng ký tư vấn thành công!");
-    // Xóa form sau khi gửi (tùy chọn)
     setFormData({ name: "", phone: "", email: "", message: "" });
   };
 
-  // Các lớp CSS tái sử dụng để code sạch hơn
   const labelClasses = "block !text-sm font-text-content mb-2";
   const inputClasses =
-    "!font-josefin text-xs w-full px-5 py-3.5 bg-white rounded-lg shadow-sm " +
-    "border border-gray-200 placeholder-gray-400 text-gray-800 " +
-    "focus:outline-none focus:ring-2 focus:ring-[#4A6341] focus:ring-opacity-50";
+    "!font-josefin text-xs w-full px-5 py-3.5 bg-white rounded-lg shadow-sm border border-gray-200 placeholder-gray-400 text-gray-800 transition-all duration-300 ease-in-out focus:outline-none focus:ring-2 focus:ring-[#4A6341] focus:ring-opacity-50 focus:scale-105 focus:placeholder-transparent";
 
   return (
-    <section className="py-16 md:py-24">
+    <motion.section
+      initial={{ opacity: 0, y: 50 }}
+      whileInView={{ opacity: 1, y: 0 }}
+      viewport={{ once: true, amount: 0.3 }}
+      transition={{ duration: 0.8, ease: "easeOut" }}
+      className="py-16 md:py-18"
+    >
       <div className="max-w-6xl mx-auto px-4">
-        {/* --- 1. Tiêu đề --- */}
-        <div className="text-center mb-12">
+        <div
+          className={
+            pathname === "/about"
+              ? "hidden"
+              : "text-center mb-12 md:mb-16"
+          }
+        >
           <h2
             className="text-4xl md:text-5xl text-about mb-4"
-            style={{ color: "#4A6341" }} // Màu xanh lá đậm
+            style={{ color: "#4A6341" }}
           >
             Đăng ký Tư vấn & Nhận Thông tin Workshop
           </h2>
@@ -63,21 +68,14 @@ export const RegistrationForm = () => {
           </p>
         </div>
 
-        {/* --- 2. Container Form --- */}
         <div
           className="rounded-2xl p-8 md:p-12 shadow-lg"
-          style={{ backgroundColor: "#DDE0D5" }} // Màu nền xanh-xám nhạt
+          style={{ backgroundColor: "#DDE0D5" }}
         >
           <form onSubmit={handleSubmit}>
-            {/* Sử dụng Grid Layout
-              - Desktop (lg): 3 cột
-              - Mobile (mặc định): 1 cột
-            */}
             <div className="grid grid-cols-1 lg:grid-cols-3 gap-6">
-              {/* === KHỐI BÊN TRÁI (2 CỘT) === */}
               <div className="lg:col-span-2">
                 <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
-                  {/* Tên Phụ Huynh */}
                   <div className="sm:col-span-1">
                     <label htmlFor="name" className={labelClasses}>
                       Tên Phụ Huynh
@@ -94,7 +92,6 @@ export const RegistrationForm = () => {
                     />
                   </div>
 
-                  {/* Số Điện Thoại */}
                   <div className="sm:col-span-1">
                     <label htmlFor="phone" className={labelClasses}>
                       Số Điện Thoại
@@ -111,7 +108,6 @@ export const RegistrationForm = () => {
                     />
                   </div>
 
-                  {/* E-mail */}
                   <div className="sm:col-span-2">
                     <label htmlFor="email" className={labelClasses}>
                       E-mail
@@ -128,16 +124,14 @@ export const RegistrationForm = () => {
                     />
                   </div>
 
-                  {/* Nút Đăng Ký */}
                   <div className="sm:col-span-1">
                     <button
                       type="submit"
                       className="
-                        w-full sm:w-auto px-8 py-3.5 rounded-lg button-workshop text-workshop 
-                        transition-all duration-300
-                        hover:opacity-90 hover:shadow-md
+                        w-full sm:w-auto px-8 py-3.5 rounded-lg button-workshop text-workshop
+                        transition-all duration-300 ease-in-out transform hover:scale-105 hover:shadow-lg hover:opacity-90
                       "
-                      style={{ backgroundColor: "#71836A" }} // Màu nút xanh-xám đậm
+                      style={{ backgroundColor: "#71836A" }}
                     >
                       Đăng ký tư vấn
                     </button>
@@ -145,10 +139,6 @@ export const RegistrationForm = () => {
                 </div>
               </div>
 
-              {/* === KHỐI BÊN PHẢI (1 CỘT) === */}
-              {/* Sử dụng flex-col và h-full để textarea chiếm hết chiều cao 
-                của khối bên trái trên màn hình desktop.
-              */}
               <div className="lg:col-span-1 flex flex-col h-full">
                 <label htmlFor="message" className={labelClasses}>
                   Nội dung quan tâm
@@ -159,14 +149,14 @@ export const RegistrationForm = () => {
                   value={formData.message}
                   onChange={handleChange}
                   placeholder="Tôi muốn hỏi về Workshop Robot từ hộp sữa..."
-                  rows={8} // Chiều cao mặc định trên mobile
-                  className={`${inputClasses} flex-grow min-h-[150px] lg:min-h-0`} // flex-grow để co giãn
+                  rows={8}
+                  className={`${inputClasses} flex-grow min-h-[150px] lg:min-h-0`}
                 />
               </div>
             </div>
           </form>
         </div>
       </div>
-    </section>
+    </motion.section>
   );
 };

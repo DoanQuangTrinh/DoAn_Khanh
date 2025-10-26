@@ -1,3 +1,5 @@
+import { details } from "framer-motion/client";
+
 export const listProducts = [
   {
     id: 1,
@@ -10,8 +12,8 @@ export const listProducts = [
       ketQua:
         "Trẻ phân biệt được truyền sáng, phản xạ và khuếch tán. Trẻ hiểu vai trò của chất liệu trong việc điều tiết ánh sáng, rèn tính tỉ mỉ và tư duy bố cục. Ý thức về môi trường được củng cố khi một chai nhựa cũ được tái sinh thành đồ vật hữu ích.",
     },
-    align: "right", // Khối text nằm bên phải
-    bgColor: "bg-[#E5E6D8]", // Màu nền từ ảnh
+    align: "right",
+    bgColor: "bg-[#E5E6D8]",
     buttonText: "Xem chi tiết",
     testimonials: [
       {
@@ -43,6 +45,52 @@ export const listProducts = [
         rating: 5,
       },
     ],
+    details: {
+      title: "Robot Từ Hộp Sữa",
+      description_details:
+        "Trong buổi học, trẻ sẽ được hướng dẫn biến vỏ hộp sữa quen thuộc thành một robot mini có khớp xoay hoạt động mượt mà. Hành trình đi từ ý tưởng đến sản phẩm giúp trẻ hiểu cơ học nền tảng, làm chủ thao tác thủ công chính xác và thể hiện cá tính qua trang trí cũng phần kể chuyện về nhân vật robot do chính mình tạo ra.",
+      images: [
+        {
+          id: 1,
+          url: "https://placehold.co/800x600/879382/FDFBF4?text=Robot+View+1",
+          thumbnailUrl: "https://placehold.co/150x150/879382/FDFBF4?text=View+1",
+          alt: "Robot từ hộp sữa - Ảnh 1",
+        },
+        {
+          id: 2,
+          url: "https://placehold.co/800x600/B5C4B0/4A6341?text=Robot+View+2",
+          thumbnailUrl: "https://placehold.co/150x150/B5C4B0/4A6341?text=View+2",
+          alt: "Robot từ hộp sữa - Ảnh 2",
+        },
+        {
+          id: 3,
+          url: "https://placehold.co/800x600/D7DDCF/4A6341?text=Robot+View+3",
+          thumbnailUrl: "https://placehold.co/150x150/D7DDCF/4A6341?text=View+3",
+          alt: "Robot từ hộp sữa - Ảnh 3",
+        },
+        {
+          id: 4,
+          url: "https://placehold.co/800x600/E5E6D8/4A6341?text=Robot+View+4",
+          thumbnailUrl: "https://placehold.co/150x150/E5E6D8/4A6341?text=View+4",
+          alt: "Robot từ hộp sữa - Ảnh 4",
+        },
+      ],
+      details: [
+        { label: "Thời gian", value: "120 phút" },
+        {
+          label: "Lịch học",
+          value: "Thứ 7 và Chủ Nhật hàng tuần\n09:00, 14:30 và 18:30",
+        },
+        { label: "Độ tuổi", value: "5 - 12 tuổi" },
+        { label: "Sĩ số", value: "10 - 12 bé" },
+      ],
+      price: "150.000đ / 1 bé",
+      priceNotes: [
+        "Ưu đãi giảm 30 phần trăm cho 10 vé đầu tiên.",
+        "Combo gia đình được giảm thêm từ bé thứ hai.",
+      ],
+      disclaimer: "Cho phép đổi lịch trước 24 giờ mà không tính phí.",
+    }
   },
   {
     id: 3,
@@ -88,6 +136,52 @@ export const listProducts = [
         rating: 5,
       },
     ],
+    details: {
+      title: "Xe Đua Nắp Chai",
+      description_details:
+        "Trong buổi học, trẻ sẽ được hướng dẫn biến vỏ hộp sữa quen thuộc thành một robot mini có khớp xoay hoạt động mượt mà. Hành trình đi từ ý tưởng đến sản phẩm giúp trẻ hiểu cơ học nền tảng, làm chủ thao tác thủ công chính xác và thể hiện cá tính qua trang trí cũng phần kể chuyện về nhân vật robot do chính mình tạo ra.",
+      images: [
+        {
+          id: 1,
+          url: "https://placehold.co/800x600/879382/FDFBF4?text=Robot+View+1",
+          thumbnailUrl: "https://placehold.co/150x150/879382/FDFBF4?text=View+1",
+          alt: "Robot từ hộp sữa - Ảnh 1",
+        },
+        {
+          id: 2,
+          url: "https://placehold.co/800x600/B5C4B0/4A6341?text=Robot+View+2",
+          thumbnailUrl: "https://placehold.co/150x150/B5C4B0/4A6341?text=View+2",
+          alt: "Robot từ hộp sữa - Ảnh 2",
+        },
+        {
+          id: 3,
+          url: "https://placehold.co/800x600/D7DDCF/4A6341?text=Robot+View+3",
+          thumbnailUrl: "https://placehold.co/150x150/D7DDCF/4A6341?text=View+3",
+          alt: "Robot từ hộp sữa - Ảnh 3",
+        },
+        {
+          id: 4,
+          url: "https://placehold.co/800x600/E5E6D8/4A6341?text=Robot+View+4",
+          thumbnailUrl: "https://placehold.co/150x150/E5E6D8/4A6341?text=View+4",
+          alt: "Robot từ hộp sữa - Ảnh 4",
+        },
+      ],
+      details: [
+        { label: "Thời gian", value: "120 phút" },
+        {
+          label: "Lịch học",
+          value: "Thứ 7 và Chủ Nhật hàng tuần\n09:00, 14:30 và 18:30",
+        },
+        { label: "Độ tuổi", value: "5 - 12 tuổi" },
+        { label: "Sĩ số", value: "10 - 12 bé" },
+      ],
+      price: "150.000đ / 1 bé",
+      priceNotes: [
+        "Ưu đãi giảm 30 phần trăm cho 10 vé đầu tiên.",
+        "Combo gia đình được giảm thêm từ bé thứ hai.",
+      ],
+      disclaimer: "Cho phép đổi lịch trước 24 giờ mà không tính phí.",
+    }
   },
   {
     id: 2,
@@ -133,6 +227,52 @@ export const listProducts = [
         rating: 5,
       },
     ],
+    details: {
+      title: "Đèn Lồng Từ Chai PET",
+      description_details:
+        "Trong buổi học, trẻ sẽ được hướng dẫn biến vỏ hộp sữa quen thuộc thành một robot mini có khớp xoay hoạt động mượt mà. Hành trình đi từ ý tưởng đến sản phẩm giúp trẻ hiểu cơ học nền tảng, làm chủ thao tác thủ công chính xác và thể hiện cá tính qua trang trí cũng phần kể chuyện về nhân vật robot do chính mình tạo ra.",
+      images: [
+        {
+          id: 1,
+          url: "https://placehold.co/800x600/879382/FDFBF4?text=Robot+View+1",
+          thumbnailUrl: "https://placehold.co/150x150/879382/FDFBF4?text=View+1",
+          alt: "Robot từ hộp sữa - Ảnh 1",
+        },
+        {
+          id: 2,
+          url: "https://placehold.co/800x600/B5C4B0/4A6341?text=Robot+View+2",
+          thumbnailUrl: "https://placehold.co/150x150/B5C4B0/4A6341?text=View+2",
+          alt: "Robot từ hộp sữa - Ảnh 2",
+        },
+        {
+          id: 3,
+          url: "https://placehold.co/800x600/D7DDCF/4A6341?text=Robot+View+3",
+          thumbnailUrl: "https://placehold.co/150x150/D7DDCF/4A6341?text=View+3",
+          alt: "Robot từ hộp sữa - Ảnh 3",
+        },
+        {
+          id: 4,
+          url: "https://placehold.co/800x600/E5E6D8/4A6341?text=Robot+View+4",
+          thumbnailUrl: "https://placehold.co/150x150/E5E6D8/4A6341?text=View+4",
+          alt: "Robot từ hộp sữa - Ảnh 4",
+        },
+      ],
+      details: [
+        { label: "Thời gian", value: "120 phút" },
+        {
+          label: "Lịch học",
+          value: "Thứ 7 và Chủ Nhật hàng tuần\n09:00, 14:30 và 18:30",
+        },
+        { label: "Độ tuổi", value: "5 - 12 tuổi" },
+        { label: "Sĩ số", value: "10 - 12 bé" },
+      ],
+      price: "150.000đ / 1 bé",
+      priceNotes: [
+        "Ưu đãi giảm 30 phần trăm cho 10 vé đầu tiên.",
+        "Combo gia đình được giảm thêm từ bé thứ hai.",
+      ],
+      disclaimer: "Cho phép đổi lịch trước 24 giờ mà không tính phí.",
+    }
   },
   {
     id: 4,
@@ -178,5 +318,51 @@ export const listProducts = [
         rating: 5,
       },
     ],
+    details: {
+      title: "Chậu Cây Mini Tái Chế",
+      description_details:
+        "Trong buổi học, trẻ sẽ được hướng dẫn biến vỏ hộp sữa quen thuộc thành một robot mini có khớp xoay hoạt động mượt mà. Hành trình đi từ ý tưởng đến sản phẩm giúp trẻ hiểu cơ học nền tảng, làm chủ thao tác thủ công chính xác và thể hiện cá tính qua trang trí cũng phần kể chuyện về nhân vật robot do chính mình tạo ra.",
+      images: [
+        {
+          id: 1,
+          url: "https://placehold.co/800x600/879382/FDFBF4?text=Robot+View+1",
+          thumbnailUrl: "https://placehold.co/150x150/879382/FDFBF4?text=View+1",
+          alt: "Robot từ hộp sữa - Ảnh 1",
+        },
+        {
+          id: 2,
+          url: "https://placehold.co/800x600/B5C4B0/4A6341?text=Robot+View+2",
+          thumbnailUrl: "https://placehold.co/150x150/B5C4B0/4A6341?text=View+2",
+          alt: "Robot từ hộp sữa - Ảnh 2",
+        },
+        {
+          id: 3,
+          url: "https://placehold.co/800x600/D7DDCF/4A6341?text=Robot+View+3",
+          thumbnailUrl: "https://placehold.co/150x150/D7DDCF/4A6341?text=View+3",
+          alt: "Robot từ hộp sữa - Ảnh 3",
+        },
+        {
+          id: 4,
+          url: "https://placehold.co/800x600/E5E6D8/4A6341?text=Robot+View+4",
+          thumbnailUrl: "https://placehold.co/150x150/E5E6D8/4A6341?text=View+4",
+          alt: "Robot từ hộp sữa - Ảnh 4",
+        },
+      ],
+      details: [
+        { label: "Thời gian", value: "120 phút" },
+        {
+          label: "Lịch học",
+          value: "Thứ 7 và Chủ Nhật hàng tuần\n09:00, 14:30 và 18:30",
+        },
+        { label: "Độ tuổi", value: "5 - 12 tuổi" },
+        { label: "Sĩ số", value: "10 - 12 bé" },
+      ],
+      price: "150.000đ / 1 bé",
+      priceNotes: [
+        "Ưu đãi giảm 30 phần trăm cho 10 vé đầu tiên.",
+        "Combo gia đình được giảm thêm từ bé thứ hai.",
+      ],
+      disclaimer: "Cho phép đổi lịch trước 24 giờ mà không tính phí.",
+    }
   },
 ];

@@ -1,5 +1,7 @@
+"use client";
 import React from "react";
 import { listProducts } from "@/public/data/products";
+import { useRouter } from "next/navigation";
 // 1. ĐỊNH NGHĨA TYPE CHO DỮ LIỆU
 type ServiceItemProps = {
   id: number;
@@ -10,12 +12,10 @@ type ServiceItemProps = {
   buttonText: string;
 };
 
-// --- COMPONENT CON ---
-// Component con, có thể tái sử dụng
-// Nhận vào `item` và tự động căn lề
 const ServiceHighlightItem: React.FC<{ item: ServiceItemProps }> = ({
   item,
 }) => {
+  const router = useRouter();
   const { title, description, align, bgColor, buttonText } = item;
 
   // Tự động thay đổi vị trí khối text dựa trên prop `align`
@@ -23,6 +23,7 @@ const ServiceHighlightItem: React.FC<{ item: ServiceItemProps }> = ({
 
   return (
     <section
+      onClick={() => router.push(`/services/${item.id}`)}
       className={`
         w-full rounded-3xl p-8 md:p-12 lg:p-16 
         flex items-center 
@@ -57,10 +58,7 @@ const ServiceHighlightItem: React.FC<{ item: ServiceItemProps }> = ({
   );
 };
 
-// --- COMPONENT CHÍNH ---
-// Component cha, chứa dữ liệu và render ra danh sách
 export const ServiceHighlights = () => {
-  // Dữ liệu mẫu (lấy từ ảnh của bạn)
   return (
     <div className=" py-16 md:py-24">
       <div className="max-w-7xl mx-auto px-6 lg:px-8 space-y-8 md:space-y-12">

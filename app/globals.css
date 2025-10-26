@@ -5,6 +5,7 @@
 @import "primereact/resources/themes/lara-light-green/theme.css";
 @import "primereact/resources/primereact.min.css";
 @import "primeicons/primeicons.css";
+
 :root {
   --color-brand-background: #fbf8f0;
   --color-brand-green-dark: #3b663c;
@@ -39,6 +40,7 @@ body {
   0% {
     transform: translateX(0%);
   }
+
   100% {
     transform: translateX(-100%);
   }
@@ -153,11 +155,24 @@ body {
   color: #424d3e;
 }
 
+.text-josenfin {
+  font-family: "Judson";
+  font-style: normal;
+}
+button{
+  cursor: pointer;
+}
 @media (max-width: 640px) {
   .font-text-content {
-    font-size: 22px;
+    font-size: 18px;
   }
+
   .text-about {
     line-height: 46px;
+  }
+
+  .width-md-customer {
+    width: 100% !important;
+    margin-bottom: 32px !important;
   }
 }

@@ -25,8 +25,8 @@ const FooterLinkColumn: React.FC<FooterLinkColumnProps> = ({
   <div>
     <h3 className="font-text-content text-3xl font-medium mb-6">{title}</h3>
     <ul className="space-y-4">
-      {links.map((link) => (
-        <li key={link.href}>
+      {links.map((link , index) => (
+        <li key={index}>
           <a
             href={link.href}
             className="font-text-content !text-sm transition-colors duration-300 hover:text-white"
