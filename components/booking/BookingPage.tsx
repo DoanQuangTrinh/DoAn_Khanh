@@ -188,8 +188,6 @@ export const BookingPage = () => {
         unitPrice: unitPrice.price,
         totalPrice: unitPrice.price, // Tổng tiền cho 1 sản phẩm
       };
-
-      // 5.4. Cập nhật giỏ hàng
       updateCart([...cartItems, newItem]);
       toast.success(`Đã thêm "${product.title}" vào giỏ hàng!`);
     }

@@ -86,7 +86,7 @@ export const BookingDialog = ({
       id: Date.now(),
       workshopName,
       quantity,
-      unitPrice: basePrice,
+      unitPrice: basePrice.price,
       totalPrice,
     };
 
