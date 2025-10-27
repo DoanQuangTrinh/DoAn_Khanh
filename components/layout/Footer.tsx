@@ -79,8 +79,8 @@ export const Footer = () => {
                 placeholder="Nhập E - mail của bạn."
                 className="
                   w-full bg-transparent border-b border-[#FDFBF4]
-                  py-3 pl-0 pr-10 text-lg font-josefin
-                  placeholder:text-[#FFF4E2] placeholder:opacity-70
+                  py-3 pl-0 pr-10 !text-lg font-josefin font-text-content-min
+                  placeholder:!text-[#FFF4E2] 
                   focus:outline-none focus:border-white transition-colors
                 "
               />
