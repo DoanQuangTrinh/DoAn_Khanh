@@ -59,41 +59,25 @@ const generateCalendarGrid = (
   month: number,
   year: number
 ): (number | null)[] => {
-  const days: (number | null)[] = [];
+  const days: (number | null)[] = []; // Lấy ngày đầu tiên của tháng (Date dùng tháng 0-11)
+  const firstDate = new Date(year, month - 1, 1); // Lấy số ngày trong tháng
+  const numDays = new Date(year, month, 0).getDate(); // Lấy ngày trong tuần (0=CN, 1=T2, ...)
+  const firstDayOfWeek = firstDate.getDay(); // Tính toán độ lệch để bắt đầu từ Thứ 2 (0=T2, 1=T3, ..., 6=CN)
+  const startOffset = firstDayOfWeek === 0 ? 6 : firstDayOfWeek - 1; // Thêm các ô null cho đầu tháng
 
-  // Lấy ngày đầu tiên của tháng (Date dùng tháng 0-11)
-  const firstDate = new Date(year, month - 1, 1);
-  // Lấy số ngày trong tháng
-  const numDays = new Date(year, month, 0).getDate();
-
-  // Lấy ngày trong tuần (0=CN, 1=T2, ...)
-  const firstDayOfWeek = firstDate.getDay();
-
-  // Tính toán độ lệch để bắt đầu từ Thứ 2 (0=T2, 1=T3, ..., 6=CN)
-  // CN (0) -> 6
-  // T2 (1) -> 0
-  // T3 (2) -> 1
-  const startOffset = firstDayOfWeek === 0 ? 6 : firstDayOfWeek - 1;
-
-  // Thêm các ô null cho đầu tháng
   for (let i = 0; i < startOffset; i++) {
     days.push(null);
-  }
-
-  // Thêm các ngày trong tháng
+  } // Thêm các ngày trong tháng
   for (let i = 1; i <= numDays; i++) {
     days.push(i);
-  }
-
-  // Thêm các ô null cho cuối tháng (để lấp đầy lưới)
+  } // Thêm các ô null cho cuối tháng
   while (days.length % 7 !== 0) {
     days.push(null);
   }
-
   return days;
 };
 
-// Định nghĩa props (đã thêm state tháng)
+// Định nghĩa props
 interface CalendarProps {
   selectedDay: number | null;
   setSelectedDay: (day: number | null) => void;
@@ -111,16 +95,22 @@ export const Calendar = ({
   selectedMonth,
   setSelectedMonth,
 }: CalendarProps) => {
-  // Tạo lưới ngày động dựa trên state tháng được truyền vào
+  // [LOGIC MỚI] Lấy ngày hiện tại
+  // Đặt giờ về 0:00:00 để so sánh chính xác các ngày
+  const today = new Date();
+  today.setHours(0, 0, 0, 0);
+  const currentYear = today.getFullYear();
+  const currentMonth = today.getMonth() + 1; // Chuyển từ 0-11 sang 1-12
+  const currentDay = today.getDate(); // Tạo lưới ngày động
+
   const daysInMonth = generateCalendarGrid(selectedMonth, year);
 
   const handleDayClick = (day: number | null) => {
     if (day !== null) {
       setSelectedDay(day);
     }
-  };
+  }; // Xử lý khi người dùng đổi tháng
 
-  // Xử lý khi người dùng đổi tháng
   const handleMonthChange = (e: React.ChangeEvent<HTMLSelectElement>) => {
     const newMonth = parseInt(e.target.value, 10);
     setSelectedMonth(newMonth);
@@ -130,33 +120,36 @@ export const Calendar = ({
 
   return (
     <div className="bg-[#D9DAC7] text-brand-text font-josefin p-6 rounded-2xl shadow-lg w-full lg:w-auto lg:flex-1">
-      {/* Chọn Tháng/Năm */}
       <div className="flex justify-between mb-4 gap-2">
-        {/* Select chọn tháng (thẻ <select> thật) */}
         <div className="relative">
           <select
             value={selectedMonth}
             onChange={handleMonthChange}
-            // Style nó giống hệt SelectButton
             className="bg-white text-brand-text p-2 px-4 rounded-lg font-semibold text-sm flex items-center justify-between w-[130px] focus:outline-none focus:ring-2 focus:ring-brand-dark appearance-none pr-8 cursor-pointer"
           >
-            {monthsOfYear.map((month) => (
-              <option key={month.value} value={month.value}>
-                {month.name}
-              </option>
-            ))}
+            {monthsOfYear.map((month) => {
+              const isPastMonth =
+                year < currentYear ||
+                (year === currentYear && month.value < currentMonth);
+
+              return (
+                <option
+                  key={month.value}
+                  value={month.value}
+                  disabled={isPastMonth}
+                  ứ
+                >
+                  {month.name}{" "}
+                </option>
+              );
+            })}
           </select>
-          {/* Icon mũi tên cho select */}
           <div className="absolute inset-y-0 right-0 flex items-center px-3 pointer-events-none">
             <ChevronDown />
           </div>
         </div>
-
-        {/* Giữ nguyên SelectButton cho năm (giả lập, không đổi) */}
         <SelectButton>Năm 2025</SelectButton>
       </div>
-
-      {/* Tiêu đề các ngày trong tuần */}
       <div className="grid grid-cols-7 gap-1 text-center mb-2">
         {daysOfWeek.map((day) => (
           <div
@@ -167,51 +160,73 @@ export const Calendar = ({
           </div>
         ))}
       </div>
-
-      {/* Lưới các ngày (đã được tạo động) */}
       <div className="grid grid-cols-7 gap-1 text-center">
-        {daysInMonth.map((day, index) => (
-          <div
-            key={index}
-            onClick={() => handleDayClick(day)}
-            className={`
-              w-10 h-10 flex items-center justify-center rounded-full text-sm
-              ${day === null ? "text-transparent" : "text-brand-text-light"}
-              ${
-                day === selectedDay
-                  ? "bg-brand-selected border rounded bg-[#adafa7] !text-brand-dark font-bold"
-                  : ""
-              } 
-              ${
-                day !== null && day !== selectedDay
-                  ? "hover:bg-brand-light-btn cursor-pointer"
-                  : ""
-              }
-              ${day === null ? "pointer-events-none" : ""} 
-            `}
-          >
-            {day}
-          </div>
-        ))}
-      </div>
+        {daysInMonth.map((day, index) => {
+          let isPastDay = false;
+          if (day !== null) {
+            const fullDate = new Date(year, selectedMonth - 1, day);
+            if (fullDate < today) {
+              isPastDay = true;
+            }
+          }
 
-      {/* PHẦN CHỌN GIỜ (Giữ nguyên) */}
+          const isClickable = day !== null && !isPastDay;
+
+          return (
+            <div
+              key={index} // [CẬP NHẬT] Chỉ click khi 'isClickable' là true
+              onClick={() => isClickable && handleDayClick(day)}
+              className={`
+ w-10 h-10 flex items-center justify-center rounded-full text-sm
+ ${day === null ? "text-transparent" : "text-brand-text-light"}
+ ${
+   isPastDay
+     ? "text-gray-400  pointer-events-none" // Mờ, gạch ngang, không click
+     : ""
+ }
+
+ {/* Style cho ngày được chọn (chỉ khi không phải quá khứ) */}
+ ${
+   day === selectedDay && !isPastDay
+     ? "bg-brand-selected border rounded bg-[#adafa7] !text-brand-dark font-bold"
+     : ""
+ } 
+ 
+ {/* Style cho hover (chỉ khi click được) */}
+ ${
+   isClickable && day !== selectedDay
+     ? "hover:bg-brand-light-btn cursor-pointer"
+     : ""
+ }
+ ${day === null ? "pointer-events-none" : ""} 
+ `}
+            >
+              {day}{" "}
+            </div>
+          );
+        })}{" "}
+      </div>
+      {/* PHẦN CHỌN GIỜ (Giữ nguyên) */}     {" "}
       <div className="mt-6">
-        <h3 className="text-sm font-semibold text-brand-text mb-2">Chọn giờ</h3>
+        {" "}
+        <h3 className="text-sm font-semibold text-brand-text mb-2">
+          Chọn giờ
+        </h3>{" "}
         <div className="flex gap-2 flex-wrap">
+          {" "}
           {timeSlots.map((time) => (
             <button
               key={time}
               type="button"
               onClick={() => setSelectedTime(time)}
               className={`
-                p-2 px-4 rounded-lg font-semibold text-sm
-                ${
-                  selectedTime === time
-                    ? "bg-brand-dark border rounded bg-[#adafa7] text-black"
-                    : "bg-white text-brand-text hover:bg-brand-light-btn"
-                }
-              `}
+ p-2 px-4 rounded-lg font-semibold text-sm
+ ${
+   selectedTime === time
+     ? "bg-brand-dark border rounded bg-[#adafa7] text-black"
+     : "bg-white text-brand-text hover:bg-brand-light-btn"
+ }
+ `}
             >
               {time}
             </button>
