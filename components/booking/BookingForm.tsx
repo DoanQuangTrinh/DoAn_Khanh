@@ -1,6 +1,6 @@
 // src/components/BookingForm.tsx
 "use client";
-import React from 'react';
+import React from "react";
 
 // Định nghĩa props để nhận state từ component cha
 interface BookingFormProps {
@@ -10,7 +10,12 @@ interface BookingFormProps {
   setPhone: (phone: string) => void;
 }
 
-export const BookingForm = ({ name, setName, phone, setPhone }: BookingFormProps) => {
+export const BookingForm = ({
+  name,
+  setName,
+  phone,
+  setPhone,
+}: BookingFormProps) => {
   return (
     // Sử dụng flex-1 để nó chiếm không gian linh hoạt
     <div className="bg-[#D9DAC7] text-brand-text font-text-content p-8 rounded-2xl shadow-lg w-full lg:w-auto lg:flex-1">
@@ -18,7 +23,10 @@ export const BookingForm = ({ name, setName, phone, setPhone }: BookingFormProps
       <form>
         {/* Trường Họ và Tên */}
         <div className="mb-6">
-          <label htmlFor="customerName" className="block text-sm font-text-content mb-2 font-text-content-min">
+          <label
+            htmlFor="customerName"
+            className="block text-sm font-text-content mb-2 font-text-content-min"
+          >
             Họ và Tên
           </label>
           <input
@@ -33,7 +41,10 @@ export const BookingForm = ({ name, setName, phone, setPhone }: BookingFormProps
 
         {/* Trường Số Điện Thoại */}
         <div className="mb-6">
-          <label htmlFor="customerPhone" className="block text-sm font-text-content mb-2 font-text-content-min">
+          <label
+            htmlFor="customerPhone"
+            className="block text-sm font-text-content mb-2 font-text-content-min"
+          >
             Số Điện Thoại
           </label>
           <input

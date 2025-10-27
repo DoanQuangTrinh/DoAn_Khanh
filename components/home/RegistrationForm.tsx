@@ -33,11 +33,11 @@ export const RegistrationForm = () => {
 
   const handleSubmit = (e: FormEvent) => {
     e.preventDefault();
-    toast.success("Đăng ký tư vấn thành công!")
+    toast.success("Đăng ký tư vấn thành công!");
     setFormData({ name: "", phone: "", email: "", message: "" });
   };
 
-  const labelClasses = "block !text-sm font-text-content mb-2";
+  const labelClasses = "block !text-xl font-text-content mb-2";
   const inputClasses =
     "!font-josefin text-xs w-full px-5 py-3.5 bg-white rounded-lg shadow-sm border border-gray-200 placeholder-gray-400 text-gray-800 transition-all duration-300 ease-in-out focus:outline-none focus:ring-2 focus:ring-[#4A6341] focus:ring-opacity-50 focus:scale-105 focus:placeholder-transparent";
 
@@ -52,9 +52,7 @@ export const RegistrationForm = () => {
       <div className="max-w-6xl mx-auto px-4">
         <div
           className={
-            pathname === "/about"
-              ? "hidden"
-              : "text-center mb-12 md:mb-16"
+            pathname === "/about" ? "hidden" : "text-center mb-12 md:mb-16"
           }
         >
           <h2

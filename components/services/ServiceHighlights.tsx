@@ -4,6 +4,8 @@ import { listProducts } from "@/public/data/products";
 import { useRouter } from "next/navigation";
 // ✨ 1. Import thêm kiểu 'Variants'
 import { motion, Variants } from "framer-motion";
+// ✨ Thêm import cho Image
+import Image from "next/image";
 
 // 1. ĐỊNH NGHĨA TYPE CHO DỮ LIỆU
 type ServiceItemProps = {
@@ -13,6 +15,7 @@ type ServiceItemProps = {
   align: "left" | "right"; // Căn lề của khối text
   bgColor: string; // Màu nền của cả component
   buttonText: string;
+  image: string; // <-- Thêm trường image
 };
 
 // ✨ 2. Thêm kiểu ': Variants' một cách tường minh
@@ -69,48 +72,72 @@ const LeafSVG = ({ className }: { className?: string }) => (
   </svg>
 );
 
-// ✨ 8. Component Cụm Lá Cây (sắp xếp và animation)
-const DecorativeLeaves = ({ align }: { align: "left" | "right" }) => {
-  // Lá sẽ ở bên phải nếu text bên trái, và ngược lại
-  const positionClass =
-    align === "left" ? "right-0 -bottom-8" : "left-0 -bottom-8";
+// ✨ 8. Component Cụm Lá Cây (ĐÃ SỬA LỖI LAYOUT)
+const DecorativeLeaves = ({
+  align,
+  image,
+}: {
+  align: "left" | "right";
+  image: string;
+}) => {
+  // Vị trí của cụm lá sẽ ở BÊN ĐỐI DIỆN với text
+  const positionClass = align === "left" ? "right-0" : "left-0";
+  // Căn chỉnh các item bên trong (lá, ảnh)
+  const itemAlignmentClass = align === "left" ? "items-start" : "items-end";
+
+  // Lật ảnh nếu cần
+  const transformClass = align === "left" ? "scale-x-[-1]" : "";
 
   return (
+    // Container này được định vị tuyệt đối, nằm ở 1/2 bên trái/phải
     <div
-      className={`absolute w-1/2 h-full opacity-10 ${positionClass} transform ${
-        align === "left" ? "scale-x-[-1]" : "" // Lật ngược lá cho phù hợp
-      }`}
+      className={`absolute ${positionClass} bottom-0 w-full lg:w-1/2 h-full
+                flex flex-col justify-end ${itemAlignmentClass}
+                pointer-events-none p-8 md:p-12 lg:p-16
+                `}
     >
+      {/* Ảnh chính */}
       <motion.div
-        className="absolute bottom-0 left-0"
         variants={leafVariants}
-        // ✨ 6. Tối ưu: Gộp 'transition' vào 'variants'
-        // Thay vì 2 prop, chúng ta có thể làm thế này:
-        // custom={{ delay: 0.2 }}
-        // ...nhưng cách của bạn vẫn ổn, tôi sẽ giữ nguyên
-        transition={{ delay: 0.2 }}
+        transition={{ delay: 0.1 }}
+        // Container cho ảnh, căn chỉnh bên trong
+        className={`relative w-full h-[80%] max-h-[300px] max-w-[300px] ${transformClass}
+                  ${align === "left" ? "ml-auto" : "mr-auto"}
+                  `}
       >
-        <LeafSVG className="w-24 h-24 rotate-[30deg] text-[#4A6341]" />
+        <Image
+          src={image}
+          alt={image}
+          fill
+          className="object-contain opacity-80 "
+        />
       </motion.div>
+
+      {/* Lá phụ */}
       <motion.div
-        className="absolute bottom-10 left-20"
+        variants={leafVariants}
+        transition={{ delay: 0.2 }}
+        className={`absolute bottom-10 w-12 h-12 opacity-50
+                    ${align === "left" ? "left-16" : "right-16"}
+                  `}
+      >
+        <LeafSVG className="w-full h-full text-[#8EA885]" />
+      </motion.div>
+
+      <motion.div
         variants={leafVariants}
         transition={{ delay: 0.3 }}
+        className={`absolute bottom-28 w-14 h-14 opacity-60
+                    ${align === "left" ? "left-24" : "right-24"}
+                  `}
       >
-        <LeafSVG className="w-16 h-16 rotate-[-10deg] text-[#8EA885]" />
-      </motion.div>
-      <motion.div
-        className="absolute bottom-20 left-10"
-        variants={leafVariants}
-        transition={{ delay: 0.4 }}
-      >
-        <LeafSVG className="w-20 h-20 rotate-[10deg] text-[#4A6341]" />
+        <LeafSVG className="w-full h-full text-[#4A6341]" />
       </motion.div>
     </div>
   );
 };
 
-// --- Component ServiceItem (Giữ nguyên) ---
+// --- Component ServiceItem (Đã Nâng Cấp) ---
 const ServiceHighlightItem: React.FC<{ item: ServiceItemProps }> = ({
   item,
 }) => {
@@ -136,12 +163,14 @@ const ServiceHighlightItem: React.FC<{ item: ServiceItemProps }> = ({
       whileHover="hover"
       viewport={{ once: true, amount: 0.3 }}
     >
-      <DecorativeLeaves align={align} />
+      {/* ✨ 10. Thêm component lá cây trang trí (đã sửa) */}
+      <DecorativeLeaves align={align} image={item.image} />
 
+      {/* ✨ 11. Bọc khối nội dung text (giữ nguyên) */}
       <motion.div className="w-full lg:w-1/2 xl:w-2/5 space-y-6 relative z-10">
         <motion.h2
           className="title-work-shop text-4xl md:text-5xl font-bold"
-          variants={itemVariants}
+          variants={itemVariants} // Animation cho từng item
         >
           {title}
         </motion.h2>

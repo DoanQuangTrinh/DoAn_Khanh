@@ -53,25 +53,29 @@ export const listProducts = [
         {
           id: 1,
           url: "https://placehold.co/800x600/879382/FDFBF4?text=Robot+View+1",
-          thumbnailUrl: "https://placehold.co/150x150/879382/FDFBF4?text=View+1",
+          thumbnailUrl:
+            "https://placehold.co/150x150/879382/FDFBF4?text=View+1",
           alt: "Robot từ hộp sữa - Ảnh 1",
         },
         {
           id: 2,
           url: "https://placehold.co/800x600/B5C4B0/4A6341?text=Robot+View+2",
-          thumbnailUrl: "https://placehold.co/150x150/B5C4B0/4A6341?text=View+2",
+          thumbnailUrl:
+            "https://placehold.co/150x150/B5C4B0/4A6341?text=View+2",
           alt: "Robot từ hộp sữa - Ảnh 2",
         },
         {
           id: 3,
           url: "https://placehold.co/800x600/D7DDCF/4A6341?text=Robot+View+3",
-          thumbnailUrl: "https://placehold.co/150x150/D7DDCF/4A6341?text=View+3",
+          thumbnailUrl:
+            "https://placehold.co/150x150/D7DDCF/4A6341?text=View+3",
           alt: "Robot từ hộp sữa - Ảnh 3",
         },
         {
           id: 4,
           url: "https://placehold.co/800x600/E5E6D8/4A6341?text=Robot+View+4",
-          thumbnailUrl: "https://placehold.co/150x150/E5E6D8/4A6341?text=View+4",
+          thumbnailUrl:
+            "https://placehold.co/150x150/E5E6D8/4A6341?text=View+4",
           alt: "Robot từ hộp sữa - Ảnh 4",
         },
       ],
@@ -84,13 +88,14 @@ export const listProducts = [
         { label: "Độ tuổi", value: "5 - 12 tuổi" },
         { label: "Sĩ số", value: "10 - 12 bé" },
       ],
-      price: "150.000đ / 1 bé",
+      price: "170.000đ / 1 bé",
       priceNotes: [
         "Ưu đãi giảm 30 phần trăm cho 10 vé đầu tiên.",
         "Combo gia đình được giảm thêm từ bé thứ hai.",
       ],
       disclaimer: "Cho phép đổi lịch trước 24 giờ mà không tính phí.",
-    }
+    },
+    image: "/product/IMG_8166.JPG",
   },
   {
     id: 3,
@@ -144,25 +149,29 @@ export const listProducts = [
         {
           id: 1,
           url: "https://placehold.co/800x600/879382/FDFBF4?text=Robot+View+1",
-          thumbnailUrl: "https://placehold.co/150x150/879382/FDFBF4?text=View+1",
+          thumbnailUrl:
+            "https://placehold.co/150x150/879382/FDFBF4?text=View+1",
           alt: "Robot từ hộp sữa - Ảnh 1",
         },
         {
           id: 2,
           url: "https://placehold.co/800x600/B5C4B0/4A6341?text=Robot+View+2",
-          thumbnailUrl: "https://placehold.co/150x150/B5C4B0/4A6341?text=View+2",
+          thumbnailUrl:
+            "https://placehold.co/150x150/B5C4B0/4A6341?text=View+2",
           alt: "Robot từ hộp sữa - Ảnh 2",
         },
         {
           id: 3,
           url: "https://placehold.co/800x600/D7DDCF/4A6341?text=Robot+View+3",
-          thumbnailUrl: "https://placehold.co/150x150/D7DDCF/4A6341?text=View+3",
+          thumbnailUrl:
+            "https://placehold.co/150x150/D7DDCF/4A6341?text=View+3",
           alt: "Robot từ hộp sữa - Ảnh 3",
         },
         {
           id: 4,
           url: "https://placehold.co/800x600/E5E6D8/4A6341?text=Robot+View+4",
-          thumbnailUrl: "https://placehold.co/150x150/E5E6D8/4A6341?text=View+4",
+          thumbnailUrl:
+            "https://placehold.co/150x150/E5E6D8/4A6341?text=View+4",
           alt: "Robot từ hộp sữa - Ảnh 4",
         },
       ],
@@ -175,13 +184,14 @@ export const listProducts = [
         { label: "Độ tuổi", value: "5 - 12 tuổi" },
         { label: "Sĩ số", value: "10 - 12 bé" },
       ],
-      price: "150.000đ / 1 bé",
+      price: "170.000đ / 1 bé",
       priceNotes: [
         "Ưu đãi giảm 30 phần trăm cho 10 vé đầu tiên.",
         "Combo gia đình được giảm thêm từ bé thứ hai.",
       ],
       disclaimer: "Cho phép đổi lịch trước 24 giờ mà không tính phí.",
-    }
+    },
+    image: "/product/IMG_6217.JPG",
   },
   {
     id: 2,
@@ -235,25 +245,29 @@ export const listProducts = [
         {
           id: 1,
           url: "https://placehold.co/800x600/879382/FDFBF4?text=Robot+View+1",
-          thumbnailUrl: "https://placehold.co/150x150/879382/FDFBF4?text=View+1",
+          thumbnailUrl:
+            "https://placehold.co/150x150/879382/FDFBF4?text=View+1",
           alt: "Robot từ hộp sữa - Ảnh 1",
         },
         {
           id: 2,
           url: "https://placehold.co/800x600/B5C4B0/4A6341?text=Robot+View+2",
-          thumbnailUrl: "https://placehold.co/150x150/B5C4B0/4A6341?text=View+2",
+          thumbnailUrl:
+            "https://placehold.co/150x150/B5C4B0/4A6341?text=View+2",
           alt: "Robot từ hộp sữa - Ảnh 2",
         },
         {
           id: 3,
           url: "https://placehold.co/800x600/D7DDCF/4A6341?text=Robot+View+3",
-          thumbnailUrl: "https://placehold.co/150x150/D7DDCF/4A6341?text=View+3",
+          thumbnailUrl:
+            "https://placehold.co/150x150/D7DDCF/4A6341?text=View+3",
           alt: "Robot từ hộp sữa - Ảnh 3",
         },
         {
           id: 4,
           url: "https://placehold.co/800x600/E5E6D8/4A6341?text=Robot+View+4",
-          thumbnailUrl: "https://placehold.co/150x150/E5E6D8/4A6341?text=View+4",
+          thumbnailUrl:
+            "https://placehold.co/150x150/E5E6D8/4A6341?text=View+4",
           alt: "Robot từ hộp sữa - Ảnh 4",
         },
       ],
@@ -266,13 +280,14 @@ export const listProducts = [
         { label: "Độ tuổi", value: "5 - 12 tuổi" },
         { label: "Sĩ số", value: "10 - 12 bé" },
       ],
-      price: "150.000đ / 1 bé",
+      price: "170.000đ / 1 bé",
       priceNotes: [
         "Ưu đãi giảm 30 phần trăm cho 10 vé đầu tiên.",
         "Combo gia đình được giảm thêm từ bé thứ hai.",
       ],
       disclaimer: "Cho phép đổi lịch trước 24 giờ mà không tính phí.",
-    }
+    },
+    image: "/product/5ce100884de0726a699e870860e8a1de.jpeg",
   },
   {
     id: 4,
@@ -326,25 +341,29 @@ export const listProducts = [
         {
           id: 1,
           url: "https://placehold.co/800x600/879382/FDFBF4?text=Robot+View+1",
-          thumbnailUrl: "https://placehold.co/150x150/879382/FDFBF4?text=View+1",
+          thumbnailUrl:
+            "https://placehold.co/150x150/879382/FDFBF4?text=View+1",
           alt: "Robot từ hộp sữa - Ảnh 1",
         },
         {
           id: 2,
           url: "https://placehold.co/800x600/B5C4B0/4A6341?text=Robot+View+2",
-          thumbnailUrl: "https://placehold.co/150x150/B5C4B0/4A6341?text=View+2",
+          thumbnailUrl:
+            "https://placehold.co/150x150/B5C4B0/4A6341?text=View+2",
           alt: "Robot từ hộp sữa - Ảnh 2",
         },
         {
           id: 3,
           url: "https://placehold.co/800x600/D7DDCF/4A6341?text=Robot+View+3",
-          thumbnailUrl: "https://placehold.co/150x150/D7DDCF/4A6341?text=View+3",
+          thumbnailUrl:
+            "https://placehold.co/150x150/D7DDCF/4A6341?text=View+3",
           alt: "Robot từ hộp sữa - Ảnh 3",
         },
         {
           id: 4,
           url: "https://placehold.co/800x600/E5E6D8/4A6341?text=Robot+View+4",
-          thumbnailUrl: "https://placehold.co/150x150/E5E6D8/4A6341?text=View+4",
+          thumbnailUrl:
+            "https://placehold.co/150x150/E5E6D8/4A6341?text=View+4",
           alt: "Robot từ hộp sữa - Ảnh 4",
         },
       ],
@@ -357,12 +376,13 @@ export const listProducts = [
         { label: "Độ tuổi", value: "5 - 12 tuổi" },
         { label: "Sĩ số", value: "10 - 12 bé" },
       ],
-      price: "150.000đ / 1 bé",
+      price: "170.000đ / 1 bé",
       priceNotes: [
         "Ưu đãi giảm 30 phần trăm cho 10 vé đầu tiên.",
         "Combo gia đình được giảm thêm từ bé thứ hai.",
       ],
       disclaimer: "Cho phép đổi lịch trước 24 giờ mà không tính phí.",
-    }
+    },
+    image: "/product/temp_image_AEFE4FA6-7A98-4933-AFEE-D2D7D898AD84.webp",
   },
 ];
