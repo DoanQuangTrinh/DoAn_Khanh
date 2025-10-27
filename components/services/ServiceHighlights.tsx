@@ -169,13 +169,13 @@ const ServiceHighlightItem: React.FC<{ item: ServiceItemProps }> = ({
       {/* ✨ 11. Bọc khối nội dung text (giữ nguyên) */}
       <motion.div className="w-full lg:w-1/2 xl:w-2/5 space-y-6 relative z-10">
         <motion.h2
-          className="title-work-shop text-4xl md:text-5xl font-bold"
+          className="title-work-shop text-4xl md:!text-5xl font-bold"
           variants={itemVariants} // Animation cho từng item
         >
           {title}
         </motion.h2>
         <motion.p
-          className="text-base md:!text-lg font-text-content-min"
+          className="text-base md:!text-xl font-text-content-min"
           variants={itemVariants}
         >
           {description}
