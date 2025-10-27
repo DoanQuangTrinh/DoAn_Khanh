@@ -4,7 +4,7 @@ import { useEffect, useState, useRef } from "react";
 import { useRouter } from "next/navigation";
 import { Dialog } from "primereact/dialog";
 import { Toast } from "primereact/toast";
-import "react-toastify/dist/ReactToastify.css"; // Cần thiết cho toast
+import "react-toastify/dist/ReactToastify.css";
 
 // --- Định nghĩa Types ---
 interface CartItem {
@@ -28,7 +28,7 @@ interface OrderDetails {
   grandTotal: number;
 }
 
-type PaymentMethod = "card" | "bank"; // Kiểu cho phương thức thanh toán
+type PaymentMethod = "card" | "bank";
 
 // --- Hàm hỗ trợ ---
 const formatPrice = (priceNum: number): string => {
@@ -40,60 +40,57 @@ const CreditCardForm = ({ onComplete }: { onComplete: () => void }) => {
   return (
     <div className="space-y-6">
       <div className="flex justify-between items-center">
-        <h3 className="text-2xl font-semibold text-white">
+        <h3 className="text-xl font-semibold text-gray-900">
           Thẻ tín dụng / Ghi nợ
         </h3>
-        {/* Logos */}
         <div className="flex items-center gap-2">
-          {/* Tôi sẽ dùng text cho các logo này, bạn có thể thay bằng Image */}
-          <span className="bg-white text-black text-sm font-bold py-1 px-2 rounded">
+          <span className="bg-gray-200 text-gray-800 text-sm font-bold py-1 px-2 rounded">
             Apple Pay
           </span>
-          <span className="bg-gray-700 text-white text-sm font-bold py-1 px-2 rounded">
+          <span className="bg-gray-200 text-gray-800 text-sm font-bold py-1 px-2 rounded">
             Mastercard
           </span>
-          <span className="bg-blue-700 text-white text-sm font-bold py-1 px-2 rounded">
+          <span className="bg-blue-100 text-blue-800 text-sm font-bold py-1 px-2 rounded">
             VISA
           </span>
-          <span className="bg-blue-600 text-white text-sm font-bold py-1 px-2 rounded">
+          <span className="bg-blue-100 text-blue-800 text-sm font-bold py-1 px-2 rounded">
             Samsung Pay
           </span>
         </div>
       </div>
 
-      {/* Form Fields */}
       <div className="space-y-4">
         <div>
           <label
             htmlFor="cardName"
-            className="block text-xl font-medium text-gray-300 mb-2"
+            className="block text-xl font-medium text-gray-700 mb-2"
           >
             Tên chủ thẻ
           </label>
           <input
             type="text"
             id="cardName"
-            className="w-full p-3 bg-gray-800 border border-gray-700 rounded-lg text-white focus:ring-brand-dark focus:border-brand-dark"
+            className="w-full p-3 bg-white border border-gray-300 rounded-lg text-gray-900 focus:ring-blue-500 focus:border-blue-500"
           />
         </div>
         <div>
           <label
             htmlFor="cardNumber"
-            className="block text-xl font-medium text-gray-300 mb-2"
+            className="block text-xl font-medium text-gray-700 mb-2"
           >
             Số thẻ
           </label>
           <input
             type="text"
             id="cardNumber"
-            className="w-full p-3 bg-gray-800 border border-gray-700 rounded-lg text-white focus:ring-brand-dark focus:border-brand-dark"
+            className="w-full p-3 bg-white border border-gray-300 rounded-lg text-gray-900 focus:ring-blue-500 focus:border-blue-500"
           />
         </div>
         <div className="flex gap-4">
           <div className="w-1/2">
             <label
               htmlFor="expiryDate"
-              className="block text-xl font-medium text-gray-300 mb-2"
+              className="block text-xl font-medium text-gray-700 mb-2"
             >
               Ngày hết hạn
             </label>
@@ -101,13 +98,13 @@ const CreditCardForm = ({ onComplete }: { onComplete: () => void }) => {
               type="text"
               id="expiryDate"
               placeholder="MM/YY"
-              className="w-full p-3 bg-gray-800 border border-gray-700 rounded-lg text-white focus:ring-brand-dark focus:border-brand-dark"
+              className="w-full p-3 bg-white border border-gray-300 rounded-lg text-gray-900 focus:ring-blue-500 focus:border-blue-500"
             />
           </div>
           <div className="w-1/2">
             <label
               htmlFor="cvv"
-              className="block text-xl font-medium text-gray-300 mb-2"
+              className="block text-xl font-medium text-gray-700 mb-2"
             >
               CVV
             </label>
@@ -115,17 +112,16 @@ const CreditCardForm = ({ onComplete }: { onComplete: () => void }) => {
               type="text"
               id="cvv"
               placeholder="123"
-              className="w-full p-3 bg-gray-800 border border-gray-700 rounded-lg text-white focus:ring-brand-dark focus:border-brand-dark"
+              className="w-full p-3 bg-white border border-gray-300 rounded-lg text-gray-900 focus:ring-blue-500 focus:border-blue-500"
             />
           </div>
         </div>
       </div>
 
-      {/* Nút Hoàn tất */}
       <button
         type="button"
         onClick={onComplete}
-        className="w-full bg-[#6c7a67] text-white p-4 rounded-lg font-bold text-lg transition hover:bg-opacity-80 focus:outline-none focus:ring-2 focus:ring-[#6c7a67]"
+        className="w-full bg-blue-600 text-white p-4 rounded-lg font-bold text-lg transition hover:bg-blue-500 focus:outline-none focus:ring-2 focus:ring-blue-600"
       >
         Hoàn tất
       </button>
@@ -147,26 +143,27 @@ const BankAccountInfo = ({
 
   return (
     <div className="space-y-6">
-      <h3 className="text-2xl font-semibold text-white">Tài khoản ngân hàng</h3>
+      <h3 className="text-2xl font-semibold text-gray-900">
+        Tài khoản ngân hàng
+      </h3>
 
-      <div className="space-y-3 text-gray-300 text-lg">
+      <div className="space-y-3 text-gray-700 text-lg">
         <p>
           Tên người nhận:{" "}
-          <span className="font-semibold text-white">GREENKIDS VIETNAM</span>
+          <span className="font-semibold text-gray-900">GREENKIDS VIETNAM</span>
         </p>
         <p>
           STK người nhận:{" "}
-          <span className="font-semibold text-white">0123 456 789</span>
+          <span className="font-semibold text-gray-900">0123 456 789</span>
         </p>
         <p>
           Nội dung thanh toán:{" "}
-          <span className="font-semibold text-white">{content}</span>
+          <span className="font-semibold text-gray-900">{content}</span>
         </p>
       </div>
 
       <div className="space-y-3">
-        <p className="text-center text-gray-300">Hoặc chuyển khoản qua mã QR</p>
-        {/* Placeholder QR Code */}
+        <p className="text-center text-gray-700">Hoặc chuyển khoản qua mã QR</p>
         <div className="w-48 h-48 bg-white p-2 rounded-lg mx-auto">
           <img
             src={`https://api.qrserver.com/v1/create-qr-code/?size=180x180&data=${content}`}
@@ -179,11 +176,10 @@ const BankAccountInfo = ({
         </div>
       </div>
 
-      {/* Nút Hoàn tất */}
       <button
         type="button"
         onClick={onComplete}
-        className="w-full bg-[#6c7a67] text-white p-4 rounded-lg font-bold text-lg transition hover:bg-opacity-80 focus:outline-none focus:ring-2 focus:ring-[#6c7a67]"
+        className="w-full bg-blue-600 text-white p-4 rounded-lg font-bold text-lg transition hover:bg-blue-500 focus:outline-none focus:ring-2 focus:ring-blue-600"
       >
         Hoàn tất
       </button>
@@ -211,14 +207,12 @@ const SuccessDialog = ({
         root: {
           className: "font-josefin rounded-2xl overflow-hidden border-none",
         },
-        header: { className: "bg-brand-container text-brand-dark p-6" },
-        // title: { className: "text-2xl font-bold" },
+        header: { className: "bg-gray-100 text-gray-900 p-6" },
         content: { className: "bg-white p-8 text-center" },
-        footer: { className: "bg-gray-100 p-4" },
+        footer: { className: "bg-gray-50 p-4" },
       }}
     >
       <div className="flex flex-col items-center">
-        {/* Icon Check */}
         <svg
           className="w-20 h-20 text-green-500 mb-6"
           fill="none"
@@ -233,7 +227,7 @@ const SuccessDialog = ({
             d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"
           />
         </svg>
-        <h3 className="text-2xl font-bold text-brand-dark mb-4">
+        <h3 className="text-2xl font-bold text-gray-900 mb-4">
           Thanh toán thành công!
         </h3>
         <p className="text-lg text-gray-700">
@@ -254,14 +248,12 @@ export default function PaymentPage() {
   const [paymentMethod, setPaymentMethod] = useState<PaymentMethod>("card");
   const [isSuccessModalVisible, setIsSuccessModalVisible] = useState(false);
 
-  // 1. Đọc dữ liệu từ localStorage
   useEffect(() => {
     try {
       const storedOrder = localStorage.getItem("finalOrder");
       if (storedOrder) {
         setOrder(JSON.parse(storedOrder));
       } else {
-        // Nếu không có đơn hàng, quay về trang đặt vé
         toastRef.current?.show({
           severity: "error",
           summary: "Lỗi",
@@ -274,14 +266,9 @@ export default function PaymentPage() {
     }
   }, [router]);
 
-  // 2. Xử lý khi hoàn tất thanh toán
   const handlePaymentComplete = () => {
-    // Logic: tại đây bạn sẽ gọi API thanh toán thật
-    // Sau khi API trả về thành công:
-    localStorage.removeItem("finalOrder"); // Xóa đơn hàng khỏi localStorage
-    setIsSuccessModalVisible(true); // Hiển thị modal thành công
-
-    // Tự động điều hướng về trang chủ sau 5s
+    localStorage.removeItem("finalOrder");
+    setIsSuccessModalVisible(true);
     setTimeout(() => {
       router.push("/");
     }, 5000);
@@ -289,7 +276,7 @@ export default function PaymentPage() {
 
   if (!order) {
     return (
-      <div className="flex items-center justify-center min-h-screen bg-brand-page-bg text-brand-dark">
+      <div className="flex items-center justify-center min-h-screen bg-gray-100 text-gray-900">
         <Toast ref={toastRef} />
         <p className="text-xl">Đang tải thông tin đơn hàng...</p>
       </div>
@@ -298,17 +285,16 @@ export default function PaymentPage() {
 
   return (
     <>
-      <div className="w-full min-h-screen flex flex-col lg:flex-row bg-brand-page-bg font-josefin">
+      <div className="w-full min-h-screen flex flex-col lg:flex-row font-josefin">
         {/* === CỘT TRÁI: TÓM TẮT ĐƠN HÀNG === */}
         <div className="w-full lg:w-1/2 p-8 md:p-12 lg:p-16">
-          <h1 className="font-serif text-4xl font-bold text-brand-dark mb-8">
+          <h1 className="font-serif text-4xl font-bold text-gray-900 mb-8">
             Xác nhận thanh toán
           </h1>
 
           <div className="bg-white p-6 rounded-2xl shadow-lg space-y-6">
-            {/* Thông tin khách hàng */}
             <div>
-              <h3 className="text-xl font-bold text-brand-dark mb-3">
+              <h3 className="text-xl font-bold text-gray-900 mb-3">
                 Thông tin khách hàng
               </h3>
               <p>
@@ -329,9 +315,8 @@ export default function PaymentPage() {
               </p>
             </div>
 
-            {/* Chi tiết giỏ hàng */}
-            <div className="border-t border-brand-container pt-4">
-              <h3 className="text-xl font-bold text-brand-dark mb-4">
+            <div className="border-t border-gray-200 pt-4">
+              <h3 className="text-xl font-bold text-gray-900 mb-4">
                 Chi tiết đơn hàng
               </h3>
               <div className="space-y-3">
@@ -354,8 +339,7 @@ export default function PaymentPage() {
               </div>
             </div>
 
-            {/* Tổng cộng */}
-            <div className="border-t-2 border-brand-dark pt-4 text-brand-dark">
+            <div className="border-t-2 border-gray-900 pt-4 text-gray-900">
               <div className="flex justify-between items-center text-2xl font-bold">
                 <span>Tổng cộng:</span>
                 <span className="text-3xl">
@@ -366,16 +350,15 @@ export default function PaymentPage() {
           </div>
         </div>
 
-        {/* === CỘT PHẢI: THANH TOÁN (Dark Mode) === */}
-        <div className="w-full lg:w-1/2 bg-[#1C1C1C] p-8 md:p-12 lg:p-16 text-gray-300 rounded-t-3xl lg:rounded-none lg:rounded-l-3xl">
-          {/* Lựa chọn phương thức */}
+        {/* === CỘT PHẢI: THANH TOÁN === */}
+        <div className="w-full lg:w-1/2 bg-white p-8 md:p-12 lg:p-16 text-gray-700 rounded-t-3xl lg:rounded-none lg:rounded-l-3xl">
           <div className="flex gap-4 mb-8">
             <button
               onClick={() => setPaymentMethod("card")}
               className={`flex-1 p-4 rounded-lg font-semibold text-lg ${
                 paymentMethod === "card"
-                  ? "bg-[#6c7a67] text-white"
-                  : "bg-gray-800 text-gray-400"
+                  ? "bg-blue-600 text-white"
+                  : "bg-gray-200 text-gray-700"
               }`}
             >
               Thẻ tín dụng
@@ -384,16 +367,15 @@ export default function PaymentPage() {
               onClick={() => setPaymentMethod("bank")}
               className={`flex-1 p-4 rounded-lg font-semibold text-lg ${
                 paymentMethod === "bank"
-                  ? "bg-[#6c7a67] text-white"
-                  : "bg-gray-800 text-gray-400"
+                  ? "bg-blue-600 text-white"
+                  : "bg-gray-200 text-gray-700"
               }`}
             >
               Tài khoản ngân hàng
             </button>
           </div>
 
-          {/* Hiển thị form tương ứng */}
-          <div className="bg-[#2A2A2A] p-8 rounded-2xl">
+          <div className="bg-gray-50 p-8 rounded-2xl">
             {paymentMethod === "card" ? (
               <CreditCardForm onComplete={handlePaymentComplete} />
             ) : (
@@ -406,10 +388,9 @@ export default function PaymentPage() {
         </div>
       </div>
 
-      {/* === MODAL THÀNH CÔNG === */}
       <SuccessDialog
         visible={isSuccessModalVisible}
-        onHide={() => router.push("/")} // Bấm ra ngoài là về trang chủ
+        onHide={() => router.push("/")}
         name={order.customerInfo.name}
       />
     </>

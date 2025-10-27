@@ -52,7 +52,7 @@ export const ServiceHero = () => {
               <br />
               TRẢI NGHIỆM THỰC TẾ
             </h1>
-            <p className="mt-6 font-text-content-min">
+            <p className="mt-6 font-text-content-min !text-xl ">
               Từ robot hộp sữa đến đèn lồng chai PET, mỗi workshop là một trải
               nghiệm 2 giờ đầy hứng khởi. Hãy chọn cho bé khung giờ cuối tuần
               phù hợp để con vừa học, vừa chơi, và mang về những sản phẩm tự tay

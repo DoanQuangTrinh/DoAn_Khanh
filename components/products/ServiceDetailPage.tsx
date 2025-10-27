@@ -122,7 +122,7 @@ export const ServiceDetailPage = () => {
             <h1 className="title-work-shop md:!text-5xl text-3xl">
               {productData.title}
             </h1>
-            <p className="mt-6 font-text-content-min ">
+            <p className="mt-6 font-text-content-min !text-xl  ">
               {productData.description}
             </p>
 

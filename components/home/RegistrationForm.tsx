@@ -39,7 +39,7 @@ export const RegistrationForm = () => {
 
   const labelClasses = "block !text-xl font-text-content mb-2";
   const inputClasses =
-    "!font-josefin text-sm w-full px-5 py-3.5 bg-white rounded-lg shadow-sm border border-gray-200 placeholder-gray-400 text-gray-800 transition-all duration-300 ease-in-out focus:outline-none focus:ring-2 focus:ring-[#4A6341] focus:ring-opacity-50 focus:scale-105 focus:placeholder-transparent";
+    "!font-josefin text-xs w-full px-5 py-3.5 bg-white rounded-lg shadow-sm border border-gray-200 placeholder-gray-400 text-gray-800 transition-all duration-300 ease-in-out focus:outline-none focus:ring-2 focus:ring-[#4A6341] focus:ring-opacity-50 focus:scale-105 focus:placeholder-transparent";
 
   return (
     <motion.section
@@ -61,7 +61,7 @@ export const RegistrationForm = () => {
           >
             Đăng ký Tư vấn & Nhận Thông tin Workshop
           </h2>
-          <p className="font-text-content !text-sm mx-auto w-full !text-center">
+          <p className="font-text-content !text-xs mx-auto w-full !text-center">
             "Để lại thông tin, GreenKids sẽ liên hệ tư vấn và gửi chi tiết các
             workshop phù hợp với độ tuổi của bé."
           </p>

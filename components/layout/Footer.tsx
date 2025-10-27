@@ -4,6 +4,7 @@ import {
   FaFacebookF,
   FaInstagram,
   FaCheck,
+  FaTiktok,
 } from "react-icons/fa";
 
 // --- COMPONENT CON (Tùy chọn) ---
@@ -125,10 +126,10 @@ export const Footer = () => {
             <div className="flex items-center gap-5">
               <a
                 href="#"
-                aria-label="Instagram"
+                aria-label="TikTok"
                 className="p-2 border border-[#FDFBF4] rounded-full transition-all duration-300 hover:bg-[#FDFBF4] hover:text-[#879382] hover:scale-110"
               >
-                <FaInstagram size={20} />
+                <FaTiktok size={20} />
               </a>
               <a
                 href="#"

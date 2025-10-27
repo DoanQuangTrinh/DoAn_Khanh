@@ -77,7 +77,7 @@ const TestimonialCard = ({ item }: { item: Testimonial }) => (
           </svg>
         ))}
       </div>
-      <p className="font-text-content-min text-sm mb-6">{item.quote}</p>
+      <p className="font-text-content-min text-xs mb-6">{item.quote}</p>
       <div>
         <p className="font-bold font-text-content">{item.name}</p>
         <p className="text-gray-500 text-xl font-text-content-min !font-bold">

@@ -175,7 +175,7 @@ const ServiceHighlightItem: React.FC<{ item: ServiceItemProps }> = ({
           {title}
         </motion.h2>
         <motion.p
-          className="text-base md:text-lg font-text-content-min"
+          className="text-base md:!text-lg font-text-content-min"
           variants={itemVariants}
         >
           {description}
