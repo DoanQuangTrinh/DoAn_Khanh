@@ -109,7 +109,7 @@ export const BookingPage = () => {
   // 1. Đọc giỏ hàng từ localStorage khi component mount
   useEffect(() => {
     try {
-      const storedCart = localStorage.getItem("cart");
+      const storedCart = localStorage.getItem("checkoutData");
       if (storedCart) {
         setCartItems(JSON.parse(storedCart));
       }
