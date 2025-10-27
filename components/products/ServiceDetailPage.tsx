@@ -64,9 +64,10 @@ const ImageGallery: React.FC<ImageGalleryProps> = ({ images }) => {
               ring-offset-2 ring-offset-[#FFFBF2]
               transition-all duration-300
               focus:outline-none focus:ring-2 
-              ${selectedImage.id === image.id
-                ? "ring-2 ring-[#879382]"
-                : "opacity-70 hover:opacity-100"
+              ${
+                selectedImage.id === image.id
+                  ? "ring-2 ring-[#879382]"
+                  : "opacity-70 hover:opacity-100"
               }
             `}
           >
@@ -83,9 +84,9 @@ const ImageGallery: React.FC<ImageGalleryProps> = ({ images }) => {
 };
 
 export const ServiceDetailPage = () => {
-  const params = useParams()
+  const params = useParams();
   const [isDialogVisible, setIsDialogVisible] = useState(false);
-  const product = listProducts?.find(item => item.id === Number(params.id));
+  const product = listProducts?.find((item) => item.id === Number(params.id));
   // eslint-disable-next-line @typescript-eslint/ban-ts-comment
   // @ts-ignore
   const productData: ProductDetails | undefined = product?.details;
@@ -101,16 +102,19 @@ export const ServiceDetailPage = () => {
   }
   return (
     <>
-      <div className="max-w-7xl mx-auto px-6 lg:px-8 py-8 md:py-16">  <a
-        href="/services"
-        className="
+      <div className="max-w-7xl mx-auto px-6 lg:px-8 py-8 md:py-16">
+        {" "}
+        <a
+          href="/services"
+          className="
                   flex items-center gap-2 heading-title text-lg  opacity-80
                   hover:opacity-100 transition-opacity duration-300
                 "
-      >
-        <FaChevronLeft size={16} />
-        Dịch vụ
-      </a></div>
+        >
+          <FaChevronLeft size={16} />
+          Dịch vụ
+        </a>
+      </div>
       <section className=" ">
         <div className="max-w-7xl mx-auto px-6 lg:px-8 grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-16">
           <ImageGallery images={productData.images} />
@@ -125,10 +129,10 @@ export const ServiceDetailPage = () => {
             <div className="my-8 space-y-4">
               {productData.details.map((item) => (
                 <div key={item.label} className="flex">
-                  <span className="font-text-content-min text-sm w-28 shrink-0">
+                  <span className="font-text-content-min text-xl w-28 shrink-0">
                     {item.label} :
                   </span>
-                  <span className="font-text-content-min text-sm whitespace-pre-line">
+                  <span className="font-text-content-min text-xl whitespace-pre-line">
                     {item.value}
                   </span>
                 </div>
@@ -144,7 +148,7 @@ export const ServiceDetailPage = () => {
                 ))}
               </ul>
             </div>
-            <p className="mt-4 text-sm font-text-content-min ">
+            <p className="mt-4 text-xl font-text-content-min ">
               {productData.disclaimer}
             </p>
             <button

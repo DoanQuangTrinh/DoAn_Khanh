@@ -261,7 +261,7 @@ export const BookingPage = () => {
                 {/* Tên và Đơn giá */}
                 <div className="flex-1 mr-2">
                   <div className="font-semibold">{item.workshopName}</div>
-                  <div className="text-sm text-gray-600">
+                  <div className="text-xl text-gray-600">
                     {formatPrice(item.unitPrice)} / vé
                   </div>
                 </div>
@@ -377,7 +377,7 @@ export const BookingPage = () => {
                     {product.title}
                   </h4>
                   <p
-                    className="text-sm text-gray-600 truncate"
+                    className="text-xl text-gray-600 truncate"
                     title={product.description}
                   >
                     {product.description}

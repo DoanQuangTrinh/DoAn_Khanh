@@ -77,10 +77,10 @@ const TestimonialCard = ({ item }: { item: Testimonial }) => (
           </svg>
         ))}
       </div>
-      <p className="font-text-content-min text-xs mb-6">{item.quote}</p>
+      <p className="font-text-content-min text-sm mb-6">{item.quote}</p>
       <div>
         <p className="font-bold font-text-content">{item.name}</p>
-        <p className="text-gray-500 text-sm font-text-content-min !font-bold">
+        <p className="text-gray-500 text-xl font-text-content-min !font-bold">
           {item.title}
         </p>
       </div>
@@ -136,7 +136,7 @@ export const TestimonialSlider = () => {
       <div className="max-w-7xl mx-auto px-4">
         <div className="mb-12 md:pl-12 pl-0">
           <h2 className="text-4xl md:text-5xl text-about">Khách hàng nói gì</h2>
-          <p className="font-text-content !text-sm">
+          <p className="font-text-content !text-xl">
             Cùng lắng nghe xem các phụ huynh và bé đã nói gì về trải nghiệm
             workshop của chúng tôi!
           </p>

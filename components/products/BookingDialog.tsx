@@ -55,8 +55,18 @@ const PlusIcon = () => (
   </svg>
 );
 
-const parsePrice = (priceStr: string): number =>
-  parseInt(priceStr?.replace(/[^0-9]/g, ""), 10) || 0;
+const parsePrice = (priceString: string) => {
+  // Lấy giá tiền (tìm số có dấu . hoặc ,)
+  const priceMatch = priceString.match(/[\d\.]+/);
+  const price = priceMatch ? parseInt(priceMatch[0].replace(/\./g, ""), 10) : 0;
+
+  // Lấy số lượng phía sau "/"
+  const countMatch = priceString.match(/\/\s*(\d+)/);
+  const count = countMatch ? parseInt(countMatch[1], 10) : 1;
+
+  return { price, count };
+};
+
 const formatPrice = (priceNum: number): string =>
   priceNum.toLocaleString("vi-VN") + "đ";
 
@@ -69,7 +79,7 @@ export const BookingDialog = ({
   const [quantity, setQuantity] = useState(1);
   const router = useRouter();
   const basePrice = parsePrice(data.price);
-  const totalPrice = basePrice * quantity;
+  const totalPrice = basePrice.price * quantity;
 
   const handleAddToCart = () => {
     const cartItem = {
@@ -162,7 +172,7 @@ export const BookingDialog = ({
           ))}
           <div className="mt-4 pt-4 border-t border-brand-container">
             <div className="font-semibold">Điều khoản</div>
-            <p className="text-sm text-gray-600">{data?.disclaimer}</p>
+            <p className="text-xl text-gray-600">{data?.disclaimer}</p>
           </div>
         </div>
 
@@ -197,7 +207,7 @@ export const BookingDialog = ({
           {data?.priceNotes?.length > 0 && (
             <div className="bg-brand-container p-4 rounded-lg space-y-2 mt-6">
               {data.priceNotes.map((note, idx) => (
-                <p key={idx} className="text-sm text-brand-text">
+                <p key={idx} className="text-xl text-brand-text">
                   ✨ {note}
                 </p>
               ))}

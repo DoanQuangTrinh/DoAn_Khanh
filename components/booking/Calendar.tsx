@@ -21,7 +21,7 @@ const ChevronDown = () => (
 const SelectButton = ({ children }: { children: React.ReactNode }) => (
   <button
     type="button"
-    className="bg-white text-brand-text p-2 px-4 rounded-lg font-semibold text-sm flex items-center justify-between w-[130px] focus:outline-none focus:ring-2 focus:ring-brand-dark"
+    className="bg-white text-brand-text p-2 px-4 rounded-lg font-semibold text-xl flex items-center justify-between w-[130px] focus:outline-none focus:ring-2 focus:ring-brand-dark"
   >
     <span>{children}</span>
     <ChevronDown />
@@ -138,7 +138,7 @@ export const Calendar = ({
             value={selectedMonth}
             onChange={handleMonthChange}
             // Style nó giống hệt SelectButton
-            className="bg-white text-brand-text p-2 px-4 rounded-lg font-semibold text-sm flex items-center justify-between w-[130px] focus:outline-none focus:ring-2 focus:ring-brand-dark appearance-none pr-8 cursor-pointer"
+            className="bg-white text-brand-text p-2 px-4 rounded-lg font-semibold text-xl flex items-center justify-between w-[130px] focus:outline-none focus:ring-2 focus:ring-brand-dark appearance-none pr-8 cursor-pointer"
           >
             {monthsOfYear.map((month) => (
               <option key={month.value} value={month.value}>
@@ -161,7 +161,7 @@ export const Calendar = ({
         {daysOfWeek.map((day) => (
           <div
             key={day}
-            className="font-semibold text-sm text-brand-text-light"
+            className="font-semibold text-xl text-brand-text-light"
           >
             {day}
           </div>
@@ -175,7 +175,7 @@ export const Calendar = ({
             key={index}
             onClick={() => handleDayClick(day)}
             className={`
-              w-10 h-10 flex items-center justify-center rounded-full text-sm
+              w-10 h-10 flex items-center justify-center rounded-full text-xl
               ${day === null ? "text-transparent" : "text-brand-text-light"}
               ${
                 day === selectedDay
@@ -197,7 +197,7 @@ export const Calendar = ({
 
       {/* PHẦN CHỌN GIỜ (Giữ nguyên) */}
       <div className="mt-6">
-        <h3 className="text-sm font-semibold text-brand-text mb-2">Chọn giờ</h3>
+        <h3 className="text-xl font-semibold text-brand-text mb-2">Chọn giờ</h3>
         <div className="flex gap-2 flex-wrap">
           {timeSlots.map((time) => (
             <button
@@ -205,7 +205,7 @@ export const Calendar = ({
               type="button"
               onClick={() => setSelectedTime(time)}
               className={`
-                p-2 px-4 rounded-lg font-semibold text-sm
+                p-2 px-4 rounded-lg font-semibold text-xl
                 ${
                   selectedTime === time
                     ? "bg-brand-dark border rounded bg-[#adafa7] text-black"

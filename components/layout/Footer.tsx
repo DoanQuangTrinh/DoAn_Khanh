@@ -25,11 +25,11 @@ const FooterLinkColumn: React.FC<FooterLinkColumnProps> = ({
   <div>
     <h3 className="font-text-content text-3xl font-medium mb-6">{title}</h3>
     <ul className="space-y-4">
-      {links.map((link , index) => (
+      {links.map((link, index) => (
         <li key={index}>
           <a
             href={link.href}
-            className="font-text-content !text-sm transition-colors duration-300 hover:text-white"
+            className="font-text-content !text-xl transition-colors duration-300 hover:text-white"
           >
             {link.label}
           </a>
@@ -113,7 +113,7 @@ export const Footer = () => {
                   className="text-[#879382] opacity-0 peer-checked:opacity-100 transition-opacity"
                 />
               </div>
-              <span className="font-text-content !text-sm opacity-80 group-hover:opacity-100 transition-opacity">
+              <span className="font-text-content !text-xl opacity-80 group-hover:opacity-100 transition-opacity">
                 I agree with the privacy policy and terms of use.
               </span>
             </label>

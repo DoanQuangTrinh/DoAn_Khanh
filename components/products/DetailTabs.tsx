@@ -35,7 +35,7 @@ const TestimonialCard: React.FC<TestimonialCardProps> = ({
     {/* Thông tin */}
     <div>
       <p className="font-bold text-gray-900 text-lg">{name}</p>
-      <p className="text-gray-500 text-sm">{title}</p>
+      <p className="text-gray-500 text-xl">{title}</p>
     </div>
   </div>
 );
@@ -85,7 +85,7 @@ export const DetailTabs = () => {
         <button
           onClick={() => setActiveTab(tabId)}
           className={`
-            font-text-content-min md:!text-2xl !text-sm font-medium
+            font-text-content-min md:!text-2xl !text-xl font-medium
             transition-colors duration-300
             ${isActive ? "text-[#4A6341]" : "text-gray-400 hover:text-gray-600"}
           `}

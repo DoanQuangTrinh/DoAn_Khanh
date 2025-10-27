@@ -25,7 +25,7 @@ export const BookingForm = ({
         <div className="mb-6">
           <label
             htmlFor="customerName"
-            className="block text-sm font-text-content mb-2 font-text-content-min"
+            className="block text-xl font-text-content mb-2 font-text-content-min"
           >
             Họ và Tên
           </label>
@@ -43,7 +43,7 @@ export const BookingForm = ({
         <div className="mb-6">
           <label
             htmlFor="customerPhone"
-            className="block text-sm font-text-content mb-2 font-text-content-min"
+            className="block text-xl font-text-content mb-2 font-text-content-min"
           >
             Số Điện Thoại
           </label>

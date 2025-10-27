@@ -52,23 +52,20 @@ export const listProducts = [
       images: [
         {
           id: 1,
-          url: "https://placehold.co/800x600/879382/FDFBF4?text=Robot+View+1",
-          thumbnailUrl:
-            "https://placehold.co/150x150/879382/FDFBF4?text=View+1",
+          url: "/product/IMG_8166.JPG",
+          thumbnailUrl: "/product/IMG_8166.JPG",
           alt: "Robot từ hộp sữa - Ảnh 1",
         },
         {
           id: 2,
-          url: "https://placehold.co/800x600/B5C4B0/4A6341?text=Robot+View+2",
-          thumbnailUrl:
-            "https://placehold.co/150x150/B5C4B0/4A6341?text=View+2",
+          url: "/product/IMG_8166.JPG",
+          thumbnailUrl: "/product/IMG_8166.JPG",
           alt: "Robot từ hộp sữa - Ảnh 2",
         },
         {
           id: 3,
-          url: "https://placehold.co/800x600/D7DDCF/4A6341?text=Robot+View+3",
-          thumbnailUrl:
-            "https://placehold.co/150x150/D7DDCF/4A6341?text=View+3",
+          url: "/product/IMG_8170.JPG",
+          thumbnailUrl: "/product/IMG_8170.JPG",
           alt: "Robot từ hộp sữa - Ảnh 3",
         },
         {

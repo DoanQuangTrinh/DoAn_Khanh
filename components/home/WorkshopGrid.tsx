@@ -43,12 +43,12 @@ const WorkshopCard = ({
         whileHover={{ scale: 1.12, rotate: -2 }}
         transition={{ type: "spring", stiffness: 200, damping: 8 }}
       >
-        <span className="text-gray-400 text-sm">[Ảnh Minh Họa]</span>
+        <span className="text-gray-400 text-xl">[Ảnh Minh Họa]</span>
       </motion.div>
 
       <div className="p-6 flex flex-col flex-grow">
         <h3 className="title-work-shop mb-2">{item.title}</h3>
-        <p className="font-text-content !text-sm flex-grow">
+        <p className="font-text-content !text-xl flex-grow">
           {item.description}
         </p>
 

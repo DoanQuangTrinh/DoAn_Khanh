@@ -108,7 +108,7 @@ const TextWithFlowers: React.FC<{ data: any; router: any }> = ({
       onMouseLeave={handleHoverEnd}
     >
       {/* Small label */}
-      <span className="text-xs font-medium tracking-widest text-[#6B6B6B] opacity-80 mb-1">
+      <span className="text-sm font-medium tracking-widest text-[#6B6B6B] opacity-80 mb-1">
         {data.title}
       </span>
 
