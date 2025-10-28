@@ -137,7 +137,7 @@ export const Calendar = ({
                   key={month.value}
                   value={month.value}
                   disabled={isPastMonth}
-                  ứ
+                  
                 >
                   {month.name}{" "}
                 </option>
