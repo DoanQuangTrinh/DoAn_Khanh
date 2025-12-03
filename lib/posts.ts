@@ -2,6 +2,8 @@
 
 // lib/posts.ts
 
+// lib/posts.ts
+
 export const listProducts = [
   {
     id: 1,
@@ -17,7 +19,7 @@ export const listProducts = [
     details: {
       title: "Robot Từ Hộp Sữa",
       description_details:
-        "Trong buổi học, trẻ sẽ được hướng dẫn biến vỏ hộp sữa quen thuộc thành một robot mini có khớp xoay hoạt động mượt mà. Trẻ sẽ học về cơ học, trực quan hóa ý tưởng, phối hợp màu sắc và trang trí robot theo phong cách riêng. Ngoài ra, khóa học còn giới thiệu các khái niệm cơ bản về động cơ mini, bánh răng và cách làm robot di chuyển đơn giản.",
+        "Trong buổi học, các kỹ sư nhí sẽ được thử sức với thử thách tái chế đầy thú vị: **biến vỏ hộp sữa UHT** tưởng chừng như bỏ đi thành một chú **robot mini có khớp xoay linh hoạt và cử động mượt mà**. \n\nChúng ta sẽ bắt đầu bằng việc **phân tích cấu trúc hộp sữa**, sau đó tiến hành **cắt, gấp và lắp ráp các chi tiết** để hình thành thân robot. Trẻ sẽ học về **nguyên lý cơ học đơn giản** như cách tạo khớp nối (joint) và trục xoay, giúp robot có thể cử động tay, chân. \n\nPhần sáng tạo là quan trọng nhất: trẻ sẽ **trực quan hóa ý tưởng** bằng cách vẽ phác thảo, **phối hợp màu sắc** và trang trí robot theo phong cách riêng (ví dụ: robot bảo vệ môi trường, robot dọn dẹp). \n\nKhóa học còn giới thiệu các khái niệm cơ bản về **động cơ mini** (nếu có lắp thêm), **bánh răng** và cách làm robot di chuyển đơn giản. Mục tiêu là giúp trẻ **hình thành tư duy thiết kế STEM** thông qua hoạt động thủ công gần gũi.",
       images: [
         {
           id: 1,
@@ -57,7 +59,7 @@ export const listProducts = [
     details: {
       title: "Đèn Lồng Từ Chai PET",
       description_details:
-        "Trẻ sẽ học cách cắt, gấp và trang trí chai PET thành những chiếc đèn lồng lung linh. Buổi học kết hợp lý thuyết về tái chế, vật liệu, ánh sáng, và thực hành nghệ thuật thủ công. Trẻ còn được hướng dẫn cách treo đèn và tạo hiệu ứng ánh sáng đẹp mắt.",
+        "Đèn Lồng Từ Chai PET là hành trình khám phá khả năng biến hóa của vật liệu tái chế. Trẻ sẽ được hướng dẫn qua từng bước: **xử lý bề mặt chai PET, cắt, gấp và tạo hình** để biến chiếc chai rỗng thành một chiếc đèn lồng có cấu trúc hình học độc đáo.\n\nBuổi học không chỉ là thủ công, mà còn là lý thuyết về **tái chế (Recycling)**, hiểu biết về **vật liệu (Material Science)** và **nguyên lý ánh sáng (Optics)**. Trẻ sẽ học cách bố trí vật liệu mờ và trong để tạo ra **hiệu ứng tán sắc ánh sáng đẹp mắt**.\n\nSau khi hoàn thành phần khung, trẻ sẽ tự do **trang trí** với màu sắc, sticker hoặc các vật liệu đi kèm để mang dấu ấn cá nhân. Đây là hoạt động tuyệt vời giúp **phát triển khả năng quan sát, sự khéo léo** trong kỹ năng cắt dán phức tạp, và ý thức bảo vệ môi trường.",
       images: [
         {
           id: 1,
@@ -86,119 +88,8 @@ export const listProducts = [
       maxStudents: 10,
     },
   },
-  {
-    id: 3,
-    title: "Xe Đua Nắp Chai",
-    description:
-      "Khóa học 60 phút cho trẻ từ 6-10 tuổi, biến nắp chai thành xe đua mini, học về chuyển động, lực ma sát và tốc độ.",
-    price: "170.000đ",
-    priceNotes: ["Giảm 10% cho lần đăng ký thứ 2", "Tặng 1 nắp chai dự phòng"],
-    disclaimer: "Có thể bẩn tay, phụ huynh giám sát trẻ nhỏ.",
-    details: {
-      title: "Xe Đua Nắp Chai",
-      description_details:
-        "Trẻ sẽ được hướng dẫn tạo xe đua mini từ nắp chai, học về lực đẩy, ma sát, cách tối ưu hóa tốc độ và thiết kế bánh xe. Khóa học kết hợp trò chơi đua xe thú vị để trẻ trải nghiệm vận tốc và kỹ năng thử nghiệm, sửa chữa, cải tiến xe.",
-      images: [
-        {
-          id: 1,
-          url: "https://www.greenkids.net.vn/product1/xd1.jpeg",
-          thumbnailUrl: "https://www.greenkids.net.vn/product1/xd1.jpeg",
-          alt: "Xe đua nắp chai - Ảnh 1",
-        },
-        {
-          id: 2,
-          url: "https://www.greenkids.net.vn/product1/xd1.jpeg",
-          thumbnailUrl: "https://www.greenkids.net.vn/product1/xd1.jpeg",
-          alt: "Xe đua nắp chai - Ảnh 2",
-        },
-        {
-          id: 3,
-          url: "https://www.greenkids.net.vn/product1/xd1.jpeg",
-          thumbnailUrl: "https://www.greenkids.net.vn/product1/xd1.jpeg",
-          alt: "Xe đua nắp chai - Ảnh 3",
-        },
-      ],
-      schedule: ["Thứ 7: 9h-10h", "Chủ nhật: 14h-15h"],
-      ageGroup: "6-10 tuổi",
-      maxStudents: 12,
-    },
-  },
-  {
-    id: 4,
-    title: "Chậu Cây Mini Tái Chế",
-    description:
-      "Khóa học 75 phút, trẻ học cách làm chậu cây mini từ vật liệu tái chế, phát triển sự sáng tạo và trách nhiệm với môi trường.",
-    price: "170.000đ",
-    priceNotes: [
-      "Tặng đất trồng và hạt giống",
-      "Miễn phí 1 bộ sticker trang trí",
-    ],
-    disclaimer: "Phụ huynh giám sát trẻ dưới 7 tuổi.",
-    details: {
-      title: "Chậu Cây Mini Tái Chế",
-      description_details:
-        "Trẻ sẽ học cách tái chế lon, hộp giấy thành chậu cây nhỏ xinh, trồng cây và trang trí theo sở thích. Khóa học giúp trẻ hiểu về chăm sóc thực vật, học màu sắc, họa tiết, và trách nhiệm với môi trường. Buổi học có cả phần trồng cây thật và trang trí chậu.",
-      images: [
-        {
-          id: 1,
-          url: "https://www.greenkids.net.vn/product1/IMG_6217.JPG",
-          thumbnailUrl: "https://www.greenkids.net.vn/product1/IMG_6217.JPG",
-          alt: "Chậu cây mini tái chế - Ảnh 1",
-        },
-        {
-          id: 2,
-          url: "https://www.greenkids.net.vn/product1/cc1.jpeg",
-          thumbnailUrl: "https://www.greenkids.net.vn/product1/cc1.jpeg",
-          alt: "Chậu cây mini tái chế - Ảnh 2",
-        },
-        {
-          id: 3,
-          url: "https://www.greenkids.net.vn/product1/cc2.jpeg",
-          thumbnailUrl: "https://www.greenkids.net.vn/product1/cc2.jpeg",
-          alt: "Chậu cây mini tái chế - Ảnh 3",
-        },
-      ],
-      schedule: ["Thứ 7: 10h-11h15", "Chủ nhật: 15h-16h15"],
-      ageGroup: "5-12 tuổi",
-      maxStudents: 15,
-    },
-  },
-  {
-    id: 5,
-    title: "Thuyền Giấy Trôi Nước",
-    description:
-      "Khóa học 50 phút, trẻ tạo thuyền giấy và thử nghiệm khả năng nổi và di chuyển trên nước, kết hợp học về lực đẩy và vật lý cơ bản.",
-    price: "170.000đ",
-    priceNotes: [
-      "Tặng giấy gấp thuyền thêm 5 chiếc",
-      "Giảm 5% khi đăng ký nhóm 2 bé",
-    ],
-    disclaimer: "Phụ huynh giám sát trẻ dưới 6 tuổi.",
-    details: {
-      title: "Thuyền Giấy Trôi Nước",
-      description_details:
-        "Trẻ sẽ học cách gấp thuyền giấy chuẩn, thử nghiệm khả năng nổi trên nước, học về lực đẩy Archimedes và thiết kế thuyền ổn định. Buổi học kết hợp lý thuyết vật lý cơ bản và trò chơi thử nghiệm đua thuyền trên hồ nhỏ.",
-      images: [
-        {
-          id: 1,
-          url: "https://img.pikbest.com/photo/20240428/spirited-mothers-day-holiday-wishes-222024-png-images-png_10539357.jpg!w700wp",
-          thumbnailUrl:
-            "https://img.pikbest.com/photo/20240428/spirited-mothers-day-holiday-wishes-222024-png-images-png_10539357.jpg!w700wp",
-          alt: "Thuyền giấy trôi nước - Ảnh 1",
-        },
-        {
-          id: 2,
-          url: "https://placehold.co/800x600/1E90FF/FDFBF4?text=Boat+2",
-          thumbnailUrl:
-            "https://placehold.co/150x150/1E90FF/FDFBF4?text=Thumb+2",
-          alt: "Thuyền giấy trôi nước - Ảnh 2",
-        },
-      ],
-      schedule: ["Thứ 7: 9h-9h50", "Chủ nhật: 14h-14h50"],
-      ageGroup: "5-10 tuổi",
-      maxStudents: 10,
-    },
-  },
+  // CÁC SẢN PHẨM KHÁC TỪ ID 6 ĐẾN ID 9 (Đã được cập nhật)
+  // ---
   {
     id: 6,
     title: "Vườn Thú Mini Từ Khay Trứng",
@@ -213,7 +104,7 @@ export const listProducts = [
     details: {
       title: "Vườn Thú Mini Từ Khay Trứng",
       description_details:
-        "Tận dụng những chiếc khay trứng giấy quen thuộc, các bé sẽ được hướng dẫn để 'phù phép' từng ô trứng thành những gương mặt con thú đáng yêu như: Sư tử, Gấu trúc, Voi, Rùa, Bọ cánh cứng... Bé sẽ học kỹ năng pha màu, nặn đất sét để tạo chi tiết (tai, mắt, mũi) và tư duy sắp xếp bố cục để tạo nên một mô hình sở thú (Zoo) hoành tráng trang trí góc học tập.",
+        "Đây là một dự án nghệ thuật tái chế kết hợp kiến thức về sinh học và nghệ thuật tạo hình. Trẻ sẽ học cách **tận dụng từng ô lõm** trên khay trứng giấy để tạo ra mô hình khuôn mặt của hơn 20 loài vật khác nhau.\n\nQuy trình gồm 3 bước: 1) **Tạo hình 3D**: Sử dụng **đất nặn nhẹ** để đắp các chi tiết nổi (tai, mũi, sừng) giúp khuôn mặt có độ sâu. 2) **Vẽ và phối màu**: Sử dụng **màu Acrylic** để tô màu da, lông của các con vật (Sư tử, Gấu trúc, Rùa,...) và học cách **pha màu cơ bản** để tạo ra các sắc thái tự nhiên. 3) **Sắp xếp bố cục**: Trẻ sẽ tự tay sắp xếp các 'cư dân' của mình vào khay để tạo thành một **bức tranh phù điêu Sở Thú** hoàn chỉnh và sống động. Khóa học giúp **rèn luyện sự tỉ mỉ, khả năng pha màu** và trực quan hóa thế giới động vật.",
       images: [
         {
           id: 1,
@@ -249,11 +140,11 @@ export const listProducts = [
     details: {
       title: "Mobile Xoắn Ốc Cầu Vồng",
       description_details:
-        "Một buổi học đầy màu sắc! Các bé sẽ biến những chiếc lọ nhỏ vô tri thành một tác phẩm nghệ thuật sắp đặt. Bé sẽ được tự tay sơn vẽ các họa tiết (chấm bi, kẻ sọc, hình sao...) lên từng lọ, sau đó học cách buộc dây và sắp xếp chúng theo quy luật xoắn ốc (DNA) để tạo ra hiệu ứng chuyển động đẹp mắt khi có gió thổi. Sản phẩm vừa là vật trang trí phòng, vừa là chuông gió leng keng vui tai.",
+        "Mobile Xoắn Ốc Cầu Vồng là dự án kết hợp nghệ thuật trang trí và **nguyên lý vật lý về cân bằng và trọng lực**. Trẻ sẽ bắt đầu bằng việc **trang trí các lọ nhỏ tái chế** (lọ nhựa/thủy tinh an toàn) bằng cách sơn các họa tiết **chấm bi, kẻ sọc** với bảng màu rực rỡ.\n\nPhần thử thách và thú vị nhất là **lắp ráp cấu trúc xoắn ốc**: Trẻ phải học cách **cân bằng các sợi dây treo** với độ dài khác nhau và sắp xếp vị trí các lọ màu theo một trật tự nhất định để mô hình không bị nghiêng lệch, tạo ra hình dạng **xoắn ốc (Spiral/Helix)** độc đáo. Sản phẩm này không chỉ là vật trang trí mà còn giúp trẻ phát triển sự **tỉ mỉ, khéo léo và hiểu biết về trọng tâm** của vật thể. Khi treo lên, mobile sẽ tạo hiệu ứng chuyển động và **phản chiếu ánh sáng** tuyệt đẹp.",
       images: [
         {
           id: 1,
-          url: "https://ai.chotnhanh.vn/download/media/users/trinhdev74d1/images/1764777802_CAMSJGM0ND-NzliODhkNw.jpeg", // Nhớ cập nhật đường dẫn ảnh thật
+          url: "https://ai.chotnhanh.vn/download/media/users/trinhdev74d1/images/1764777802_CAMSJGM0ND-NzliODhkNw.jpeg",
           thumbnailUrl:
             "https://ai.chotnhanh.vn/download/media/users/trinhdev74d1/images/1764777802_CAMSJGM0ND-NzliODhkNw.jpeg",
           alt: "Mobile xoắn ốc cầu vồng - Tổng thể",
@@ -286,7 +177,7 @@ export const listProducts = [
     details: {
       title: "Đèn Lồng Đu Quay",
       description_details:
-        "Trong buổi học, các bé sẽ khám phá các khái niệm về kiến trúc và cơ học cơ bản khi lắp ráp mô hình đu quay. Trẻ sẽ học cách cắt, dán và trang trí mái vòm, sàn đu quay theo phong cách lễ hội (vàng - đỏ - xanh). Điểm nhấn là việc lắp đặt hệ thống đèn LED nhỏ bên trong chai nhựa để tạo ra chiếc đèn lồng độc đáo, lấp lánh, giúp trẻ rèn luyện tính tỉ mỉ và kiên nhẫn.",
+        "Đèn Lồng Đu Quay là một dự án **kiến trúc mô hình** đòi hỏi sự tập trung và tỉ mỉ cao. Trẻ sẽ học cách **đọc hiểu và lắp ráp các chi tiết** mô phỏng một chiếc đu quay ngoài đời thật, sử dụng nguyên liệu chính là **chai nhựa, nắp chai** và **bìa cứng**.\n\nQuy trình bao gồm: 1) **Xây dựng cấu trúc trụ**: Sử dụng que gỗ hoặc ống hút cứng để tạo các trụ đỡ. 2) **Tạo hình mái vòm và sàn**: Cắt và dán bìa cứng theo các mẫu **hình học** (hình tròn, tam giác, răng cưa) với các màu sắc rực rỡ như đỏ, vàng, xanh. 3) **Lắp đặt hệ thống điện**: Đặt **bộ đèn LED mini** vào lõi chai nhựa (trung tâm) để biến mô hình thành chiếc đèn lồng lấp lánh khi tắt đèn.\n\nKhóa học giúp trẻ **khám phá nguyên tắc kiến trúc và kỹ thuật lắp ghép cơ bản**, đồng thời rèn luyện **tính kiên nhẫn** khi xử lý các chi tiết nhỏ và chính xác.",
       images: [
         {
           id: 1,
@@ -322,7 +213,7 @@ export const listProducts = [
     details: {
       title: "Tranh Bướm Đắp Nổi 3D",
       description_details:
-        "Trong buổi học, trẻ sẽ học cách phối màu nền, phác thảo và sau đó tạo hình đôi cánh bướm bằng kỹ thuật đắp nổi vật liệu tái chế (như giấy, bìa hoặc vật liệu nhẹ). Trọng tâm của khóa học là kỹ thuật vẽ chi tiết (chấm bi, sọc, hoa văn) trên đôi cánh để tạo sự sinh động và độ sâu cho bức tranh. Khóa học giúp trẻ phát triển khả năng thẩm mỹ, sự tỉ mỉ và kỹ năng làm việc trên mặt phẳng (hội họa) kết hợp với không gian (3D).",
+        "Tranh Bướm Đắp Nổi 3D là cầu nối giữa nghệ thuật **hội họa truyền thống và thủ công hiện đại**. Trẻ sẽ làm việc trên **nền canvas**, học cách **phối màu nền** để tạo không gian sinh động.\n\nTrọng tâm là kỹ thuật **đắp nổi (Relief)**: trẻ sẽ sử dụng các vật liệu tái chế hoặc giấy bìa cứng để **cắt và tạo hình đôi cánh bướm** theo các mẫu khác nhau (cánh tròn, cánh nhọn). Sau đó, cố định chúng lên canvas để tạo độ nổi 3D.\n\nPhần cuối là **trang trí chi tiết**: Trẻ sẽ dùng **màu Acrylic** để tô vẽ họa tiết (chấm bi, sọc, đường vân) lên đôi cánh, biến bức tranh thành một tác phẩm nghệ thuật có **chiều sâu và kết cấu** (texture) độc đáo. Khóa học giúp **phát triển tư duy không gian** và sự **khéo léo, tỉ mỉ** khi xử lý chi tiết 3D.",
       images: [
         {
           id: 1,

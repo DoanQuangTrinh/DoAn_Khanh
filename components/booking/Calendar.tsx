@@ -1,5 +1,4 @@
 "use client";
-// src/components/Calendar.tsx
 import React from "react";
 
 // Icon mũi tên Xổ xuống
@@ -11,9 +10,8 @@ const ChevronDown = () => (
     fill="none"
     stroke="currentColor"
     strokeWidth="3"
-    className="text-brand-text-light h-4 w-4"
-  >
-    <path d="m6 9 6 6 6-6" />
+    className="text-brand-text-light h-4 w-4">
+    <path d="m6 9 6 6 6-6" />{" "}
   </svg>
 );
 
@@ -21,16 +19,17 @@ const ChevronDown = () => (
 const SelectButton = ({ children }: { children: React.ReactNode }) => (
   <button
     type="button"
-    className="bg-white text-brand-text p-2 px-4 rounded-lg font-semibold text-sm flex items-center justify-between w-[130px] focus:outline-none focus:ring-2 focus:ring-brand-dark"
-  >
+    className="bg-white text-brand-text p-2 px-4 rounded-lg font-semibold text-sm flex items-center justify-between w-[130px] focus:outline-none focus:ring-2 focus:ring-brand-dark">
     <span>{children}</span>
-    <ChevronDown />
+    <ChevronDown />{" "}
   </button>
 );
 
 // Dữ liệu cho lịch
 const daysOfWeek = ["Th2", "Th3", "Th4", "Th5", "Th6", "Th7", "CN"];
-const timeSlots = ["09:00", "14:30", "18:30"];
+// CẬP NHẬT: timeSlots chứa các khung giờ chung, KHUNG GIỜ CUỐI TUẦN SẼ ĐƯỢC THÊM SAU.
+const weekdayTimeSlots = ["09:00 - 11:00", "14:00 - 16:00", "18:30 - 20:30"];
+const weekendExtraTime = "19:00 - 21:00"; // Khung giờ thêm
 const year = 2025; // Giữ cố định năm
 
 // Danh sách các tháng
@@ -95,18 +94,42 @@ export const Calendar = ({
   selectedMonth,
   setSelectedMonth,
 }: CalendarProps) => {
-  // [LOGIC MỚI] Lấy ngày hiện tại
+  // Lấy ngày hiện tại
   // Đặt giờ về 0:00:00 để so sánh chính xác các ngày
   const today = new Date();
   today.setHours(0, 0, 0, 0);
   const currentYear = today.getFullYear();
-  const currentMonth = today.getMonth() + 1; // Chuyển từ 0-11 sang 1-12
-  const currentDay = today.getDate(); // Tạo lưới ngày động
+  const currentMonth = today.getMonth() + 1; // Chuyển từ 0-11 sang 1-12 // Tạo lưới ngày động
+  const daysInMonth = generateCalendarGrid(selectedMonth, year); // LOGIC MỚI: KIỂM TRA NGÀY ĐƯỢC CHỌN CÓ PHẢI CUỐI TUẦN KHÔNG
 
-  const daysInMonth = generateCalendarGrid(selectedMonth, year);
+  let isWeekendSelected = false;
+  if (selectedDay !== null) {
+    const fullDate = new Date(year, selectedMonth - 1, selectedDay);
+    const dayOfWeek = fullDate.getDay(); // 0 = CN, 6 = T7
+    if (dayOfWeek === 0 || dayOfWeek === 6) {
+      isWeekendSelected = true;
+    }
+  } // TÍNH TOÁN DANH SÁCH KHUNG GIỜ HIỂN THỊ
+
+  const finalTimeSlots = isWeekendSelected
+    ? [...weekdayTimeSlots, weekendExtraTime]
+    : weekdayTimeSlots;
 
   const handleDayClick = (day: number | null) => {
     if (day !== null) {
+      // Nếu chọn ngày mới, reset giờ đã chọn nếu khung giờ cũ không còn tồn tại
+      const fullDate = new Date(year, selectedMonth - 1, day);
+      const dayOfWeek = fullDate.getDay();
+      const isNewDayWeekend = dayOfWeek === 0 || dayOfWeek === 6;
+
+      const newTimeSlots = isNewDayWeekend
+        ? [...weekdayTimeSlots, weekendExtraTime]
+        : weekdayTimeSlots;
+
+      if (selectedTime !== null && !newTimeSlots.includes(selectedTime)) {
+        setSelectedTime(null);
+      }
+
       setSelectedDay(day);
     }
   }; // Xử lý khi người dùng đổi tháng
@@ -120,13 +143,16 @@ export const Calendar = ({
 
   return (
     <div className="bg-[#D9DAC7] text-brand-text font-josefin p-6 rounded-2xl shadow-lg w-full lg:w-auto lg:flex-1">
+      {" "}
       <div className="flex justify-between mb-4 gap-2">
+        {" "}
         <div className="relative">
+          {" "}
           <select
             value={selectedMonth}
             onChange={handleMonthChange}
-            className="bg-white text-brand-text p-2 px-4 rounded-lg font-semibold text-sm flex items-center justify-between w-[130px] focus:outline-none focus:ring-2 focus:ring-brand-dark appearance-none pr-8 cursor-pointer"
-          >
+            className="bg-white text-brand-text p-2 px-4 rounded-lg font-semibold text-sm flex items-center justify-between w-[130px] focus:outline-none focus:ring-2 focus:ring-brand-dark appearance-none pr-8 cursor-pointer">
+            {" "}
             {monthsOfYear.map((month) => {
               const isPastMonth =
                 year < currentYear ||
@@ -136,31 +162,30 @@ export const Calendar = ({
                 <option
                   key={month.value}
                   value={month.value}
-                  disabled={isPastMonth}
-                  
-                >
+                  disabled={isPastMonth}>
                   {month.name}{" "}
                 </option>
               );
-            })}
-          </select>
+            })}{" "}
+          </select>{" "}
           <div className="absolute inset-y-0 right-0 flex items-center px-3 pointer-events-none">
-            <ChevronDown />
-          </div>
+            <ChevronDown />{" "}
+          </div>{" "}
         </div>
-        <SelectButton>Năm 2025</SelectButton>
-      </div>
+        <SelectButton>Năm 2025</SelectButton>{" "}
+      </div>{" "}
       <div className="grid grid-cols-7 gap-1 text-center mb-2">
+        {" "}
         {daysOfWeek.map((day) => (
           <div
             key={day}
-            className="font-semibold text-sm text-brand-text-light"
-          >
-            {day}
+            className="font-semibold text-sm text-brand-text-light">
+            {day}{" "}
           </div>
-        ))}
-      </div>
+        ))}{" "}
+      </div>{" "}
       <div className="grid grid-cols-7 gap-1 text-center">
+        {" "}
         {daysInMonth.map((day, index) => {
           let isPastDay = false;
           if (day !== null) {
@@ -177,62 +202,59 @@ export const Calendar = ({
               key={index} // [CẬP NHẬT] Chỉ click khi 'isClickable' là true
               onClick={() => isClickable && handleDayClick(day)}
               className={`
- w-10 h-10 flex items-center justify-center rounded-full text-sm
- ${day === null ? "text-transparent" : "text-brand-text-light"}
- ${
-   isPastDay
-     ? "text-gray-400  pointer-events-none" // Mờ, gạch ngang, không click
-     : ""
- }
+w-10 h-10 flex items-center justify-center rounded-full text-sm
+${day === null ? "text-transparent" : "text-brand-text-light"}
+${
+  isPastDay
+    ? "text-gray-400 pointer-events-none" // Mờ, gạch ngang, không click
+    : ""
+}
 
- {/* Style cho ngày được chọn (chỉ khi không phải quá khứ) */}
- ${
-   day === selectedDay && !isPastDay
-     ? "bg-brand-selected border rounded bg-[#adafa7] !text-brand-dark font-bold"
-     : ""
- } 
- 
- {/* Style cho hover (chỉ khi click được) */}
- ${
-   isClickable && day !== selectedDay
-     ? "hover:bg-brand-light-btn cursor-pointer"
-     : ""
- }
- ${day === null ? "pointer-events-none" : ""} 
- `}
-            >
+{/* Style cho ngày được chọn (chỉ khi không phải quá khứ) */}
+${
+  day === selectedDay && !isPastDay
+    ? "bg-brand-selected border rounded bg-[#adafa7] !text-brand-dark font-bold"
+    : ""
+} 
+
+{/* Style cho hover (chỉ khi click được) */}
+${
+  isClickable && day !== selectedDay
+    ? "hover:bg-brand-light-btn cursor-pointer"
+    : ""
+}
+${day === null ? "pointer-events-none" : ""} 
+`}>
               {day}{" "}
             </div>
           );
         })}{" "}
-      </div>
-      {/* PHẦN CHỌN GIỜ (Giữ nguyên) */}     {" "}
+      </div>{" "}
       <div className="mt-6">
         {" "}
         <h3 className="text-sm font-semibold text-brand-text mb-2">
-          Chọn giờ
+          Chọn giờ{" "}
         </h3>{" "}
         <div className="flex gap-2 flex-wrap">
           {" "}
-          {timeSlots.map((time) => (
+          {finalTimeSlots.map((time) => (
             <button
               key={time}
               type="button"
               onClick={() => setSelectedTime(time)}
               className={`
- p-2 px-4 rounded-lg font-semibold text-sm
- ${
-   selectedTime === time
-     ? "bg-brand-dark border rounded bg-[#adafa7] text-black"
-     : "bg-white text-brand-text hover:bg-brand-light-btn"
- }
- `}
-            >
-              {time}
+p-2 px-4 rounded-lg font-semibold text-sm
+${
+  selectedTime === time
+    ? "bg-brand-dark border rounded bg-[#adafa7] text-black"
+    : "bg-white text-brand-text hover:bg-brand-light-btn"
+}
+`}>
+              {time}{" "}
             </button>
-          ))}
-        </div>
-      </div>
+          ))}{" "}
+        </div>{" "}
+      </div>{" "}
     </div>
   );
 };
