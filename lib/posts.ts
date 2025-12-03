@@ -8,7 +8,7 @@ export const listProducts = [
     title: "Robot Từ Hộp Sữa",
     description:
       "Khóa học 120 phút dành cho trẻ từ 5-12 tuổi, hướng dẫn các bé biến vỏ hộp sữa thành robot mini có khớp xoay, giúp hình thành tư duy thiết kế và kỹ năng thủ công.",
-    price: "150.000đ",
+    price: "170.000đ",
     priceNotes: [
       "Giảm 10% nếu đăng ký nhóm 3 bé",
       "Miễn phí kit vật liệu cho 5 học viên đầu tiên",
@@ -48,7 +48,7 @@ export const listProducts = [
     title: "Đèn Lồng Từ Chai PET",
     description:
       "Khóa học 90 phút, giúp trẻ học cách tái chế chai PET thành đèn lồng sáng tạo, phát triển khả năng quan sát và kỹ năng cắt dán.",
-    price: "120.000đ",
+    price: "170.000đ",
     priceNotes: [
       "Tặng 1 bộ sticker trang trí",
       "Giảm 15% nếu đăng ký nhóm 2 bé trở lên",
@@ -91,7 +91,7 @@ export const listProducts = [
     title: "Xe Đua Nắp Chai",
     description:
       "Khóa học 60 phút cho trẻ từ 6-10 tuổi, biến nắp chai thành xe đua mini, học về chuyển động, lực ma sát và tốc độ.",
-    price: "100.000đ",
+    price: "170.000đ",
     priceNotes: ["Giảm 10% cho lần đăng ký thứ 2", "Tặng 1 nắp chai dự phòng"],
     disclaimer: "Có thể bẩn tay, phụ huynh giám sát trẻ nhỏ.",
     details: {
@@ -128,7 +128,7 @@ export const listProducts = [
     title: "Chậu Cây Mini Tái Chế",
     description:
       "Khóa học 75 phút, trẻ học cách làm chậu cây mini từ vật liệu tái chế, phát triển sự sáng tạo và trách nhiệm với môi trường.",
-    price: "130.000đ",
+    price: "170.000đ",
     priceNotes: [
       "Tặng đất trồng và hạt giống",
       "Miễn phí 1 bộ sticker trang trí",
@@ -168,7 +168,7 @@ export const listProducts = [
     title: "Thuyền Giấy Trôi Nước",
     description:
       "Khóa học 50 phút, trẻ tạo thuyền giấy và thử nghiệm khả năng nổi và di chuyển trên nước, kết hợp học về lực đẩy và vật lý cơ bản.",
-    price: "90.000đ",
+    price: "170.000đ",
     priceNotes: [
       "Tặng giấy gấp thuyền thêm 5 chiếc",
       "Giảm 5% khi đăng ký nhóm 2 bé",
