@@ -25,8 +25,7 @@ export const BookingForm = ({
         <div className="mb-6">
           <label
             htmlFor="customerName"
-            className="block !text-xl font-text-content mb-2 font-text-content-min"
-          >
+            className="block !text-xl font-text-content mb-2 font-text-content-min">
             Họ và Tên
           </label>
           <input
@@ -43,8 +42,7 @@ export const BookingForm = ({
         <div className="mb-6">
           <label
             htmlFor="customerPhone"
-            className="block !text-xl font-text-content mb-2 font-text-content-min"
-          >
+            className="block !text-xl font-text-content mb-2 font-text-content-min">
             Số Điện Thoại
           </label>
           <input
@@ -57,6 +55,19 @@ export const BookingForm = ({
           />
         </div>
       </form>
+
+      {/* --- LƯU Ý QUAN TRỌNG ĐƯỢC THÊM VÀO ĐÂY --- */}
+      <div className="mt-8 pt-4 border-t border-brand-light-border">
+        <h3 className="text-xl font-semibold text-brand-dark mb-2 flex items-center gap-2">
+          ⚠️ Lưu ý quan trọng
+        </h3>
+        <p className="text-brand-text text-lg">
+          Thông tin liên hệ của Quý khách sẽ được GreenKids bảo mật tuyệt đối.
+          Chúng tôi sẽ gọi điện xác nhận lại lịch học sau khi nhận được yêu cầu
+          đăng ký trong vòng **2 giờ làm việc**. Vui lòng kiểm tra lại số điện
+          thoại trước khi hoàn tất.
+        </p>
+      </div>
     </div>
   );
 };

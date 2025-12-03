@@ -18,8 +18,7 @@ const ServiceCard: React.FC<ServiceCardProps> = ({
       transform-gpu transition-all duration-300 ease-in-out
       hover:scale-105 hover:z-30
       ${className}
-    `}
-  >
+    `}>
     {imageUrl ? (
       <img
         src={imageUrl}
@@ -40,17 +39,14 @@ export const ServiceHero = () => {
           className="
             flex items-center gap-2 heading-title text-lg  opacity-80
             hover:opacity-100 transition-opacity duration-300
-          "
-        >
+          ">
           <FaChevronLeft size={16} />
           Dịch vụ
         </a>
         <div className="mt-8 grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-16 items-center">
           <div className="flex flex-col justify-center">
-            <h1 className="text-about text-2xl md:text-4xl">
-              HỌC HỎI QUA
-              <br />
-              TRẢI NGHIỆM THỰC TẾ
+            <h1 className="text-about whitespace-nowrap text-2xl md:text-4xl">
+              HỌC HỎI QUA TRẢI NGHIỆM THỰC TẾ
             </h1>
             <p className="mt-6 font-text-content-min !text-2xl  ">
               Từ robot hộp sữa đến đèn lồng chai PET, mỗi workshop là một trải
@@ -74,7 +70,6 @@ export const ServiceHero = () => {
                 bg-[#B5C4B0]
               "
               imageUrl="/nhom/KIT_5897.jpg"
-
             />
             <ServiceCard
               className="
