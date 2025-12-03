@@ -10,7 +10,7 @@ export const listProducts = [
     title: "Robot Từ Hộp Sữa",
     description:
       "Khóa học 120 phút dành cho trẻ từ 5-12 tuổi, hướng dẫn các bé biến vỏ hộp sữa thành robot mini có khớp xoay, giúp hình thành tư duy thiết kế và kỹ năng thủ công.",
-    price: "170.000đ",
+    price: "160.000đ - 170.000đ",
     priceNotes: [
       "Giảm 10% nếu đăng ký nhóm 3 bé",
       "Miễn phí kit vật liệu cho 5 học viên đầu tiên",
@@ -49,8 +49,8 @@ export const listProducts = [
     id: 2,
     title: "Đèn Lồng Từ Chai PET",
     description:
-      "Khóa học 90 phút, giúp trẻ học cách tái chế chai PET thành đèn lồng sáng tạo, phát triển khả năng quan sát và kỹ năng cắt dán.",
-    price: "170.000đ",
+      "Khóa học 120 phút, giúp trẻ học cách tái chế chai PET thành đèn lồng sáng tạo, phát triển khả năng quan sát và kỹ năng cắt dán.",
+    price: "160.000đ - 170.000đ",
     priceNotes: [
       "Tặng 1 bộ sticker trang trí",
       "Giảm 15% nếu đăng ký nhóm 2 bé trở lên",
@@ -84,7 +84,7 @@ export const listProducts = [
         },
       ],
       schedule: ["Thứ 7: 10h-11h30", "Chủ nhật: 15h-16h30"],
-      ageGroup: "5-10 tuổi",
+      ageGroup: "5-12 tuổi",
       maxStudents: 10,
     },
   },
@@ -95,7 +95,7 @@ export const listProducts = [
     title: "Vườn Thú Mini Từ Khay Trứng",
     description:
       "Khóa học 120 phút, biến khay trứng giấy bỏ đi thành một vườn thú 3D rực rỡ sắc màu với hơn 20 loài vật ngộ nghĩnh.",
-    price: "140.000đ",
+    price: "160.000đ - 170.000đ",
     priceNotes: [
       "Tặng kèm 1 bộ màu vẽ mini mang về",
       "Giảm 10% khi check-in cùng sản phẩm",
@@ -122,7 +122,7 @@ export const listProducts = [
         },
       ],
       schedule: ["Thứ 7: 14h-16h", "Chủ nhật: 9h-11h"],
-      ageGroup: "4-12 tuổi",
+      ageGroup: "5-12 tuổi",
       maxStudents: 15,
     },
   },
@@ -130,8 +130,8 @@ export const listProducts = [
     id: 7,
     title: "Mobile Xoắn Ốc Cầu Vồng",
     description:
-      "Khóa học 90 phút, sáng tạo vật trang trí treo (mobile) hình xoắn ốc từ các lọ nhỏ tái chế, học về sự cân bằng và phối màu họa tiết.",
-    price: "125.000đ",
+      "Khóa học 120 phút, sáng tạo vật trang trí treo (mobile) hình xoắn ốc từ các lọ nhỏ tái chế, học về sự cân bằng và phối màu họa tiết.",
+    price: "160.000đ - 170.000đ",
     priceNotes: [
       "Đã bao gồm khung treo và dây cước",
       "Giảm 15% cho nhóm đăng ký từ 3 bé",
@@ -158,7 +158,7 @@ export const listProducts = [
         },
       ],
       schedule: ["Thứ 7: 16h-17h30", "Chủ nhật: 10h-11h30"],
-      ageGroup: "6-14 tuổi",
+      ageGroup: "5-12 tuổi",
       maxStudents: 10,
     },
   },
@@ -166,8 +166,8 @@ export const listProducts = [
     id: 8,
     title: "Đèn Lồng Đu Quay Tái Chế",
     description:
-      "Khóa học 150 phút, hướng dẫn trẻ biến chai nhựa, nắp chai và bìa cứng thành chiếc đèn lồng đu quay (Carousel) có đèn LED lấp lánh.",
-    price: "160.000đ",
+      "Khóa học 120 phút, hướng dẫn trẻ biến chai nhựa, nắp chai và bìa cứng thành chiếc đèn lồng đu quay (Carousel) có đèn LED lấp lánh.",
+    price: "160.000đ - 170.000đ",
     priceNotes: [
       "Tặng kèm bộ đèn LED mini dùng pin",
       "Giảm 10% nếu đăng ký nhóm từ 3 bé trở lên",
@@ -195,7 +195,7 @@ export const listProducts = [
         },
       ],
       schedule: ["Thứ 7: 15h30-18h", "Chủ nhật: 9h30-12h"],
-      ageGroup: "7-14 tuổi",
+      ageGroup: "5-12 tuổi",
       maxStudents: 12,
     },
   },
@@ -204,7 +204,7 @@ export const listProducts = [
     title: "Tranh Bướm Đắp Nổi 3D",
     description:
       "Khóa học 120 phút, hướng dẫn trẻ vẽ và tạo hình 3D những chú bướm rực rỡ trên canvas, kết hợp hội họa và kỹ thuật đắp nổi vật liệu tái chế.",
-    price: "180.000đ",
+    price: "160.000đ - 170.000đ",
     priceNotes: [
       "Bao gồm 1 bộ canvas và màu Acrylic chất lượng cao",
       "Sản phẩm có thể dùng trang trí phòng bé",
@@ -231,7 +231,7 @@ export const listProducts = [
         },
       ],
       schedule: ["Thứ 7: 10h30-12h30", "Chủ nhật: 15h-17h"],
-      ageGroup: "6-14 tuổi",
+      ageGroup: "5-12 tuổi",
       maxStudents: 10,
     },
   },

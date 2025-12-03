@@ -84,7 +84,7 @@ export const listProducts = [
         { label: "Độ tuổi", value: "5 - 12 tuổi" },
         { label: "Sĩ số", value: "10 - 12 bé" },
       ],
-      price: "170.000đ / 1 bé",
+      price: "160.000đ - 170.000đ / 1 bé",
       priceNotes: [
         "Ưu đãi giảm 30 phần trăm cho 10 vé đầu tiên.",
         "Combo gia đình được giảm thêm từ bé thứ hai.",
@@ -93,7 +93,7 @@ export const listProducts = [
     },
     image: "/product/IMG_8166.JPG",
   },
-  
+
   {
     id: 5,
     title: "Vườn Thú Mini Từ Khay Trứng",
@@ -181,7 +181,7 @@ export const listProducts = [
         { label: "Độ tuổi", value: "5 - 12 tuổi" },
         { label: "Sĩ số", value: "10 - 12 bé" },
       ],
-      price: "170.000đ / 1 bé",
+      price: "160.000đ - 170.000đ / 1 bé",
       priceNotes: [
         "Ưu đãi giảm 30 phần trăm cho 10 vé đầu tiên.",
         "Combo gia đình được giảm thêm từ bé thứ hai.",
@@ -277,7 +277,7 @@ export const listProducts = [
         { label: "Độ tuổi", value: "5 - 12 tuổi" },
         { label: "Sĩ số", value: "10 - 12 bé" },
       ],
-      price: "170.000đ / 1 bé",
+      price: "160.000đ - 170.000đ / 1 bé",
       priceNotes: [
         "Ưu đãi giảm 30 phần trăm cho 10 vé đầu tiên.",
         "Combo gia đình được giảm thêm từ bé thứ hai.",
@@ -373,7 +373,7 @@ export const listProducts = [
         { label: "Độ tuổi", value: "5 - 12 tuổi" },
         { label: "Sĩ số", value: "10 - 12 bé" },
       ],
-      price: "170.000đ / 1 bé",
+      price: "160.000đ - 170.000đ / 1 bé",
       priceNotes: [
         "Ưu đãi giảm 30 phần trăm cho 10 vé đầu tiên.",
         "Combo gia đình được giảm thêm từ bé thứ hai.",
@@ -469,7 +469,7 @@ export const listProducts = [
         { label: "Độ tuổi", value: "5 - 12 tuổi" },
         { label: "Sĩ số", value: "10 - 12 bé" },
       ],
-      price: "170.000đ / 1 bé",
+      price: "160.000đ - 170.000đ / 1 bé",
       priceNotes: [
         "Ưu đãi giảm 30 phần trăm cho 10 vé đầu tiên.",
         "Combo gia đình được giảm thêm từ bé thứ hai.",

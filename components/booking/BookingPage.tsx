@@ -360,7 +360,7 @@ export const BookingPage = () => {
                     {product.description}{" "}
                   </p>{" "}
                   <p className="font-semibold text-brand-dark mt-1">
-                    {/* {product.details.price}{" "} */}
+                    {product.details.price}{" "}
                   </p>{" "}
                 </div>{" "}
                 <Button

@@ -241,7 +241,7 @@ export default async function PostDetailPage({ params }: Props) {
                     Học phí trọn gói
                   </p>
                   <div className="flex items-baseline gap-1">
-                    <span className="text-4xl font-extrabold text-green-600 tracking-tight">
+                    <span className="text-2xl font-extrabold text-green-600 tracking-tight">
                       {productData.price}
                     </span>
                     <span className="text-gray-400 text-sm">/ bé</span>

@@ -38,8 +38,7 @@ const ImageGallery: React.FC<ImageGalleryProps> = ({ images }) => {
           rounded-2xl shadow-lg 
           aspect-[4/3] // Giữ tỷ lệ khung hình 4:3
           bg-gray-200 // Màu nền khi ảnh đang tải
-        "
-      >
+        ">
         <img
           key={selectedImage.id}
           src={selectedImage.url}
@@ -69,8 +68,7 @@ const ImageGallery: React.FC<ImageGalleryProps> = ({ images }) => {
                   ? "ring-2 ring-[#879382]"
                   : "opacity-70 hover:opacity-100"
               }
-            `}
-          >
+            `}>
             <img
               src={image.thumbnailUrl}
               alt={image.alt}
@@ -109,8 +107,7 @@ export const ServiceDetailPage = () => {
           className="
                   flex items-center gap-2 heading-title text-lg  opacity-80
                   hover:opacity-100 transition-opacity duration-300
-                "
-        >
+                ">
           <FaChevronLeft size={16} />
           Dịch vụ
         </a>
@@ -159,8 +156,7 @@ export const ServiceDetailPage = () => {
               transition-all duration-300 ease-in-out
               hover:bg-[#4A6341] hover:scale-105
               focus:outline-none focus:ring-2 focus:ring-[#879382] focus:ring-opacity-50
-            "
-            >
+            ">
               Đặt Lịch
             </button>
           </div>
