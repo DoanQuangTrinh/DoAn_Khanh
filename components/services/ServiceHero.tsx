@@ -65,7 +65,7 @@ export const ServiceHero = () => {
                 w-3/4 h-60 top-0 right-0 z-10
                 bg-[#879382]
               "
-              imageUrl="/Workshop/ảnh 1.jpeg"
+              imageUrl="/nhom/KIT_5897.jpg"
             />
             <ServiceCard
               className="
@@ -73,14 +73,15 @@ export const ServiceHero = () => {
                 -translate-x-1/2 -translate-y-1/2 z-20
                 bg-[#B5C4B0]
               "
-              imageUrl="/Workshop/ảnh 2.jpeg"
+              imageUrl="/nhom/KIT_5897.jpg"
+
             />
             <ServiceCard
               className="
                 w-3/4 h-60 bottom-0 left-0 z-10
                 bg-[#879382]
               "
-              imageUrl="/Workshop/ảnh 3.jpeg"
+              imageUrl="/nhom/KIT_5710.jpg"
             />
           </div>
         </div>

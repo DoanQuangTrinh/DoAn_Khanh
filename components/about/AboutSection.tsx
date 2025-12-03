@@ -48,11 +48,11 @@ export const AboutSection = () => {
         </div>
         <div className="">
           <Image
-            src="/frame/KEMStudio-00338.jpg"
+            src="/nhom/123.jpg"
             alt="Bear holding the earth illustration"
             width={600}
             height={550}
-            className="object-contain"
+            className="object-contain rounded-2xl shadow-amber-100 "
             priority
           />
         </div>
