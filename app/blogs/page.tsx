@@ -1,6 +1,5 @@
-// app/blogs/page.tsx
 import Link from "next/link";
-import { getAllPosts } from "@/lib/posts"; // Đảm bảo đường dẫn đúng
+import { getAllPosts } from "@/lib/posts";
 
 export default function BlogPage() {
   const posts = getAllPosts();
@@ -16,13 +15,11 @@ export default function BlogPage() {
           {posts.map((post) => (
             <article
               key={post.id}
-              className="group grid grid-cols-1 md:grid-cols-3 gap-6 md:gap-8"
-            >
+              className="group grid grid-cols-1 md:grid-cols-3 gap-6 md:gap-8">
               {/* Ảnh bìa */}
               <Link
                 href={`/blogs/${post.slug}`}
-                className="md:col-span-1 block overflow-hidden rounded-xl"
-              >
+                className="md:col-span-1 block overflow-hidden rounded-xl">
                 <img
                   src={post.imageUrl}
                   alt={post.title}
@@ -38,8 +35,7 @@ export default function BlogPage() {
                 <h2 className="font-serif text-3xl font-bold text-brand-dark mb-3">
                   <Link
                     href={`/blogs/${post.slug}`}
-                    className="text-about text-4xl md:text-5xl font-medium leading-tight"
-                  >
+                    className="text-about text-4xl md:text-5xl font-medium leading-tight">
                     {post.title}
                   </Link>
                 </h2>
@@ -48,8 +44,7 @@ export default function BlogPage() {
                 </p>
                 <Link
                   href={`/blogs/${post.slug}`}
-                  className="font-semibold text-brand-dark hover:text-green-kids-title transition-all group-hover:tracking-wider"
-                >
+                  className="font-semibold text-brand-dark hover:text-green-kids-title transition-all group-hover:tracking-wider">
                   Đọc thêm &rarr;
                 </Link>
               </div>
