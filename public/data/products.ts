@@ -71,8 +71,7 @@ export const listProducts = [
         {
           id: 4,
           url: "/product1/rb1.jpg",
-          thumbnailUrl:
-            "/product1/rb1.jpg",
+          thumbnailUrl: "/product1/rb1.jpg",
           alt: "Robot từ hộp sữa - Ảnh 4",
         },
       ],
@@ -146,29 +145,25 @@ export const listProducts = [
         {
           id: 1,
           url: "/product1/xd1.jpeg",
-          thumbnailUrl:
-            "/product1/xd1.jpeg",
+          thumbnailUrl: "/product1/xd1.jpeg",
           alt: "Robot từ hộp sữa - Ảnh 1",
         },
         {
           id: 2,
           url: "/product1/xd1.jpeg",
-          thumbnailUrl:
-            "/product1/xd1.jpeg",
+          thumbnailUrl: "/product1/xd1.jpeg",
           alt: "Robot từ hộp sữa - Ảnh 2",
         },
         {
           id: 3,
           url: "/product1/xd1.jpeg",
-          thumbnailUrl:
-            "/product1/xd1.jpeg",
+          thumbnailUrl: "/product1/xd1.jpeg",
           alt: "Robot từ hộp sữa - Ảnh 3",
         },
         {
           id: 4,
           url: "/product1/xd1.jpeg",
-          thumbnailUrl:
-            "/product1/xd1.jpeg",
+          thumbnailUrl: "/product1/xd1.jpeg",
           alt: "Robot từ hộp sữa - Ảnh 4",
         },
       ],
@@ -242,29 +237,25 @@ export const listProducts = [
         {
           id: 1,
           url: "/product1/5ce100884de0726a699e870860e8a1de.jpeg",
-          thumbnailUrl:
-            "/product1/5ce100884de0726a699e870860e8a1de.jpeg",
+          thumbnailUrl: "/product1/5ce100884de0726a699e870860e8a1de.jpeg",
           alt: "Robot từ hộp sữa - Ảnh 1",
         },
         {
           id: 2,
           url: "/product1/5ce100884de0726a699e870860e8a1de.jpeg",
-          thumbnailUrl:
-            "/product1/5ce100884de0726a699e870860e8a1de.jpeg",
+          thumbnailUrl: "/product1/5ce100884de0726a699e870860e8a1de.jpeg",
           alt: "Robot từ hộp sữa - Ảnh 2",
         },
         {
           id: 3,
           url: "/product1/5ce100884de0726a699e870860e8a1de.jpeg",
-          thumbnailUrl:
-            "/product1/5ce100884de0726a699e870860e8a1de.jpeg",
+          thumbnailUrl: "/product1/5ce100884de0726a699e870860e8a1de.jpeg",
           alt: "Robot từ hộp sữa - Ảnh 3",
         },
         {
           id: 4,
           url: "/product1/5ce100884de0726a699e870860e8a1de.jpeg",
-          thumbnailUrl:
-            "/product1/5ce100884de0726a699e870860e8a1de.jpeg",
+          thumbnailUrl: "/product1/5ce100884de0726a699e870860e8a1de.jpeg",
           alt: "Robot từ hộp sữa - Ảnh 4",
         },
       ],
@@ -338,29 +329,25 @@ export const listProducts = [
         {
           id: 1,
           url: "/product1/IMG_6217.JPG",
-          thumbnailUrl:
-            "/product1/IMG_6217.JPG",
+          thumbnailUrl: "/product1/IMG_6217.JPG",
           alt: "Robot từ hộp sữa - Ảnh 1",
         },
         {
           id: 2,
           url: "/product1/cc1.jpeg",
-          thumbnailUrl:
-            "/product1/cc1.jpeg",
+          thumbnailUrl: "/product1/cc1.jpeg",
           alt: "Robot từ hộp sữa - Ảnh 2",
         },
         {
           id: 3,
           url: "/product1/cc2.jpeg",
-          thumbnailUrl:
-            "/product1/cc2.jpeg",
+          thumbnailUrl: "/product1/cc2.jpeg",
           alt: "Robot từ hộp sữa - Ảnh 3",
         },
         {
           id: 4,
           url: "/product1/cc3.png",
-          thumbnailUrl:
-            "/product1/cc3.png",
+          thumbnailUrl: "/product1/cc3.png",
           alt: "Robot từ hộp sữa - Ảnh 4",
         },
       ],
@@ -381,5 +368,389 @@ export const listProducts = [
       disclaimer: "Cho phép đổi lịch trước 24 giờ mà không tính phí.",
     },
     image: "/product/temp_image_AEFE4FA6-7A98-4933-AFEE-D2D7D898AD84.webp",
+  },
+  {
+    id: 5,
+    title: "Vườn Thú Mini Từ Khay Trứng",
+    description:
+      "Tận dụng những chiếc khay trứng giấy quen thuộc, các bé sẽ được hướng dẫn để 'phù phép' từng ô trứng thành những gương mặt con thú đáng yêu như: Sư tử, Gấu trúc, Voi, Rùa, Bọ cánh cứng... Bé sẽ học kỹ năng pha màu, nặn đất sét để tạo chi tiết (tai, mắt, mũi) và tư duy sắp xếp bố cục để tạo nên một mô hình sở thú (Zoo) hoành tráng trang trí góc học tập.",
+    tabs: {
+      noiDung:
+        "Nội dung chi tiết về workshop... (Đây là tab Nội dung) Trẻ sẽ được học về...",
+      ketQua:
+        "Tận dụng những chiếc khay trứng giấy quen thuộc, các bé sẽ được hướng dẫn để 'phù phép' từng ô trứng thành những gương mặt con thú đáng yêu như: Sư tử, Gấu trúc, Voi, Rùa, Bọ cánh cứng... Bé sẽ học kỹ năng pha màu, nặn đất sét để tạo chi tiết (tai, mắt, mũi) và tư duy sắp xếp bố cục để tạo nên một mô hình sở thú (Zoo) hoành tráng trang trí góc học tập.",
+    },
+    align: "right",
+    bgColor: "bg-[#E5E6D8]",
+    buttonText: "Xem chi tiết",
+    testimonials: [
+      {
+        name: "Anh Quang Huy",
+        title: "Phụ huynh (quận Hải Châu)",
+        quote:
+          "Con tôi mang về món đồ chơi đâu tay từ chai nhựa và kể rất chi tiết cách làm. Tôi thấy con chủ động, tập trung hơn hẳn.",
+        rating: 4,
+      },
+      {
+        name: "Cô Thu Hà",
+        title: "Giáo viên chủ nhiệm",
+        quote:
+          "Buổi học rõ ràng, an toàn, có quy trình. Học sinh hào hứng mà giáo viên cũng dễ tích hợp vào tiết kỹ năng sống.",
+        rating: 4,
+      },
+      {
+        name: "Bé Gia Khang",
+        title: "Học sinh lớp 4",
+        quote:
+          "Em thích nhất phần lắp ghép robot nắp chai. Về nhà em còn làm thêm một cái nữa để tặng em trai.",
+        rating: 5,
+      },
+      {
+        name: "Chị Ngọc Ánh",
+        title: "Phụ huynh (quận Sơn Trà)",
+        quote:
+          "Con tôi vẫn nhút nhát, nhưng khi tự tay hoàn thiện món đồ chơi, bé tự tin khoe trước lớp. Đó là thay đổi tôi mong đợi.",
+        rating: 5,
+      },
+    ],
+    details: {
+      title: "Chậu Cây Mini Tái Chế",
+      description_details:
+        "Trong buổi học, trẻ sẽ được hướng dẫn biến vỏ hộp sữa quen thuộc thành một robot mini có khớp xoay hoạt động mượt mà. Hành trình đi từ ý tưởng đến sản phẩm giúp trẻ hiểu cơ học nền tảng, làm chủ thao tác thủ công chính xác và thể hiện cá tính qua trang trí cũng phần kể chuyện về nhân vật robot do chính mình tạo ra.",
+      images: [
+        {
+          id: 1,
+          url: "https://ai.chotnhanh.vn/download/media/users/trinhdev74d1/images/1764777160_CAMSJGFiOT-M2FjOTI4YQ.jpeg",
+          thumbnailUrl:
+            "https://ai.chotnhanh.vn/download/media/users/trinhdev74d1/images/1764777160_CAMSJGFiOT-M2FjOTI4YQ.jpeg",
+          alt: "Robot từ hộp sữa - Ảnh 1",
+        },
+        {
+          id: 2,
+          url: "https://ai.chotnhanh.vn/download/media/users/trinhdev74d1/images/1764777160_CAMSJGFiOT-NDE5NDAyNQ.jpeg",
+          thumbnailUrl:
+            "https://ai.chotnhanh.vn/download/media/users/trinhdev74d1/images/1764777160_CAMSJGFiOT-NDE5NDAyNQ.jpeg",
+          alt: "Robot từ hộp sữa - Ảnh 2",
+        },
+        {
+          id: 3,
+          url: "https://ai.chotnhanh.vn/download/media/users/trinhdev74d1/images/1764777160_CAMSJGFiOT-NDE5NDAyNQ.jpeg",
+          thumbnailUrl:
+            "https://ai.chotnhanh.vn/download/media/users/trinhdev74d1/images/1764777160_CAMSJGFiOT-NDE5NDAyNQ.jpeg",
+          alt: "Robot từ hộp sữa - Ảnh 3",
+        },
+        {
+          id: 4,
+          url: "https://ai.chotnhanh.vn/download/media/users/trinhdev74d1/images/1764777160_CAMSJGFiOT-NDE5NDAyNQ.jpeg",
+          thumbnailUrl:
+            "https://ai.chotnhanh.vn/download/media/users/trinhdev74d1/images/1764777160_CAMSJGFiOT-NDE5NDAyNQ.jpeg",
+          alt: "Robot từ hộp sữa - Ảnh 4",
+        },
+      ],
+      details: [
+        { label: "Thời gian", value: "120 phút" },
+        {
+          label: "Lịch học",
+          value: "Thứ 7 và Chủ Nhật hàng tuần\n09:00, 14:30 và 18:30",
+        },
+        { label: "Độ tuổi", value: "5 - 12 tuổi" },
+        { label: "Sĩ số", value: "10 - 12 bé" },
+      ],
+      price: "170.000đ / 1 bé",
+      priceNotes: [
+        "Ưu đãi giảm 30 phần trăm cho 10 vé đầu tiên.",
+        "Combo gia đình được giảm thêm từ bé thứ hai.",
+      ],
+      disclaimer: "Cho phép đổi lịch trước 24 giờ mà không tính phí.",
+    },
+    image: "/product1/KEMStudio-00341.jpg",
+  },
+  {
+    id: 6,
+    title: "Mobile Xoắn Ốc Cầu Vồng",
+    description:
+      "Một buổi học đầy màu sắc! Các bé sẽ biến những chiếc lọ nhỏ vô tri thành một tác phẩm nghệ thuật sắp đặt. Bé sẽ được tự tay sơn vẽ các họa tiết (chấm bi, kẻ sọc, hình sao...) lên từng lọ, sau đó học cách buộc dây và sắp xếp chúng theo quy luật xoắn ốc (DNA) để tạo ra hiệu ứng chuyển động đẹp mắt khi có gió thổi. Sản phẩm vừa là vật trang trí phòng, vừa là chuông gió leng keng vui tai.",
+    tabs: {
+      noiDung:
+        "Nội dung chi tiết về workshop... (Đây là tab Nội dung) Trẻ sẽ được học về...",
+      ketQua:
+        "Tận dụng những chiếc khay trứng giấy quen thuộc, các bé sẽ được hướng dẫn để 'phù phép' từng ô trứng thành những gương mặt con thú đáng yêu như: Sư tử, Gấu trúc, Voi, Rùa, Bọ cánh cứng... Bé sẽ học kỹ năng pha màu, nặn đất sét để tạo chi tiết (tai, mắt, mũi) và tư duy sắp xếp bố cục để tạo nên một mô hình sở thú (Zoo) hoành tráng trang trí góc học tập.",
+    },
+    align: "left",
+    bgColor: "bg-[#E5E6D8]",
+    buttonText: "Xem chi tiết",
+    testimonials: [
+      {
+        name: "Anh Quang Huy",
+        title: "Phụ huynh (quận Hải Châu)",
+        quote:
+          "Con tôi mang về món đồ chơi đâu tay từ chai nhựa và kể rất chi tiết cách làm. Tôi thấy con chủ động, tập trung hơn hẳn.",
+        rating: 4,
+      },
+      {
+        name: "Cô Thu Hà",
+        title: "Giáo viên chủ nhiệm",
+        quote:
+          "Buổi học rõ ràng, an toàn, có quy trình. Học sinh hào hứng mà giáo viên cũng dễ tích hợp vào tiết kỹ năng sống.",
+        rating: 4,
+      },
+      {
+        name: "Bé Gia Khang",
+        title: "Học sinh lớp 4",
+        quote:
+          "Em thích nhất phần lắp ghép robot nắp chai. Về nhà em còn làm thêm một cái nữa để tặng em trai.",
+        rating: 5,
+      },
+      {
+        name: "Chị Ngọc Ánh",
+        title: "Phụ huynh (quận Sơn Trà)",
+        quote:
+          "Con tôi vẫn nhút nhát, nhưng khi tự tay hoàn thiện món đồ chơi, bé tự tin khoe trước lớp. Đó là thay đổi tôi mong đợi.",
+        rating: 5,
+      },
+    ],
+    details: {
+      title: "Chậu Cây Mini Tái Chế",
+      description_details:
+        "Trong buổi học, trẻ sẽ được hướng dẫn biến vỏ hộp sữa quen thuộc thành một robot mini có khớp xoay hoạt động mượt mà. Hành trình đi từ ý tưởng đến sản phẩm giúp trẻ hiểu cơ học nền tảng, làm chủ thao tác thủ công chính xác và thể hiện cá tính qua trang trí cũng phần kể chuyện về nhân vật robot do chính mình tạo ra.",
+      images: [
+        {
+          id: 1,
+          url: "https://ai.chotnhanh.vn/download/media/users/trinhdev74d1/images/1764777802_CAMSJGM0ND-NzliODhkNw.jpeg",
+          thumbnailUrl:
+            "https://ai.chotnhanh.vn/download/media/users/trinhdev74d1/images/1764777802_CAMSJGM0ND-NzliODhkNw.jpeg",
+          alt: "Robot từ hộp sữa - Ảnh 1",
+        },
+        {
+          id: 2,
+          url: "https://ai.chotnhanh.vn/download/media/users/trinhdev74d1/images/1764777802_CAMSJGM0ND-NTFmOWFjOA.jpeg",
+          thumbnailUrl:
+            "https://ai.chotnhanh.vn/download/media/users/trinhdev74d1/images/1764777802_CAMSJGM0ND-NTFmOWFjOA.jpeg",
+          alt: "Robot từ hộp sữa - Ảnh 2",
+        },
+        {
+          id: 3,
+          url: "https://ai.chotnhanh.vn/download/media/users/trinhdev74d1/images/1764777802_CAMSJGM0ND-NzliODhkNw.jpegs",
+          thumbnailUrl:
+            "https://ai.chotnhanh.vn/download/media/users/trinhdev74d1/images/1764777802_CAMSJGM0ND-NzliODhkNw.jpegs",
+          alt: "Robot từ hộp sữa - Ảnh 3",
+        },
+        {
+          id: 4,
+          url: "https://ai.chotnhanh.vn/download/media/users/trinhdev74d1/images/1764777802_CAMSJGM0ND-NTFmOWFjOA.jpeg",
+          thumbnailUrl:
+            "https://ai.chotnhanh.vn/download/media/users/trinhdev74d1/images/1764777802_CAMSJGM0ND-NTFmOWFjOA.jpeg",
+          alt: "Robot từ hộp sữa - Ảnh 4",
+        },
+      ],
+      details: [
+        { label: "Thời gian", value: "120 phút" },
+        {
+          label: "Lịch học",
+          value: "Thứ 7 và Chủ Nhật hàng tuần\n09:00, 14:30 và 18:30",
+        },
+        { label: "Độ tuổi", value: "5 - 12 tuổi" },
+        { label: "Sĩ số", value: "10 - 12 bé" },
+      ],
+      price: "170.000đ / 1 bé",
+      priceNotes: [
+        "Ưu đãi giảm 30 phần trăm cho 10 vé đầu tiên.",
+        "Combo gia đình được giảm thêm từ bé thứ hai.",
+      ],
+      disclaimer: "Cho phép đổi lịch trước 24 giờ mà không tính phí.",
+    },
+    image: "/product1/temp_image_1013BA9B-A4E6-4244-AE0A-8D16B4213B12.webp",
+  },
+  {
+    id: 7,
+    title: "Đèn Lồng Đu Quay Tái Chế",
+    description:
+      "Trong buổi học, các bé sẽ khám phá các khái niệm về kiến trúc và cơ học cơ bản khi lắp ráp mô hình đu quay. Trẻ sẽ học cách cắt, dán và trang trí mái vòm, sàn đu quay theo phong cách lễ hội (vàng - đỏ - xanh). Điểm nhấn là việc lắp đặt hệ thống đèn LED nhỏ bên trong chai nhựa để tạo ra chiếc đèn lồng độc đáo, lấp lánh, giúp trẻ rèn luyện tính tỉ mỉ và kiên nhẫn.",
+    tabs: {
+      noiDung:
+        "Nội dung chi tiết về workshop... (Đây là tab Nội dung) Trẻ sẽ được học về...",
+      ketQua:
+        "Tận dụng những chiếc khay trứng giấy quen thuộc, các bé sẽ được hướng dẫn để 'phù phép' từng ô trứng thành những gương mặt con thú đáng yêu như: Sư tử, Gấu trúc, Voi, Rùa, Bọ cánh cứng... Bé sẽ học kỹ năng pha màu, nặn đất sét để tạo chi tiết (tai, mắt, mũi) và tư duy sắp xếp bố cục để tạo nên một mô hình sở thú (Zoo) hoành tráng trang trí góc học tập.",
+    },
+    align: "right",
+    bgColor: "bg-[#E5E6D8]",
+    buttonText: "Xem chi tiết",
+    testimonials: [
+      {
+        name: "Anh Quang Huy",
+        title: "Phụ huynh (quận Hải Châu)",
+        quote:
+          "Con tôi mang về món đồ chơi đâu tay từ chai nhựa và kể rất chi tiết cách làm. Tôi thấy con chủ động, tập trung hơn hẳn.",
+        rating: 4,
+      },
+      {
+        name: "Cô Thu Hà",
+        title: "Giáo viên chủ nhiệm",
+        quote:
+          "Buổi học rõ ràng, an toàn, có quy trình. Học sinh hào hứng mà giáo viên cũng dễ tích hợp vào tiết kỹ năng sống.",
+        rating: 4,
+      },
+      {
+        name: "Bé Gia Khang",
+        title: "Học sinh lớp 4",
+        quote:
+          "Em thích nhất phần lắp ghép robot nắp chai. Về nhà em còn làm thêm một cái nữa để tặng em trai.",
+        rating: 5,
+      },
+      {
+        name: "Chị Ngọc Ánh",
+        title: "Phụ huynh (quận Sơn Trà)",
+        quote:
+          "Con tôi vẫn nhút nhát, nhưng khi tự tay hoàn thiện món đồ chơi, bé tự tin khoe trước lớp. Đó là thay đổi tôi mong đợi.",
+        rating: 5,
+      },
+    ],
+    details: {
+      title: "Chậu Cây Mini Tái Chế",
+      description_details:
+        "Trong buổi học, trẻ sẽ được hướng dẫn biến vỏ hộp sữa quen thuộc thành một robot mini có khớp xoay hoạt động mượt mà. Hành trình đi từ ý tưởng đến sản phẩm giúp trẻ hiểu cơ học nền tảng, làm chủ thao tác thủ công chính xác và thể hiện cá tính qua trang trí cũng phần kể chuyện về nhân vật robot do chính mình tạo ra.",
+      images: [
+        {
+          id: 1,
+          url: "https://ai.chotnhanh.vn/download/media/users/trinhdev74d1/images/1764778033_CAMSJDkyN2-OTk0YjRhYg.jpeg",
+          thumbnailUrl:
+            "https://ai.chotnhanh.vn/download/media/users/trinhdev74d1/images/1764778033_CAMSJDkyN2-OTk0YjRhYg.jpeg",
+          alt: "Robot từ hộp sữa - Ảnh 1",
+        },
+        {
+          id: 2,
+          url: "https://ai.chotnhanh.vn/download/media/users/trinhdev74d1/images/1764778323_CAMSJGM5Nz-MDcwYWY0Yg.jpeg",
+          thumbnailUrl:
+            "https://ai.chotnhanh.vn/download/media/users/trinhdev74d1/images/1764778033_CAMSJDkyN2-MjYwOWI5OA.jpeg",
+          alt: "Robot từ hộp sữa - Ảnh 2",
+        },
+        {
+          id: 3,
+          url: "https://ai.chotnhanh.vn/download/media/users/trinhdev74d1/images/1764778033_CAMSJDkyN2-OTk0YjRhYg.jpeg",
+          thumbnailUrl:
+            "https://ai.chotnhanh.vn/download/media/users/trinhdev74d1/images/1764778033_CAMSJDkyN2-OTk0YjRhYg.jpeg",
+          alt: "Robot từ hộp sữa - Ảnh 3",
+        },
+        {
+          id: 4,
+          url: "https://ai.chotnhanh.vn/download/media/users/trinhdev74d1/images/1764778033_CAMSJDkyN2-MjYwOWI5OA.jpeg",
+          thumbnailUrl:
+            "https://ai.chotnhanh.vn/download/media/users/trinhdev74d1/images/1764778033_CAMSJDkyN2-MjYwOWI5OA.jpeg",
+          alt: "Robot từ hộp sữa - Ảnh 4",
+        },
+      ],
+      details: [
+        { label: "Thời gian", value: "120 phút" },
+        {
+          label: "Lịch học",
+          value: "Thứ 7 và Chủ Nhật hàng tuần\n09:00, 14:30 và 18:30",
+        },
+        { label: "Độ tuổi", value: "5 - 12 tuổi" },
+        { label: "Sĩ số", value: "10 - 12 bé" },
+      ],
+      price: "170.000đ / 1 bé",
+      priceNotes: [
+        "Ưu đãi giảm 30 phần trăm cho 10 vé đầu tiên.",
+        "Combo gia đình được giảm thêm từ bé thứ hai.",
+      ],
+      disclaimer: "Cho phép đổi lịch trước 24 giờ mà không tính phí.",
+    },
+    image: "/product1/Screenshot 2025-12-03 230946.png",
+  },
+  {
+    id: 8,
+    title: "Tranh Bướm Đắp Nổi 3D",
+    description:
+      "Trong buổi học, các bé sẽ khám phá các khái niệm về kiến trúc và cơ học cơ bản khi lắp ráp mô hình đu quay. Trẻ sẽ học cách cắt, dán và trang trí mái vòm, sàn đu quay theo phong cách lễ hội (vàng - đỏ - xanh). Điểm nhấn là việc lắp đặt hệ thống đèn LED nhỏ bên trong chai nhựa để tạo ra chiếc đèn lồng độc đáo, lấp lánh, giúp trẻ rèn luyện tính tỉ mỉ và kiên nhẫn.",
+    tabs: {
+      noiDung:
+        "Nội dung chi tiết về workshop... (Đây là tab Nội dung) Trẻ sẽ được học về...",
+      ketQua:
+        "Tận dụng những chiếc khay trứng giấy quen thuộc, các bé sẽ được hướng dẫn để 'phù phép' từng ô trứng thành những gương mặt con thú đáng yêu như: Sư tử, Gấu trúc, Voi, Rùa, Bọ cánh cứng... Bé sẽ học kỹ năng pha màu, nặn đất sét để tạo chi tiết (tai, mắt, mũi) và tư duy sắp xếp bố cục để tạo nên một mô hình sở thú (Zoo) hoành tráng trang trí góc học tập.",
+    },
+    align: "left",
+    bgColor: "bg-[#E5E6D8]",
+    buttonText: "Xem chi tiết",
+    testimonials: [
+      {
+        name: "Anh Quang Huy",
+        title: "Phụ huynh (quận Hải Châu)",
+        quote:
+          "Con tôi mang về món đồ chơi đâu tay từ chai nhựa và kể rất chi tiết cách làm. Tôi thấy con chủ động, tập trung hơn hẳn.",
+        rating: 4,
+      },
+      {
+        name: "Cô Thu Hà",
+        title: "Giáo viên chủ nhiệm",
+        quote:
+          "Buổi học rõ ràng, an toàn, có quy trình. Học sinh hào hứng mà giáo viên cũng dễ tích hợp vào tiết kỹ năng sống.",
+        rating: 4,
+      },
+      {
+        name: "Bé Gia Khang",
+        title: "Học sinh lớp 4",
+        quote:
+          "Em thích nhất phần lắp ghép robot nắp chai. Về nhà em còn làm thêm một cái nữa để tặng em trai.",
+        rating: 5,
+      },
+      {
+        name: "Chị Ngọc Ánh",
+        title: "Phụ huynh (quận Sơn Trà)",
+        quote:
+          "Con tôi vẫn nhút nhát, nhưng khi tự tay hoàn thiện món đồ chơi, bé tự tin khoe trước lớp. Đó là thay đổi tôi mong đợi.",
+        rating: 5,
+      },
+    ],
+    details: {
+      title: "Chậu Cây Mini Tái Chế",
+      description_details:
+        "Trong buổi học, trẻ sẽ được hướng dẫn biến vỏ hộp sữa quen thuộc thành một robot mini có khớp xoay hoạt động mượt mà. Hành trình đi từ ý tưởng đến sản phẩm giúp trẻ hiểu cơ học nền tảng, làm chủ thao tác thủ công chính xác và thể hiện cá tính qua trang trí cũng phần kể chuyện về nhân vật robot do chính mình tạo ra.",
+      images: [
+        {
+          id: 1,
+          url: "https://ai.chotnhanh.vn/download/media/users/trinhdev74d1/images/1764778323_CAMSJGM5Nz-MDkxN2UzNQ.jpeg",
+          thumbnailUrl:
+            "https://ai.chotnhanh.vn/download/media/users/trinhdev74d1/images/1764778323_CAMSJGM5Nz-MDkxN2UzNQ.jpeg",
+          alt: "Robot từ hộp sữa - Ảnh 1",
+        },
+        {
+          id: 2,
+          url: "https://ai.chotnhanh.vn/download/media/users/trinhdev74d1/images/1764778323_CAMSJGM5Nz-MDcwYWY0Yg.jpeg",
+          thumbnailUrl:
+            "https://ai.chotnhanh.vn/download/media/users/trinhdev74d1/images/1764778323_CAMSJGM5Nz-MDcwYWY0Yg.jpeg",
+          alt: "Robot từ hộp sữa - Ảnh 2",
+        },
+        {
+          id: 3,
+          url: "https://ai.chotnhanh.vn/download/media/users/trinhdev74d1/images/1764778323_CAMSJGM5Nz-MDkxN2UzNQ.jpeg",
+          thumbnailUrl:
+            "https://ai.chotnhanh.vn/download/media/users/trinhdev74d1/images/1764778323_CAMSJGM5Nz-MDkxN2UzNQ.jpeg",
+          alt: "Robot từ hộp sữa - Ảnh 3",
+        },
+        {
+          id: 4,
+          url: "https://ai.chotnhanh.vn/download/media/users/trinhdev74d1/images/1764778323_CAMSJGM5Nz-MDcwYWY0Yg.jpeg",
+          thumbnailUrl:
+            "https://ai.chotnhanh.vn/download/media/users/trinhdev74d1/images/1764778323_CAMSJGM5Nz-MDcwYWY0Yg.jpeg",
+          alt: "Robot từ hộp sữa - Ảnh 4",
+        },
+      ],
+      details: [
+        { label: "Thời gian", value: "120 phút" },
+        {
+          label: "Lịch học",
+          value: "Thứ 7 và Chủ Nhật hàng tuần\n09:00, 14:30 và 18:30",
+        },
+        { label: "Độ tuổi", value: "5 - 12 tuổi" },
+        { label: "Sĩ số", value: "10 - 12 bé" },
+      ],
+      price: "170.000đ / 1 bé",
+      priceNotes: [
+        "Ưu đãi giảm 30 phần trăm cho 10 vé đầu tiên.",
+        "Combo gia đình được giảm thêm từ bé thứ hai.",
+      ],
+      disclaimer: "Cho phép đổi lịch trước 24 giờ mà không tính phí.",
+    },
+    image: "/product1/IMG_8300.PNG",
   },
 ];

@@ -199,6 +199,151 @@ export const listProducts = [
       maxStudents: 10,
     },
   },
+  {
+    id: 6,
+    title: "Vườn Thú Mini Từ Khay Trứng",
+    description:
+      "Khóa học 120 phút, biến khay trứng giấy bỏ đi thành một vườn thú 3D rực rỡ sắc màu với hơn 20 loài vật ngộ nghĩnh.",
+    price: "140.000đ",
+    priceNotes: [
+      "Tặng kèm 1 bộ màu vẽ mini mang về",
+      "Giảm 10% khi check-in cùng sản phẩm",
+    ],
+    disclaimer: "Lớp học dùng màu acrylic, trẻ nên mang theo tạp dề.",
+    details: {
+      title: "Vườn Thú Mini Từ Khay Trứng",
+      description_details:
+        "Tận dụng những chiếc khay trứng giấy quen thuộc, các bé sẽ được hướng dẫn để 'phù phép' từng ô trứng thành những gương mặt con thú đáng yêu như: Sư tử, Gấu trúc, Voi, Rùa, Bọ cánh cứng... Bé sẽ học kỹ năng pha màu, nặn đất sét để tạo chi tiết (tai, mắt, mũi) và tư duy sắp xếp bố cục để tạo nên một mô hình sở thú (Zoo) hoành tráng trang trí góc học tập.",
+      images: [
+        {
+          id: 1,
+          url: "https://ai.chotnhanh.vn/download/media/users/trinhdev74d1/images/1764777160_CAMSJGFiOT-M2FjOTI4YQ.jpeg",
+          thumbnailUrl:
+            "https://ai.chotnhanh.vn/download/media/users/trinhdev74d1/images/1764777160_CAMSJGFiOT-M2FjOTI4YQ.jpeg",
+          alt: "Vườn thú mini từ khay trứng - Tổng quan",
+        },
+        {
+          id: 2,
+          url: "https://ai.chotnhanh.vn/download/media/users/trinhdev74d1/images/1764777160_CAMSJGFiOT-NDE5NDAyNQ.jpeg",
+          thumbnailUrl:
+            "https://ai.chotnhanh.vn/download/media/users/trinhdev74d1/images/1764777160_CAMSJGFiOT-NDE5NDAyNQ.jpeg",
+          alt: "Chi tiết các con thú ngộ nghĩnh",
+        },
+      ],
+      schedule: ["Thứ 7: 14h-16h", "Chủ nhật: 9h-11h"],
+      ageGroup: "4-12 tuổi",
+      maxStudents: 15,
+    },
+  },
+  {
+    id: 7,
+    title: "Mobile Xoắn Ốc Cầu Vồng",
+    description:
+      "Khóa học 90 phút, sáng tạo vật trang trí treo (mobile) hình xoắn ốc từ các lọ nhỏ tái chế, học về sự cân bằng và phối màu họa tiết.",
+    price: "125.000đ",
+    priceNotes: [
+      "Đã bao gồm khung treo và dây cước",
+      "Giảm 15% cho nhóm đăng ký từ 3 bé",
+    ],
+    disclaimer: "Sử dụng lọ thủy tinh/nhựa nhỏ, cần sự cẩn thận.",
+    details: {
+      title: "Mobile Xoắn Ốc Cầu Vồng",
+      description_details:
+        "Một buổi học đầy màu sắc! Các bé sẽ biến những chiếc lọ nhỏ vô tri thành một tác phẩm nghệ thuật sắp đặt. Bé sẽ được tự tay sơn vẽ các họa tiết (chấm bi, kẻ sọc, hình sao...) lên từng lọ, sau đó học cách buộc dây và sắp xếp chúng theo quy luật xoắn ốc (DNA) để tạo ra hiệu ứng chuyển động đẹp mắt khi có gió thổi. Sản phẩm vừa là vật trang trí phòng, vừa là chuông gió leng keng vui tai.",
+      images: [
+        {
+          id: 1,
+          url: "https://ai.chotnhanh.vn/download/media/users/trinhdev74d1/images/1764777802_CAMSJGM0ND-NzliODhkNw.jpeg", // Nhớ cập nhật đường dẫn ảnh thật
+          thumbnailUrl:
+            "https://ai.chotnhanh.vn/download/media/users/trinhdev74d1/images/1764777802_CAMSJGM0ND-NzliODhkNw.jpeg",
+          alt: "Mobile xoắn ốc cầu vồng - Tổng thể",
+        },
+        {
+          id: 2,
+          url: "https://ai.chotnhanh.vn/download/media/users/trinhdev74d1/images/1764777802_CAMSJGM0ND-NTFmOWFjOA.jpeg",
+          thumbnailUrl:
+            "https://ai.chotnhanh.vn/download/media/users/trinhdev74d1/images/1764777802_CAMSJGM0ND-NTFmOWFjOA.jpeg",
+          alt: "Chi tiết họa tiết trên từng lọ",
+        },
+      ],
+      schedule: ["Thứ 7: 16h-17h30", "Chủ nhật: 10h-11h30"],
+      ageGroup: "6-14 tuổi",
+      maxStudents: 10,
+    },
+  },
+  {
+    id: 8,
+    title: "Đèn Lồng Đu Quay Tái Chế",
+    description:
+      "Khóa học 150 phút, hướng dẫn trẻ biến chai nhựa, nắp chai và bìa cứng thành chiếc đèn lồng đu quay (Carousel) có đèn LED lấp lánh.",
+    price: "160.000đ",
+    priceNotes: [
+      "Tặng kèm bộ đèn LED mini dùng pin",
+      "Giảm 10% nếu đăng ký nhóm từ 3 bé trở lên",
+    ],
+    disclaimer:
+      "Sử dụng keo nến (hot glue) và kéo, cần sự giám sát của phụ huynh.",
+    details: {
+      title: "Đèn Lồng Đu Quay",
+      description_details:
+        "Trong buổi học, các bé sẽ khám phá các khái niệm về kiến trúc và cơ học cơ bản khi lắp ráp mô hình đu quay. Trẻ sẽ học cách cắt, dán và trang trí mái vòm, sàn đu quay theo phong cách lễ hội (vàng - đỏ - xanh). Điểm nhấn là việc lắp đặt hệ thống đèn LED nhỏ bên trong chai nhựa để tạo ra chiếc đèn lồng độc đáo, lấp lánh, giúp trẻ rèn luyện tính tỉ mỉ và kiên nhẫn.",
+      images: [
+        {
+          id: 1,
+          url: "https://ai.chotnhanh.vn/download/media/users/trinhdev74d1/images/1764778033_CAMSJDkyN2-OTk0YjRhYg.jpeg", // Vui lòng thay đường dẫn ảnh thật của bạn vào đây
+          thumbnailUrl:
+            "https://ai.chotnhanh.vn/download/media/users/trinhdev74d1/images/1764778033_CAMSJDkyN2-OTk0YjRhYg.jpeg",
+          alt: "Đèn lồng đu quay tái chế - Tổng quan",
+        },
+        {
+          id: 2,
+          url: "https://placehold.co/800x600/00FFFF/000000?text=Detail+Structure",
+          thumbnailUrl:
+            "https://placehold.co/150x150/00FFFF/000000?text=Chi+Tiet",
+          alt: "Đèn lồng đu quay - Chi tiết lắp ráp và đèn",
+        },
+      ],
+      schedule: ["Thứ 7: 15h30-18h", "Chủ nhật: 9h30-12h"],
+      ageGroup: "7-14 tuổi",
+      maxStudents: 12,
+    },
+  },
+  {
+    id: 9,
+    title: "Tranh Bướm Đắp Nổi 3D",
+    description:
+      "Khóa học 120 phút, hướng dẫn trẻ vẽ và tạo hình 3D những chú bướm rực rỡ trên canvas, kết hợp hội họa và kỹ thuật đắp nổi vật liệu tái chế.",
+    price: "180.000đ",
+    priceNotes: [
+      "Bao gồm 1 bộ canvas và màu Acrylic chất lượng cao",
+      "Sản phẩm có thể dùng trang trí phòng bé",
+    ],
+    disclaimer: "Sử dụng màu Acrylic và keo dán, trẻ cần mặc áo chống bẩn.",
+    details: {
+      title: "Tranh Bướm Đắp Nổi 3D",
+      description_details:
+        "Trong buổi học, trẻ sẽ học cách phối màu nền, phác thảo và sau đó tạo hình đôi cánh bướm bằng kỹ thuật đắp nổi vật liệu tái chế (như giấy, bìa hoặc vật liệu nhẹ). Trọng tâm của khóa học là kỹ thuật vẽ chi tiết (chấm bi, sọc, hoa văn) trên đôi cánh để tạo sự sinh động và độ sâu cho bức tranh. Khóa học giúp trẻ phát triển khả năng thẩm mỹ, sự tỉ mỉ và kỹ năng làm việc trên mặt phẳng (hội họa) kết hợp với không gian (3D).",
+      images: [
+        {
+          id: 1,
+          url: "https://ai.chotnhanh.vn/download/media/users/trinhdev74d1/images/1764778323_CAMSJGM5Nz-MDcwYWY0Yg.jpeg", // Vui lòng thay đường dẫn ảnh thật của bạn vào đây
+          thumbnailUrl:
+            "https://ai.chotnhanh.vn/download/media/users/trinhdev74d1/images/1764778323_CAMSJGM5Nz-MDcwYWY0Yg.jpeg",
+          alt: "Tranh bướm đắp nổi 3D - Tổng quan",
+        },
+        {
+          id: 2,
+          url: "https://ai.chotnhanh.vn/download/media/users/trinhdev74d1/images/1764778323_CAMSJGM5Nz-MDkxN2UzNQ.jpeg",
+          thumbnailUrl:
+            "https://ai.chotnhanh.vn/download/media/users/trinhdev74d1/images/1764778323_CAMSJGM5Nz-MDkxN2UzNQ.jpeg",
+          alt: "Tranh bướm - Chi tiết đắp nổi",
+        },
+      ],
+      schedule: ["Thứ 7: 10h30-12h30", "Chủ nhật: 15h-17h"],
+      ageGroup: "6-14 tuổi",
+      maxStudents: 10,
+    },
+  },
 ];
 
 // Kiểu dữ liệu BlogPost
@@ -224,6 +369,10 @@ const transformProductToPost = (
     "15/10/2025",
     "10/10/2025",
     "05/10/2025",
+    "02/11/2025",
+    "01/11/2025",
+    "01/10/2025",
+    "30/10/2025",
   ];
 
   return {
