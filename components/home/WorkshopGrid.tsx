@@ -22,9 +22,8 @@ const WorkshopCard = ({
 
   return (
     <motion.div
-      className={`relative bg-[#D9DAC7] rounded-2xl shadow-lg overflow-hidden flex flex-col cursor-pointer ${
-        item.className || ""
-      }`}
+      className={`relative bg-[#D9DAC7] rounded-2xl shadow-lg overflow-hidden flex flex-col cursor-pointer ${item.className || ""
+        }`}
       initial={{ opacity: 0, scale: 0.7, rotate: -4 }}
       whileInView={{ opacity: 1, scale: 1, rotate: 0 }}
       viewport={{ once: false, amount: 0.3 }}
@@ -43,7 +42,7 @@ const WorkshopCard = ({
         whileHover={{ scale: 1.12, rotate: -2 }}
         transition={{ type: "spring", stiffness: 200, damping: 8 }}
       >
-        <span className="text-gray-400 text-xl">[Ảnh Minh Họa]</span>
+        <span className="text-gray-400 text-xl"><img src={item.imageUrl} alt="hinhanh" /></span>
       </motion.div>
 
       <div className="p-6 flex flex-col flex-grow">
@@ -77,24 +76,30 @@ export const WorkshopGrid = () => {
       description:
         "Khóa học 120 phút dành cho trẻ từ 5-12 tuổi, hướng dẫn các bé biến vỏ hộp sữa thành robot mini có khớp xoay, giúp hình thành tư duy thiết kế, rèn luyện kỹ năng thủ công, và khám phá các khái niệm khoa học nền tảng như trực, khớp, ma sát.",
       className: "h-full",
+      imageUrl: "/product1/rb2.jpeg"
     },
     {
       id: 2,
       title: "Đèn Lồng Từ Chai PET",
       description:
         "Hướng dẫn trẻ chế tác đèn lồng bền đẹp, an toàn từ chai nhựa cũ với nguồn sáng LED, giúp trẻ hiểu về truyền sáng, khuếch tán ánh sáng và vai trò của chất liệu trong điều tiết ánh sáng, đồng thời rèn luyện tư duy bố cục, tính tỉ mỉ và ý thức tái chế.",
+      imageUrl: "/product1/dl1.jpeg"
     },
     {
       id: 3,
       title: "Xe Đua Nắp Chai",
       description:
         "Workshop mini tạo xe đua từ nắp chai, que kem và ống hút. Thử thách tốc độ trên đường đua tự tạo.",
+      imageUrl: "/product1/xd1.jpeg"
+
     },
     {
       id: 4,
       title: "Chậu Cây Mini Tái Chế",
       description:
         "Trồng cây sen đá hoặc xương rồng trong chậu tự chế từ lon cũ, trang trí bàn học thêm xanh.",
+      imageUrl: "/product1/IMG_6217.JPG"
+
     },
   ];
 

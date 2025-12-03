@@ -48,7 +48,7 @@ export const AboutSection = () => {
         </div>
         <div className="">
           <Image
-            src="/frame/Rectangle 9.png"
+            src="/frame/KEMStudio-00338.jpg"
             alt="Bear holding the earth illustration"
             width={600}
             height={550}

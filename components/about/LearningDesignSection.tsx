@@ -31,7 +31,9 @@ export const LearningDesignSection = () => {
           <div
             className=" bg-[#6F7A6B] width-md-customer"
             style={{ height: "250px", width: "250px", background: "#6F7A6B" }}
-          ></div>
+          >
+            <img src="/frame/KIT_5669.jpg" className="object-cover w-full h-full"/>
+          </div>
 
           <div className="flex-1 md:col-span-2 px-4 py-4 md:py-0 flex flex-col justify-center">
             <h2 className="text-about text-brand-text text-4xl lg:text-6xl font-bold mb-6">

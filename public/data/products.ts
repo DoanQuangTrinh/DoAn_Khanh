@@ -58,8 +58,8 @@ export const listProducts = [
         },
         {
           id: 2,
-          url: "/product/IMG_8166.JPG",
-          thumbnailUrl: "/product/IMG_8166.JPG",
+          url: "/product1/rb2.jpeg",
+          thumbnailUrl: "/product1/rb2.jpeg",
           alt: "Robot từ hộp sữa - Ảnh 2",
         },
         {
@@ -70,9 +70,9 @@ export const listProducts = [
         },
         {
           id: 4,
-          url: "https://placehold.co/800x600/E5E6D8/4A6341?text=Robot+View+4",
+          url: "/product1/rb1.jpg",
           thumbnailUrl:
-            "https://placehold.co/150x150/E5E6D8/4A6341?text=View+4",
+            "/product1/rb1.jpg",
           alt: "Robot từ hộp sữa - Ảnh 4",
         },
       ],
@@ -145,30 +145,30 @@ export const listProducts = [
       images: [
         {
           id: 1,
-          url: "https://placehold.co/800x600/879382/FDFBF4?text=Robot+View+1",
+          url: "/product1/xd1.jpeg",
           thumbnailUrl:
-            "https://placehold.co/150x150/879382/FDFBF4?text=View+1",
+            "/product1/xd1.jpeg",
           alt: "Robot từ hộp sữa - Ảnh 1",
         },
         {
           id: 2,
-          url: "https://placehold.co/800x600/B5C4B0/4A6341?text=Robot+View+2",
+          url: "/product1/xd1.jpeg",
           thumbnailUrl:
-            "https://placehold.co/150x150/B5C4B0/4A6341?text=View+2",
+            "/product1/xd1.jpeg",
           alt: "Robot từ hộp sữa - Ảnh 2",
         },
         {
           id: 3,
-          url: "https://placehold.co/800x600/D7DDCF/4A6341?text=Robot+View+3",
+          url: "/product1/xd1.jpeg",
           thumbnailUrl:
-            "https://placehold.co/150x150/D7DDCF/4A6341?text=View+3",
+            "/product1/xd1.jpeg",
           alt: "Robot từ hộp sữa - Ảnh 3",
         },
         {
           id: 4,
-          url: "https://placehold.co/800x600/E5E6D8/4A6341?text=Robot+View+4",
+          url: "/product1/xd1.jpeg",
           thumbnailUrl:
-            "https://placehold.co/150x150/E5E6D8/4A6341?text=View+4",
+            "/product1/xd1.jpeg",
           alt: "Robot từ hộp sữa - Ảnh 4",
         },
       ],
@@ -188,7 +188,7 @@ export const listProducts = [
       ],
       disclaimer: "Cho phép đổi lịch trước 24 giờ mà không tính phí.",
     },
-    image: "/product/IMG_6217.JPG",
+    image: "/product1/xd1.jpeg",
   },
   {
     id: 2,
@@ -241,30 +241,30 @@ export const listProducts = [
       images: [
         {
           id: 1,
-          url: "https://placehold.co/800x600/879382/FDFBF4?text=Robot+View+1",
+          url: "/product1/5ce100884de0726a699e870860e8a1de.jpeg",
           thumbnailUrl:
-            "https://placehold.co/150x150/879382/FDFBF4?text=View+1",
+            "/product1/5ce100884de0726a699e870860e8a1de.jpeg",
           alt: "Robot từ hộp sữa - Ảnh 1",
         },
         {
           id: 2,
-          url: "https://placehold.co/800x600/B5C4B0/4A6341?text=Robot+View+2",
+          url: "/product1/5ce100884de0726a699e870860e8a1de.jpeg",
           thumbnailUrl:
-            "https://placehold.co/150x150/B5C4B0/4A6341?text=View+2",
+            "/product1/5ce100884de0726a699e870860e8a1de.jpeg",
           alt: "Robot từ hộp sữa - Ảnh 2",
         },
         {
           id: 3,
-          url: "https://placehold.co/800x600/D7DDCF/4A6341?text=Robot+View+3",
+          url: "/product1/5ce100884de0726a699e870860e8a1de.jpeg",
           thumbnailUrl:
-            "https://placehold.co/150x150/D7DDCF/4A6341?text=View+3",
+            "/product1/5ce100884de0726a699e870860e8a1de.jpeg",
           alt: "Robot từ hộp sữa - Ảnh 3",
         },
         {
           id: 4,
-          url: "https://placehold.co/800x600/E5E6D8/4A6341?text=Robot+View+4",
+          url: "/product1/5ce100884de0726a699e870860e8a1de.jpeg",
           thumbnailUrl:
-            "https://placehold.co/150x150/E5E6D8/4A6341?text=View+4",
+            "/product1/5ce100884de0726a699e870860e8a1de.jpeg",
           alt: "Robot từ hộp sữa - Ảnh 4",
         },
       ],
@@ -337,30 +337,30 @@ export const listProducts = [
       images: [
         {
           id: 1,
-          url: "https://placehold.co/800x600/879382/FDFBF4?text=Robot+View+1",
+          url: "/product1/IMG_6217.JPG",
           thumbnailUrl:
-            "https://placehold.co/150x150/879382/FDFBF4?text=View+1",
+            "/product1/IMG_6217.JPG",
           alt: "Robot từ hộp sữa - Ảnh 1",
         },
         {
           id: 2,
-          url: "https://placehold.co/800x600/B5C4B0/4A6341?text=Robot+View+2",
+          url: "/product1/cc1.jpeg",
           thumbnailUrl:
-            "https://placehold.co/150x150/B5C4B0/4A6341?text=View+2",
+            "/product1/cc1.jpeg",
           alt: "Robot từ hộp sữa - Ảnh 2",
         },
         {
           id: 3,
-          url: "https://placehold.co/800x600/D7DDCF/4A6341?text=Robot+View+3",
+          url: "/product1/cc2.jpeg",
           thumbnailUrl:
-            "https://placehold.co/150x150/D7DDCF/4A6341?text=View+3",
+            "/product1/cc2.jpeg",
           alt: "Robot từ hộp sữa - Ảnh 3",
         },
         {
           id: 4,
-          url: "https://placehold.co/800x600/E5E6D8/4A6341?text=Robot+View+4",
+          url: "/product1/cc3.png",
           thumbnailUrl:
-            "https://placehold.co/150x150/E5E6D8/4A6341?text=View+4",
+            "/product1/cc3.png",
           alt: "Robot từ hộp sữa - Ảnh 4",
         },
       ],
