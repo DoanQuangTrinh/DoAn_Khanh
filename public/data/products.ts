@@ -186,6 +186,7 @@ export const listProducts = [
       priceNotes: [
         "Ưu đãi giảm 30 phần trăm cho 10 vé đầu tiên.",
         "Combo gia đình được giảm thêm từ bé thứ hai.",
+        "Bạn sẽ đem theo các nguyên vật liệu mà greenkids đã thông báo."
       ],
       disclaimer: "Cho phép đổi lịch trước 24 giờ mà không tính phí.",
     },
@@ -282,6 +283,7 @@ export const listProducts = [
       priceNotes: [
         "Ưu đãi giảm 30 phần trăm cho 10 vé đầu tiên.",
         "Combo gia đình được giảm thêm từ bé thứ hai.",
+        "Bạn sẽ đem theo các nguyên vật liệu mà greenkids đã thông báo."
       ],
       disclaimer: "Cho phép đổi lịch trước 24 giờ mà không tính phí.",
     },
@@ -378,6 +380,7 @@ export const listProducts = [
       priceNotes: [
         "Ưu đãi giảm 30 phần trăm cho 10 vé đầu tiên.",
         "Combo gia đình được giảm thêm từ bé thứ hai.",
+        "Bạn sẽ đem theo các nguyên vật liệu mà greenkids đã thông báo."
       ],
       disclaimer: "Cho phép đổi lịch trước 24 giờ mà không tính phí.",
     },
@@ -474,6 +477,7 @@ export const listProducts = [
       priceNotes: [
         "Ưu đãi giảm 30 phần trăm cho 10 vé đầu tiên.",
         "Combo gia đình được giảm thêm từ bé thứ hai.",
+        "Bạn sẽ đem theo các nguyên vật liệu mà greenkids đã thông báo."
       ],
       disclaimer: "Cho phép đổi lịch trước 24 giờ mà không tính phí.",
     },
