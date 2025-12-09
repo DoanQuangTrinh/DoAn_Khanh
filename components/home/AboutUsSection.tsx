@@ -63,7 +63,7 @@ const AboutUsSection: React.FC = () => {
              bg-cover bg-center bg-no-repeat"
             style={{
               transform: "translateX(0rem) scale(0.95)",
-              backgroundImage: "url('/Workshop/ảnh 1.jpeg')",
+              backgroundImage: "url('/Workshop/new3.jpg')",
             }}
           ></div>
 
@@ -73,7 +73,7 @@ const AboutUsSection: React.FC = () => {
             style={{
               transform: "translateX(4rem) scale(0.98)",
               width: "100%",
-              backgroundImage: "url('/Workshop/ảnh 2.jpeg')",
+              backgroundImage: "url('/Workshop/new2.jpg')",
             }}
           ></div>
           <div
@@ -84,7 +84,7 @@ const AboutUsSection: React.FC = () => {
               transform: "translateX(8rem)",
               height: "100%",
               width: "100%",
-              backgroundImage: "url('/Workshop/afff.png')",
+              backgroundImage: "url('/Workshop/new1.jpg')",
             }}
           ></div>
         </motion.div>
