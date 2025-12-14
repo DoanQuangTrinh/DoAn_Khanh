@@ -82,7 +82,7 @@ export const listProducts = [
           value: "Thứ 7 và Chủ Nhật hàng tuần\n09:00, 14:30 và 18:30",
         },
         { label: "Độ tuổi", value: "5 - 12 tuổi" },
-        { label: "Sĩ số", value: "10 - 12 bé" },
+        { label: "Sĩ số", value: "15 - 20 bé" },
       ],
       price: "160.000đ - 170.000đ / 1 bé",
       priceNotes: [
@@ -180,7 +180,7 @@ export const listProducts = [
           value: "Thứ 7 và Chủ Nhật hàng tuần\n09:00, 14:30 và 18:30",
         },
         { label: "Độ tuổi", value: "5 - 12 tuổi" },
-        { label: "Sĩ số", value: "10 - 12 bé" },
+        { label: "Sĩ số", value: "15 - 20 bé" },
       ],
       price: "160.000đ - 170.000đ / 1 bé",
       priceNotes: [
@@ -277,7 +277,7 @@ export const listProducts = [
           value: "Thứ 7 và Chủ Nhật hàng tuần\n09:00, 14:30 và 18:30",
         },
         { label: "Độ tuổi", value: "5 - 12 tuổi" },
-        { label: "Sĩ số", value: "10 - 12 bé" },
+        { label: "Sĩ số", value: "15 - 20 bé" },
       ],
       price: "160.000đ - 170.000đ / 1 bé",
       priceNotes: [
@@ -374,7 +374,7 @@ export const listProducts = [
           value: "Thứ 7 và Chủ Nhật hàng tuần\n09:00, 14:30 và 18:30",
         },
         { label: "Độ tuổi", value: "5 - 12 tuổi" },
-        { label: "Sĩ số", value: "10 - 12 bé" },
+        { label: "Sĩ số", value: "15 - 20 bé" },
       ],
       price: "160.000đ - 170.000đ / 1 bé",
       priceNotes: [
@@ -471,7 +471,7 @@ export const listProducts = [
           value: "Thứ 7 và Chủ Nhật hàng tuần\n09:00, 14:30 và 18:30",
         },
         { label: "Độ tuổi", value: "5 - 12 tuổi" },
-        { label: "Sĩ số", value: "10 - 12 bé" },
+        { label: "Sĩ số", value: "15 - 20 bé" },
       ],
       price: "160.000đ - 170.000đ / 1 bé",
       priceNotes: [
