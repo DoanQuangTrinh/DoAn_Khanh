@@ -146,30 +146,30 @@ export const listProducts = [
       images: [
         {
           id: 1,
-          url: "https://ai.chotnhanh.vn/download/media/users/trinhdev74d1/images/1764777160_CAMSJGFiOT-M2FjOTI4YQ.jpeg",
+          url: "https://res.cloudinary.com/dfdt1tqts/image/upload/v1766625534/1766625369_CAMSJDJiYj-ZjE2ZjY2YQ_mbiqw9.jpg",
           thumbnailUrl:
-            "https://ai.chotnhanh.vn/download/media/users/trinhdev74d1/images/1764777160_CAMSJGFiOT-M2FjOTI4YQ.jpeg",
+            "https://res.cloudinary.com/dfdt1tqts/image/upload/v1766625534/1766625369_CAMSJDJiYj-ZjE2ZjY2YQ_mbiqw9.jpg",
           alt: "Robot từ hộp sữa - Ảnh 1",
         },
         {
           id: 2,
-          url: "https://ai.chotnhanh.vn/download/media/users/trinhdev74d1/images/1764777160_CAMSJGFiOT-NDE5NDAyNQ.jpeg",
+          url: "https://res.cloudinary.com/dfdt1tqts/image/upload/v1766625534/1766625369_CAMSJDJiYj-M2RmNjZjNQ_mjoqta.jpg",
           thumbnailUrl:
-            "https://ai.chotnhanh.vn/download/media/users/trinhdev74d1/images/1764777160_CAMSJGFiOT-NDE5NDAyNQ.jpeg",
+            "https://res.cloudinary.com/dfdt1tqts/image/upload/v1766625534/1766625369_CAMSJDJiYj-M2RmNjZjNQ_mjoqta.jpg",
           alt: "Robot từ hộp sữa - Ảnh 2",
         },
         {
           id: 3,
-          url: "https://ai.chotnhanh.vn/download/media/users/trinhdev74d1/images/1764777160_CAMSJGFiOT-NDE5NDAyNQ.jpeg",
+          url: "https://res.cloudinary.com/dfdt1tqts/image/upload/v1766625534/1766625369_CAMSJDJiYj-M2RmNjZjNQ_mjoqta.jpg",
           thumbnailUrl:
-            "https://ai.chotnhanh.vn/download/media/users/trinhdev74d1/images/1764777160_CAMSJGFiOT-NDE5NDAyNQ.jpeg",
+            "https://res.cloudinary.com/dfdt1tqts/image/upload/v1766625534/1766625369_CAMSJDJiYj-M2RmNjZjNQ_mjoqta.jpg",
           alt: "Robot từ hộp sữa - Ảnh 3",
         },
         {
           id: 4,
-          url: "https://ai.chotnhanh.vn/download/media/users/trinhdev74d1/images/1764777160_CAMSJGFiOT-NDE5NDAyNQ.jpeg",
+          url: "https://res.cloudinary.com/dfdt1tqts/image/upload/v1766625534/1766625369_CAMSJDJiYj-M2RmNjZjNQ_mjoqta.jpg",
           thumbnailUrl:
-            "https://ai.chotnhanh.vn/download/media/users/trinhdev74d1/images/1764777160_CAMSJGFiOT-NDE5NDAyNQ.jpeg",
+            "https://res.cloudinary.com/dfdt1tqts/image/upload/v1766625534/1766625369_CAMSJDJiYj-M2RmNjZjNQ_mjoqta.jpg",
           alt: "Robot từ hộp sữa - Ảnh 4",
         },
       ],
@@ -243,30 +243,30 @@ export const listProducts = [
       images: [
         {
           id: 1,
-          url: "https://ai.chotnhanh.vn/download/media/users/trinhdev74d1/images/1764777802_CAMSJGM0ND-NzliODhkNw.jpeg",
+          url: "https://res.cloudinary.com/dfdt1tqts/image/upload/v1766625777/genlab-ai-1766625768157_stx1gl.jpg",
           thumbnailUrl:
-            "https://ai.chotnhanh.vn/download/media/users/trinhdev74d1/images/1764777802_CAMSJGM0ND-NzliODhkNw.jpeg",
+            "https://res.cloudinary.com/dfdt1tqts/image/upload/v1766625777/genlab-ai-1766625768157_stx1gl.jpg",
           alt: "Robot từ hộp sữa - Ảnh 1",
         },
         {
           id: 2,
-          url: "https://ai.chotnhanh.vn/download/media/users/trinhdev74d1/images/1764777802_CAMSJGM0ND-NTFmOWFjOA.jpeg",
+          url: "https://res.cloudinary.com/dfdt1tqts/image/upload/v1766625777/genlab-ai-1766625768157_stx1gl.jpg",
           thumbnailUrl:
-            "https://ai.chotnhanh.vn/download/media/users/trinhdev74d1/images/1764777802_CAMSJGM0ND-NTFmOWFjOA.jpeg",
+            "https://res.cloudinary.com/dfdt1tqts/image/upload/v1766625777/genlab-ai-1766625768157_stx1gl.jpg",
           alt: "Robot từ hộp sữa - Ảnh 2",
         },
         {
           id: 3,
-          url: "https://ai.chotnhanh.vn/download/media/users/trinhdev74d1/images/1764777802_CAMSJGM0ND-NzliODhkNw.jpegs",
+          url: "https://res.cloudinary.com/dfdt1tqts/image/upload/v1766625777/genlab-ai-1766625768157_stx1gl.jpgs",
           thumbnailUrl:
-            "https://ai.chotnhanh.vn/download/media/users/trinhdev74d1/images/1764777802_CAMSJGM0ND-NzliODhkNw.jpegs",
+            "https://res.cloudinary.com/dfdt1tqts/image/upload/v1766625777/genlab-ai-1766625768157_stx1gl.jpgs",
           alt: "Robot từ hộp sữa - Ảnh 3",
         },
         {
           id: 4,
-          url: "https://ai.chotnhanh.vn/download/media/users/trinhdev74d1/images/1764777802_CAMSJGM0ND-NTFmOWFjOA.jpeg",
+          url: "https://res.cloudinary.com/dfdt1tqts/image/upload/v1766625777/genlab-ai-1766625768157_stx1gl.jpg",
           thumbnailUrl:
-            "https://ai.chotnhanh.vn/download/media/users/trinhdev74d1/images/1764777802_CAMSJGM0ND-NTFmOWFjOA.jpeg",
+            "https://res.cloudinary.com/dfdt1tqts/image/upload/v1766625777/genlab-ai-1766625768157_stx1gl.jpg",
           alt: "Robot từ hộp sữa - Ảnh 4",
         },
       ],
@@ -340,23 +340,23 @@ export const listProducts = [
       images: [
         {
           id: 1,
-          url: "https://ai.chotnhanh.vn/download/media/users/trinhdev74d1/images/1764778033_CAMSJDkyN2-OTk0YjRhYg.jpeg",
+          url: "https://res.cloudinary.com/dfdt1tqts/image/upload/v1766625905/genlab-ai-1766625894480_an1zli.jpg",
           thumbnailUrl:
-            "https://ai.chotnhanh.vn/download/media/users/trinhdev74d1/images/1764778033_CAMSJDkyN2-OTk0YjRhYg.jpeg",
+            "https://res.cloudinary.com/dfdt1tqts/image/upload/v1766625905/genlab-ai-1766625894480_an1zli.jpg",
           alt: "Robot từ hộp sữa - Ảnh 1",
         },
         {
           id: 2,
-          url: "https://ai.chotnhanh.vn/download/media/users/trinhdev74d1/images/1764778323_CAMSJGM5Nz-MDcwYWY0Yg.jpeg",
+          url: "https://res.cloudinary.com/dfdt1tqts/image/upload/v1766626034/genlab-ai-1766626017139_k4vcye.jpg",
           thumbnailUrl:
             "https://ai.chotnhanh.vn/download/media/users/trinhdev74d1/images/1764778033_CAMSJDkyN2-MjYwOWI5OA.jpeg",
           alt: "Robot từ hộp sữa - Ảnh 2",
         },
         {
           id: 3,
-          url: "https://ai.chotnhanh.vn/download/media/users/trinhdev74d1/images/1764778033_CAMSJDkyN2-OTk0YjRhYg.jpeg",
+          url: "https://res.cloudinary.com/dfdt1tqts/image/upload/v1766625905/genlab-ai-1766625894480_an1zli.jpg",
           thumbnailUrl:
-            "https://ai.chotnhanh.vn/download/media/users/trinhdev74d1/images/1764778033_CAMSJDkyN2-OTk0YjRhYg.jpeg",
+            "https://res.cloudinary.com/dfdt1tqts/image/upload/v1766625905/genlab-ai-1766625894480_an1zli.jpg",
           alt: "Robot từ hộp sữa - Ảnh 3",
         },
         {
@@ -437,30 +437,30 @@ export const listProducts = [
       images: [
         {
           id: 1,
-          url: "https://ai.chotnhanh.vn/download/media/users/trinhdev74d1/images/1764778323_CAMSJGM5Nz-MDkxN2UzNQ.jpeg",
+          url: "https://res.cloudinary.com/dfdt1tqts/image/upload/v1766626033/genlab-ai-1766626015879_sx9g59.jpg",
           thumbnailUrl:
-            "https://ai.chotnhanh.vn/download/media/users/trinhdev74d1/images/1764778323_CAMSJGM5Nz-MDkxN2UzNQ.jpeg",
+            "https://res.cloudinary.com/dfdt1tqts/image/upload/v1766626033/genlab-ai-1766626015879_sx9g59.jpg",
           alt: "Robot từ hộp sữa - Ảnh 1",
         },
         {
           id: 2,
-          url: "https://ai.chotnhanh.vn/download/media/users/trinhdev74d1/images/1764778323_CAMSJGM5Nz-MDcwYWY0Yg.jpeg",
+          url: "https://res.cloudinary.com/dfdt1tqts/image/upload/v1766626034/genlab-ai-1766626017139_k4vcye.jpg",
           thumbnailUrl:
-            "https://ai.chotnhanh.vn/download/media/users/trinhdev74d1/images/1764778323_CAMSJGM5Nz-MDcwYWY0Yg.jpeg",
+            "https://res.cloudinary.com/dfdt1tqts/image/upload/v1766626034/genlab-ai-1766626017139_k4vcye.jpg",
           alt: "Robot từ hộp sữa - Ảnh 2",
         },
         {
           id: 3,
-          url: "https://ai.chotnhanh.vn/download/media/users/trinhdev74d1/images/1764778323_CAMSJGM5Nz-MDkxN2UzNQ.jpeg",
+          url: "https://res.cloudinary.com/dfdt1tqts/image/upload/v1766626033/genlab-ai-1766626015879_sx9g59.jpg",
           thumbnailUrl:
-            "https://ai.chotnhanh.vn/download/media/users/trinhdev74d1/images/1764778323_CAMSJGM5Nz-MDkxN2UzNQ.jpeg",
+            "https://res.cloudinary.com/dfdt1tqts/image/upload/v1766626033/genlab-ai-1766626015879_sx9g59.jpg",
           alt: "Robot từ hộp sữa - Ảnh 3",
         },
         {
           id: 4,
-          url: "https://ai.chotnhanh.vn/download/media/users/trinhdev74d1/images/1764778323_CAMSJGM5Nz-MDcwYWY0Yg.jpeg",
+          url: "https://res.cloudinary.com/dfdt1tqts/image/upload/v1766626034/genlab-ai-1766626017139_k4vcye.jpg",
           thumbnailUrl:
-            "https://ai.chotnhanh.vn/download/media/users/trinhdev74d1/images/1764778323_CAMSJGM5Nz-MDcwYWY0Yg.jpeg",
+            "https://res.cloudinary.com/dfdt1tqts/image/upload/v1766626034/genlab-ai-1766626017139_k4vcye.jpg",
           alt: "Robot từ hộp sữa - Ảnh 4",
         },
       ],

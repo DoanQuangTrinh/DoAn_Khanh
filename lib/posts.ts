@@ -108,16 +108,16 @@ export const listProducts = [
       images: [
         {
           id: 1,
-          url: "https://ai.chotnhanh.vn/download/media/users/trinhdev74d1/images/1764777160_CAMSJGFiOT-M2FjOTI4YQ.jpeg",
+          url: "https://res.cloudinary.com/dfdt1tqts/image/upload/v1766625534/1766625369_CAMSJDJiYj-ZjE2ZjY2YQ_mbiqw9.jpg",
           thumbnailUrl:
-            "https://ai.chotnhanh.vn/download/media/users/trinhdev74d1/images/1764777160_CAMSJGFiOT-M2FjOTI4YQ.jpeg",
+            "https://res.cloudinary.com/dfdt1tqts/image/upload/v1766625534/1766625369_CAMSJDJiYj-ZjE2ZjY2YQ_mbiqw9.jpg",
           alt: "Vườn thú mini từ khay trứng - Tổng quan",
         },
         {
           id: 2,
-          url: "https://ai.chotnhanh.vn/download/media/users/trinhdev74d1/images/1764777160_CAMSJGFiOT-NDE5NDAyNQ.jpeg",
+          url: "https://res.cloudinary.com/dfdt1tqts/image/upload/v1766625534/1766625369_CAMSJDJiYj-M2RmNjZjNQ_mjoqta.jpg",
           thumbnailUrl:
-            "https://ai.chotnhanh.vn/download/media/users/trinhdev74d1/images/1764777160_CAMSJGFiOT-NDE5NDAyNQ.jpeg",
+            "https://res.cloudinary.com/dfdt1tqts/image/upload/v1766625534/1766625369_CAMSJDJiYj-M2RmNjZjNQ_mjoqta.jpg",
           alt: "Chi tiết các con thú ngộ nghĩnh",
         },
       ],
@@ -144,16 +144,16 @@ export const listProducts = [
       images: [
         {
           id: 1,
-          url: "https://ai.chotnhanh.vn/download/media/users/trinhdev74d1/images/1764777802_CAMSJGM0ND-NzliODhkNw.jpeg",
+          url: "https://res.cloudinary.com/dfdt1tqts/image/upload/v1766625777/genlab-ai-1766625768157_stx1gl.jpg",
           thumbnailUrl:
-            "https://ai.chotnhanh.vn/download/media/users/trinhdev74d1/images/1764777802_CAMSJGM0ND-NzliODhkNw.jpeg",
+            "https://res.cloudinary.com/dfdt1tqts/image/upload/v1766625777/genlab-ai-1766625768157_stx1gl.jpg",
           alt: "Mobile xoắn ốc cầu vồng - Tổng thể",
         },
         {
           id: 2,
-          url: "https://ai.chotnhanh.vn/download/media/users/trinhdev74d1/images/1764777802_CAMSJGM0ND-NTFmOWFjOA.jpeg",
+          url: "https://res.cloudinary.com/dfdt1tqts/image/upload/v1766625777/genlab-ai-1766625768157_stx1gl.jpg",
           thumbnailUrl:
-            "https://ai.chotnhanh.vn/download/media/users/trinhdev74d1/images/1764777802_CAMSJGM0ND-NTFmOWFjOA.jpeg",
+            "https://res.cloudinary.com/dfdt1tqts/image/upload/v1766625777/genlab-ai-1766625768157_stx1gl.jpg",
           alt: "Chi tiết họa tiết trên từng lọ",
         },
       ],
@@ -181,14 +181,14 @@ export const listProducts = [
       images: [
         {
           id: 1,
-          url: "https://ai.chotnhanh.vn/download/media/users/trinhdev74d1/images/1764778033_CAMSJDkyN2-OTk0YjRhYg.jpeg", // Vui lòng thay đường dẫn ảnh thật của bạn vào đây
+          url: "https://res.cloudinary.com/dfdt1tqts/image/upload/v1766625905/genlab-ai-1766625894480_an1zli.jpg", // Vui lòng thay đường dẫn ảnh thật của bạn vào đây
           thumbnailUrl:
-            "https://ai.chotnhanh.vn/download/media/users/trinhdev74d1/images/1764778033_CAMSJDkyN2-OTk0YjRhYg.jpeg",
+            "https://res.cloudinary.com/dfdt1tqts/image/upload/v1766625905/genlab-ai-1766625894480_an1zli.jpg",
           alt: "Đèn lồng đu quay tái chế - Tổng quan",
         },
         {
           id: 2,
-          url: "https://placehold.co/800x600/00FFFF/000000?text=Detail+Structure",
+          url: "https://res.cloudinary.com/dfdt1tqts/image/upload/v1766625906/genlab-ai-1766625896166_jggax3.jpg",
           thumbnailUrl:
             "https://placehold.co/150x150/00FFFF/000000?text=Chi+Tiet",
           alt: "Đèn lồng đu quay - Chi tiết lắp ráp và đèn",
@@ -217,16 +217,16 @@ export const listProducts = [
       images: [
         {
           id: 1,
-          url: "https://ai.chotnhanh.vn/download/media/users/trinhdev74d1/images/1764778323_CAMSJGM5Nz-MDcwYWY0Yg.jpeg", // Vui lòng thay đường dẫn ảnh thật của bạn vào đây
+          url: "https://res.cloudinary.com/dfdt1tqts/image/upload/v1766626034/genlab-ai-1766626017139_k4vcye.jpg", // Vui lòng thay đường dẫn ảnh thật của bạn vào đây
           thumbnailUrl:
-            "https://ai.chotnhanh.vn/download/media/users/trinhdev74d1/images/1764778323_CAMSJGM5Nz-MDcwYWY0Yg.jpeg",
+            "https://res.cloudinary.com/dfdt1tqts/image/upload/v1766626034/genlab-ai-1766626017139_k4vcye.jpg",
           alt: "Tranh bướm đắp nổi 3D - Tổng quan",
         },
         {
           id: 2,
-          url: "https://ai.chotnhanh.vn/download/media/users/trinhdev74d1/images/1764778323_CAMSJGM5Nz-MDkxN2UzNQ.jpeg",
+          url: "https://res.cloudinary.com/dfdt1tqts/image/upload/v1766626033/genlab-ai-1766626015879_sx9g59.jpg",
           thumbnailUrl:
-            "https://ai.chotnhanh.vn/download/media/users/trinhdev74d1/images/1764778323_CAMSJGM5Nz-MDkxN2UzNQ.jpeg",
+            "https://res.cloudinary.com/dfdt1tqts/image/upload/v1766626033/genlab-ai-1766626015879_sx9g59.jpg",
           alt: "Tranh bướm - Chi tiết đắp nổi",
         },
       ],
