@@ -243,30 +243,30 @@ export const listProducts = [
       images: [
         {
           id: 1,
-          url: "https://res.cloudinary.com/dfdt1tqts/image/upload/v1766625777/genlab-ai-1766625768157_stx1gl.jpg",
+          url: "https://res.cloudinary.com/dfdt1tqts/image/upload/v1766632623/temp_image_1013BA9B-A4E6-4244-AE0A-8D16B4213B12_o1hqad.jpg",
           thumbnailUrl:
-            "https://res.cloudinary.com/dfdt1tqts/image/upload/v1766625777/genlab-ai-1766625768157_stx1gl.jpg",
+            "https://res.cloudinary.com/dfdt1tqts/image/upload/v1766632623/temp_image_1013BA9B-A4E6-4244-AE0A-8D16B4213B12_o1hqad.jpg",
           alt: "Robot từ hộp sữa - Ảnh 1",
         },
         {
           id: 2,
-          url: "https://res.cloudinary.com/dfdt1tqts/image/upload/v1766625777/genlab-ai-1766625768157_stx1gl.jpg",
+          url: "https://res.cloudinary.com/dfdt1tqts/image/upload/v1766632623/temp_image_1013BA9B-A4E6-4244-AE0A-8D16B4213B12_o1hqad.jpg",
           thumbnailUrl:
-            "https://res.cloudinary.com/dfdt1tqts/image/upload/v1766625777/genlab-ai-1766625768157_stx1gl.jpg",
+            "https://res.cloudinary.com/dfdt1tqts/image/upload/v1766632623/temp_image_1013BA9B-A4E6-4244-AE0A-8D16B4213B12_o1hqad.jpg",
           alt: "Robot từ hộp sữa - Ảnh 2",
         },
         {
           id: 3,
-          url: "https://res.cloudinary.com/dfdt1tqts/image/upload/v1766625777/genlab-ai-1766625768157_stx1gl.jpgs",
+          url: "https://res.cloudinary.com/dfdt1tqts/image/upload/v1766632623/temp_image_1013BA9B-A4E6-4244-AE0A-8D16B4213B12_o1hqad.jpgs",
           thumbnailUrl:
-            "https://res.cloudinary.com/dfdt1tqts/image/upload/v1766625777/genlab-ai-1766625768157_stx1gl.jpgs",
+            "https://res.cloudinary.com/dfdt1tqts/image/upload/v1766632623/temp_image_1013BA9B-A4E6-4244-AE0A-8D16B4213B12_o1hqad.jpgs",
           alt: "Robot từ hộp sữa - Ảnh 3",
         },
         {
           id: 4,
-          url: "https://res.cloudinary.com/dfdt1tqts/image/upload/v1766625777/genlab-ai-1766625768157_stx1gl.jpg",
+          url: "https://res.cloudinary.com/dfdt1tqts/image/upload/v1766632623/temp_image_1013BA9B-A4E6-4244-AE0A-8D16B4213B12_o1hqad.jpg",
           thumbnailUrl:
-            "https://res.cloudinary.com/dfdt1tqts/image/upload/v1766625777/genlab-ai-1766625768157_stx1gl.jpg",
+            "https://res.cloudinary.com/dfdt1tqts/image/upload/v1766632623/temp_image_1013BA9B-A4E6-4244-AE0A-8D16B4213B12_o1hqad.jpg",
           alt: "Robot từ hộp sữa - Ảnh 4",
         },
       ],

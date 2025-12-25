@@ -144,16 +144,16 @@ export const listProducts = [
       images: [
         {
           id: 1,
-          url: "https://res.cloudinary.com/dfdt1tqts/image/upload/v1766625777/genlab-ai-1766625768157_stx1gl.jpg",
+          url: "https://res.cloudinary.com/dfdt1tqts/image/upload/v1766632623/temp_image_1013BA9B-A4E6-4244-AE0A-8D16B4213B12_o1hqad.jpg",
           thumbnailUrl:
-            "https://res.cloudinary.com/dfdt1tqts/image/upload/v1766625777/genlab-ai-1766625768157_stx1gl.jpg",
+            "https://res.cloudinary.com/dfdt1tqts/image/upload/v1766632623/temp_image_1013BA9B-A4E6-4244-AE0A-8D16B4213B12_o1hqad.jpg",
           alt: "Mobile xoắn ốc cầu vồng - Tổng thể",
         },
         {
           id: 2,
-          url: "https://res.cloudinary.com/dfdt1tqts/image/upload/v1766625777/genlab-ai-1766625768157_stx1gl.jpg",
+          url: "https://res.cloudinary.com/dfdt1tqts/image/upload/v1766632623/temp_image_1013BA9B-A4E6-4244-AE0A-8D16B4213B12_o1hqad.jpg",
           thumbnailUrl:
-            "https://res.cloudinary.com/dfdt1tqts/image/upload/v1766625777/genlab-ai-1766625768157_stx1gl.jpg",
+            "https://res.cloudinary.com/dfdt1tqts/image/upload/v1766632623/temp_image_1013BA9B-A4E6-4244-AE0A-8D16B4213B12_o1hqad.jpg",
           alt: "Chi tiết họa tiết trên từng lọ",
         },
       ],
