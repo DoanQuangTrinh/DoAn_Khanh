@@ -181,14 +181,14 @@ export const listProducts = [
       images: [
         {
           id: 1,
-          url: "https://res.cloudinary.com/dfdt1tqts/image/upload/v1766625905/genlab-ai-1766625894480_an1zli.jpg", // Vui lòng thay đường dẫn ảnh thật của bạn vào đây
+          url: "https://i.ytimg.com/vi/KcDWxMm1cxs/maxresdefault.jpg", // Vui lòng thay đường dẫn ảnh thật của bạn vào đây
           thumbnailUrl:
-            "https://res.cloudinary.com/dfdt1tqts/image/upload/v1766625905/genlab-ai-1766625894480_an1zli.jpg",
+            "https://i.ytimg.com/vi/KcDWxMm1cxs/maxresdefault.jpg",
           alt: "Đèn lồng đu quay tái chế - Tổng quan",
         },
         {
           id: 2,
-          url: "https://res.cloudinary.com/dfdt1tqts/image/upload/v1766625906/genlab-ai-1766625896166_jggax3.jpg",
+          url: "https://vietgourmet.vn/wp-content/uploads/2024/05/image-43.jpeg",
           thumbnailUrl:
             "https://placehold.co/150x150/00FFFF/000000?text=Chi+Tiet",
           alt: "Đèn lồng đu quay - Chi tiết lắp ráp và đèn",
@@ -217,16 +217,16 @@ export const listProducts = [
       images: [
         {
           id: 1,
-          url: "https://res.cloudinary.com/dfdt1tqts/image/upload/v1766626034/genlab-ai-1766626017139_k4vcye.jpg", // Vui lòng thay đường dẫn ảnh thật của bạn vào đây
+          url: "https://static.hotdeal.vn/images/722/722338/400x400/153517-bo-38-buom-3d-tranh-tri-xinh-xan.jpg", // Vui lòng thay đường dẫn ảnh thật của bạn vào đây
           thumbnailUrl:
-            "https://res.cloudinary.com/dfdt1tqts/image/upload/v1766626034/genlab-ai-1766626017139_k4vcye.jpg",
+            "https://static.hotdeal.vn/images/722/722338/400x400/153517-bo-38-buom-3d-tranh-tri-xinh-xan.jpg",
           alt: "Tranh bướm đắp nổi 3D - Tổng quan",
         },
         {
           id: 2,
-          url: "https://res.cloudinary.com/dfdt1tqts/image/upload/v1766626033/genlab-ai-1766626015879_sx9g59.jpg",
+          url: "https://hd1.hotdeal.vn/images/uploads/2015/06/26/153517/153517_buom3d_body%20%2810%29.jpg",
           thumbnailUrl:
-            "https://res.cloudinary.com/dfdt1tqts/image/upload/v1766626033/genlab-ai-1766626015879_sx9g59.jpg",
+            "https://hd1.hotdeal.vn/images/uploads/2015/06/26/153517/153517_buom3d_body%20%2810%29.jpg",
           alt: "Tranh bướm - Chi tiết đắp nổi",
         },
       ],

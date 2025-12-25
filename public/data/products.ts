@@ -340,23 +340,23 @@ export const listProducts = [
       images: [
         {
           id: 1,
-          url: "https://res.cloudinary.com/dfdt1tqts/image/upload/v1766625905/genlab-ai-1766625894480_an1zli.jpg",
+          url: "https://i.ytimg.com/vi/KcDWxMm1cxs/maxresdefault.jpg",
           thumbnailUrl:
-            "https://res.cloudinary.com/dfdt1tqts/image/upload/v1766625905/genlab-ai-1766625894480_an1zli.jpg",
+            "https://i.ytimg.com/vi/KcDWxMm1cxs/maxresdefault.jpg",
           alt: "Robot từ hộp sữa - Ảnh 1",
         },
         {
           id: 2,
-          url: "https://res.cloudinary.com/dfdt1tqts/image/upload/v1766626034/genlab-ai-1766626017139_k4vcye.jpg",
+          url: "https://static.hotdeal.vn/images/722/722338/400x400/153517-bo-38-buom-3d-tranh-tri-xinh-xan.jpg",
           thumbnailUrl:
             "https://ai.chotnhanh.vn/download/media/users/trinhdev74d1/images/1764778033_CAMSJDkyN2-MjYwOWI5OA.jpeg",
           alt: "Robot từ hộp sữa - Ảnh 2",
         },
         {
           id: 3,
-          url: "https://res.cloudinary.com/dfdt1tqts/image/upload/v1766625905/genlab-ai-1766625894480_an1zli.jpg",
+          url: "https://i.ytimg.com/vi/KcDWxMm1cxs/maxresdefault.jpg",
           thumbnailUrl:
-            "https://res.cloudinary.com/dfdt1tqts/image/upload/v1766625905/genlab-ai-1766625894480_an1zli.jpg",
+            "https://i.ytimg.com/vi/KcDWxMm1cxs/maxresdefault.jpg",
           alt: "Robot từ hộp sữa - Ảnh 3",
         },
         {
@@ -437,30 +437,30 @@ export const listProducts = [
       images: [
         {
           id: 1,
-          url: "https://res.cloudinary.com/dfdt1tqts/image/upload/v1766626033/genlab-ai-1766626015879_sx9g59.jpg",
+          url: "https://hd1.hotdeal.vn/images/uploads/2015/06/26/153517/153517_buom3d_body%20%2810%29.jpg",
           thumbnailUrl:
-            "https://res.cloudinary.com/dfdt1tqts/image/upload/v1766626033/genlab-ai-1766626015879_sx9g59.jpg",
+            "https://hd1.hotdeal.vn/images/uploads/2015/06/26/153517/153517_buom3d_body%20%2810%29.jpg",
           alt: "Robot từ hộp sữa - Ảnh 1",
         },
         {
           id: 2,
-          url: "https://res.cloudinary.com/dfdt1tqts/image/upload/v1766626034/genlab-ai-1766626017139_k4vcye.jpg",
+          url: "https://static.hotdeal.vn/images/722/722338/400x400/153517-bo-38-buom-3d-tranh-tri-xinh-xan.jpg",
           thumbnailUrl:
-            "https://res.cloudinary.com/dfdt1tqts/image/upload/v1766626034/genlab-ai-1766626017139_k4vcye.jpg",
+            "https://static.hotdeal.vn/images/722/722338/400x400/153517-bo-38-buom-3d-tranh-tri-xinh-xan.jpg",
           alt: "Robot từ hộp sữa - Ảnh 2",
         },
         {
           id: 3,
-          url: "https://res.cloudinary.com/dfdt1tqts/image/upload/v1766626033/genlab-ai-1766626015879_sx9g59.jpg",
+          url: "https://hd1.hotdeal.vn/images/uploads/2015/06/26/153517/153517_buom3d_body%20%2810%29.jpg",
           thumbnailUrl:
-            "https://res.cloudinary.com/dfdt1tqts/image/upload/v1766626033/genlab-ai-1766626015879_sx9g59.jpg",
+            "https://hd1.hotdeal.vn/images/uploads/2015/06/26/153517/153517_buom3d_body%20%2810%29.jpg",
           alt: "Robot từ hộp sữa - Ảnh 3",
         },
         {
           id: 4,
-          url: "https://res.cloudinary.com/dfdt1tqts/image/upload/v1766626034/genlab-ai-1766626017139_k4vcye.jpg",
+          url: "https://static.hotdeal.vn/images/722/722338/400x400/153517-bo-38-buom-3d-tranh-tri-xinh-xan.jpg",
           thumbnailUrl:
-            "https://res.cloudinary.com/dfdt1tqts/image/upload/v1766626034/genlab-ai-1766626017139_k4vcye.jpg",
+            "https://static.hotdeal.vn/images/722/722338/400x400/153517-bo-38-buom-3d-tranh-tri-xinh-xan.jpg",
           alt: "Robot từ hộp sữa - Ảnh 4",
         },
       ],
