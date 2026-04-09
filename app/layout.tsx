@@ -59,6 +59,9 @@ export const metadata: Metadata = {
     description: "Chuỗi workshop tái chế sáng tạo",
     images: ["/frame/Frame 1.png"],
   },
+  other: {
+    "google-adsense-account": "ca-pub-2786106242865268",
+  },
 };
 
 const josefin = Josefin_Sans({
