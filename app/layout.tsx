@@ -75,12 +75,14 @@ export default function RootLayout({
   return (
     <html lang="vi">
       <PrimeReactProvider>
-        <Script
-          async
-          strategy="afterInteractive"
-          src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-2786106242865268"
-          crossOrigin="anonymous"
-        />
+        <head>
+          <Script
+            async
+            src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-2786106242865268"
+            crossOrigin="anonymous"
+            strategy="beforeInteractive"
+          />
+        </head>
         <body
           className={`${inter.className} bg-brand-background text-brand-text overflow-x-hidden`}        >
           <Header />
