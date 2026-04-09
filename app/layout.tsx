@@ -14,6 +14,7 @@ import { Merriweather } from "next/font/google";
 import localFont from "next/font/local";
 import { IntroAnimation } from "@/components/intro/IntroAnimation";
 import { ToastContainer } from "react-toastify";
+import Script from "next/script";
 const cashC = localFont({
   src: "/fonts/Cash-Regular.ttf",
   variable: "--font-cashc",
@@ -74,6 +75,12 @@ export default function RootLayout({
   return (
     <html lang="vi">
       <PrimeReactProvider>
+        <Script
+          async
+          strategy="afterInteractive"
+          src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-2786106242865268"
+          crossOrigin="anonymous"
+        />
         <body
           className={`${inter.className} bg-brand-background text-brand-text overflow-x-hidden`}        >
           <Header />
