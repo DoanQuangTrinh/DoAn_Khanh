@@ -4,7 +4,7 @@ const nextConfig: NextConfig = {
   reactStrictMode: true,
 
   eslint: {
-    // ESLint warning/error sẽ không block build
+    // ESLint warning/error s không block build
     ignoreDuringBuilds: true,
   },
 
@@ -15,18 +15,23 @@ const nextConfig: NextConfig = {
   // Image optimization
   images: {
     formats: ['image/webp', 'image/avif'],
-    domains: ["greenkids.vn", "localhost"],
+    remotePatterns: [
+      {
+        protocol: 'https',
+        hostname: 'greenkids.vn',
+      },
+      {
+        protocol: 'http',
+        hostname: 'localhost',
+      },
+    ],
     minimumCacheTTL: 60,
     dangerouslyAllowSVG: true,
     contentSecurityPolicy: "default-src 'self'; script-src 'none'; sandbox;",
   },
 
-  // SWC minification
-  swcMinify: true,
-
-  // Experimental features for performance
+  // Experimental features for performance (Next.js 15 compatible)
   experimental: {
-    optimizeCss: true,
     optimizePackageImports: ['primereact', 'primeicons', 'react-icons'],
   },
 
