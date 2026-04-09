@@ -70,31 +70,33 @@ const josefin = Josefin_Sans({
   variable: "--font-josefin",
 });
 
-export default function RootLayout({
-  children,
-}: {
-  children: React.ReactNode;
-}) {
+export default function RootLayout({ children }) {
   return (
     <html lang="vi">
-      <PrimeReactProvider>
-        <head>
-          <Script
-            async
-            src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-2786106242865268"
-            crossOrigin="anonymous"
-            strategy="beforeInteractive"
-          />
-        </head>
-        <body
-          className={`${inter.className} bg-brand-background text-brand-text overflow-x-hidden`}        >
+      <head>
+        {/* ❗ SCRIPT THUẦN - KHÔNG dùng next/script */}
+        <script
+          async
+          src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-2786106242865268"
+          crossOrigin="anonymous"
+        ></script>
+
+        {/* ❗ META ADSENSE */}
+        <meta
+          name="google-adsense-account"
+          content="ca-pub-2786106242865268"
+        />
+      </head>
+
+      <body className="...">
+        <PrimeReactProvider>
           <Header />
-          <main className="relative z-10">{children}</main>
+          <main>{children}</main>
           <IntroAnimation />
           <ToastContainer />
           <Footer />
-        </body>
-      </PrimeReactProvider>
+        </PrimeReactProvider>
+      </body>
     </html>
   );
 }
