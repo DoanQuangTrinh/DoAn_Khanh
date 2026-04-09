@@ -1,7 +1,9 @@
 @import url("https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@400;500;600;700&display=swap");
 @import "tailwindcss";
-@tailwind utilities;
+@tailwind base;
 @tailwind components;
+@tailwind utilities;
+@import '../styles/mobile-optimizations.css';
 @import "primereact/resources/themes/lara-light-green/theme.css";
 @import "primereact/resources/primereact.min.css";
 @import "primeicons/primeicons.css";

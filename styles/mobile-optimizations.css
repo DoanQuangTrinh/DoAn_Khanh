@@ -1,0 +1,100 @@
+/* Mobile-first optimizations for GreenKids */
+
+/* Base mobile styles */
+@media (max-width: 768px) {
+  /* Typography adjustments */
+  html {
+    font-size: 14px;
+  }
+  
+  /* Ad containers mobile optimization */
+  .ad-container {
+    margin: 0.5rem 0;
+    padding: 0.25rem;
+  }
+  
+  .in-feed-ad {
+    margin: 1rem 0;
+    padding: 0.5rem;
+  }
+  
+  /* Ensure ads don't break layout */
+  .adsbygoogle {
+    max-width: 100% !important;
+    height: auto !important;
+  }
+  
+  /* Touch-friendly spacing */
+  button, a, .clickable {
+    min-height: 44px;
+    min-width: 44px;
+  }
+  
+  /* Improved readability on mobile */
+  body {
+    line-height: 1.6;
+  }
+  
+  /* Reduce motion for better performance */
+  @media (prefers-reduced-motion: reduce) {
+    * {
+      animation-duration: 0.01ms !important;
+      animation-iteration-count: 1 !important;
+      transition-duration: 0.01ms !important;
+    }
+  }
+}
+
+/* Small mobile devices */
+@media (max-width: 480px) {
+  html {
+    font-size: 12px;
+  }
+  
+  .ad-container {
+    margin: 0.25rem 0;
+  }
+  
+  /* Stack ads vertically on very small screens */
+  .ad-banner-horizontal {
+    display: none;
+  }
+  
+  .ad-banner-vertical {
+    display: block;
+  }
+}
+
+/* Landscape mobile */
+@media (max-width: 768px) and (orientation: landscape) {
+  .ad-container {
+    margin: 0.25rem 0;
+  }
+  
+  /* Optimize for landscape viewing */
+  .in-feed-ad {
+    margin: 0.5rem 0;
+    padding: 0.25rem;
+  }
+}
+
+/* High DPI displays */
+@media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
+  /* Ensure images look sharp on retina displays */
+  img {
+    image-rendering: -webkit-optimize-contrast;
+    image-rendering: crisp-edges;
+  }
+}
+
+/* Dark mode support */
+@media (prefers-color-scheme: dark) {
+  .ad-container {
+    background: #1a1a1a;
+    border: 1px solid #333;
+  }
+  
+  .in-feed-ad {
+    background: #2a2a2a;
+  }
+}
