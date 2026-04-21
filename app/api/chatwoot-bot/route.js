@@ -16,8 +16,8 @@ export async function POST(req) {
 
             // 3. Gửi câu trả lời của AI ngược lại Chatwoot
             // Dùng 127.0.0.1 vì Next.js và Chatwoot đang nằm chung trên 1 máy tính của anh
-            const chatwootApiUrl = `http://127.0.0.1:3000/api/v1/accounts/${accountId}/conversations/${conversationId}/messages`;
-
+            // Thay bằng link Ngrok đang chạy của anh
+            const chatwootApiUrl = `https://85ab-171-231-185-165.ngrok-free.app/api/v1/accounts/${accountId}/conversations/${conversationId}/messages`;
             // MÃ BÍ MẬT CỦA CON BOT (Lấy ở hướng dẫn phía dưới)
             const BOT_ACCESS_TOKEN = 'kQZRDPMtY5iTY82EgJBHKNtS';
 
