@@ -16,6 +16,7 @@ import { IntroAnimation } from "@/components/intro/IntroAnimation";
 import { ToastContainer } from "react-toastify";
 import Script from "next/script";
 import GoogleAnalytics from "@/components/analytics/GoogleAnalytics";
+import ChatwootWidget from "@/components/chatwoot/ChatwootWidget";
 const cashC = localFont({
   src: "/fonts/Cash-Regular.ttf",
   variable: "--font-cashc",
@@ -135,6 +136,7 @@ export default function RootLayout({
           <main>{children}</main>
           <IntroAnimation />
           <ToastContainer />
+          <ChatwootWidget />
           <Footer />
         </PrimeReactProvider>
       </body>
